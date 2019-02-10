@@ -1,17 +1,8 @@
 ---
-title: Attributes (F#)
+title: Attributes
 description: Learn how F# Attributes enable metadata to be applied to a programming construct.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 95c001e6-3708-4d04-a850-d855f78eb51e 
 ---
-
 # Attributes
 
 Attributes enable metadata to be applied to a programming construct.
@@ -94,6 +85,7 @@ Although you do not usually need to specify the attribute target explicitly, val
   <tr>
     <td>type</td>
     <td>
+
         ```
         [<type: StructLayout(Sequential)>] 
         type MyStruct = 
@@ -106,6 +98,6 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
 </table>
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

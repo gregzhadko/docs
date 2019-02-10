@@ -1,21 +1,7 @@
 ---
 title: "Calling a REST-style service from a WCF service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 77df81d8-7f53-4daf-8d2d-bf7996e94d5a
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Calling a REST-style service from a WCF service
 When calling a REST-style service from a regular (SOAP-based) WCF service, the operation context on the service method (which contains information about the incoming request) overrides the context which should be used by the outgoing request. This causes HTTP GET requests to change to HTTP POST requests. To force the WCF service to use the right context for calling the REST-style service, create a new <xref:System.ServiceModel.OperationContextScope> and call the REST-style service from inside the operation context scope. This topic will describe how to create a simple sample that illustrates this technique.  
@@ -88,7 +74,7 @@ public class NormalService : INormalInterface
 ```  
   
 ## Create the client proxy for the REST-style service  
- Using <!--zz<xref:System.ServiceModel.ClientBase%60>--> `System.ServiceModel.ClientBase` implement the client proxy. For each method called, a new <xref:System.ServiceModel.OperationContextScope> is created and used to call the operation.  
+ Using <xref:System.ServiceModel.ClientBase%601> to implement the client proxy. For each method called, a new <xref:System.ServiceModel.OperationContextScope> is created and used to call the operation.  
   
 ```csharp
 public class MyRestClient : ClientBase<IRestInterface>, IRestInterface
@@ -241,6 +227,6 @@ public class CallingRESTSample
 }
 ```
   
-## See Also  
- [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)  
- [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)
+## See also
+- [How to: Create a Basic WCF Web HTTP Service](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-wcf-web-http-service.md)
+- [WCF Web HTTP Programming Object Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-object-model.md)

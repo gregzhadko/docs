@@ -1,23 +1,9 @@
 ---
 title: "How to: Use Templates to Style a ListView That Uses GridView"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls [WPF], styling"
 ms.assetid: 94bf964b-96c8-4bdf-a0c3-f5271b7cb565
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Templates to Style a ListView That Uses GridView
 This example shows how to use the <xref:System.Windows.DataTemplate> and <xref:System.Windows.Style> objects to specify the appearance of a <xref:System.Windows.Controls.ListView> control that uses a <xref:System.Windows.Controls.GridView> view mode.  
@@ -43,9 +29,9 @@ This example shows how to use the <xref:System.Windows.DataTemplate> and <xref:S
   
  [!code-xaml[ListViewTemplate#CellTemplateProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#celltemplateproperty)]  
   
-## See Also  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.GridView>  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+## See also
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.GridView>
+- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Save Files with the Windows Forms RichTextBox Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - ".rtf files [Windows Forms], saving in RichTextBox control"
   - "text files [Windows Forms], saving from RichTextBox control"
 ms.assetid: 4a58ec19-84d1-4383-9110-298c06adcfca
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Save Files with the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the information it displays in one of several formats:  
@@ -95,8 +81,8 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
     > [!IMPORTANT]
     >  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs Create access for the folder. Permissions are set using access control lists. If the file already exists, the application needs only Write access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant Read access to a single file, rather than Create access for a folder. Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
-## See Also  
- <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Forms.RichTextBox>  
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.RichTextBox>
+- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

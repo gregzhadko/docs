@@ -1,24 +1,10 @@
 ---
 title: "Markup Extensions for XAML Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "markup extensions [XAML Services], custom"
   - "XAML [XAML Services], markup extensions"
 ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436
-caps.latest.revision: 14
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Markup Extensions for XAML Overview
 Markup extensions are a XAML technique for obtaining a value that is neither a primitive nor a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET Framework XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework .  
@@ -30,7 +16,7 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
  Several markup extensions are implemented by .NET Framework XAML Services for XAML language support. These markup extensions correspond to parts of the specification of XAML as a language. These are typically identifiable by the `x:` prefix in the syntax as seen in common usage. The .NET Framework XAML Services implementations for these XAML language elements all derive from the  <xref:System.Windows.Markup.MarkupExtension> base class .  
   
 > [!NOTE]
->  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language namespace, in the root element of a XAML production. For example, the [!INCLUDE[vs_current_short](../../../includes/vs-current-short-md.md)] project and page templates for various specific frameworks initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML language XAML namespace, as opposed to a specific framework's default XAML namespace or other arbitrary CLR or XML namespaces.  
+>  The `x:` prefix is used for the typical XAML namespace mapping of the XAML language namespace, in the root element of a XAML production. For example, the Visual Studio project and page templates for various specific frameworks initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML language XAML namespace, as opposed to a specific framework's default XAML namespace or other arbitrary CLR or XML namespaces.  
   
 ### x:Type  
  `x:Type` supplies the <xref:System.Type> object for the named type. This functionality is used most frequently in deferral mechanisms that use underlying CLR type and type derivation as a grouping moniker or identifier. WPF styles and templates, and their usage of `TargetType` properties, are a specific example. For more information, see [x:Type Markup Extension](../../../docs/framework/xaml-services/x-type-markup-extension.md).  
@@ -162,7 +148,7 @@ public Collate(CollationMode collationMode, object collateThis) {...}
   
  If you are working with a XAML node stream on the save path, there generally is nothing present in an object graph representation that can inform you that the object to serialize was originally provided by a markup extension usage and a `ProvideValue` result. Scenarios that need to persist markup extension usages for round-tripping while also capturing other changes in the object graph must devise their own techniques for preserving the knowledge of a markup extension usage from the original XAML input. For example, to restore the markup extension usages, you may need to work with the node stream on the save path in order to restore markup extension usages, or perform some type of merge between the original XAML and the round-tripped XAML. Some XAML-implementing frameworks such as WPF use intermediate types (expressions) to help represent cases where markup extension usages provided the values.  
   
-## See Also  
- <xref:System.Windows.Markup.MarkupExtension>  
- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+## See also
+- <xref:System.Windows.Markup.MarkupExtension>
+- [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)
+- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

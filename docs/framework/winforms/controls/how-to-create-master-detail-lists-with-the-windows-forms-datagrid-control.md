@@ -1,14 +1,6 @@
 ---
 title: "How to: Create Master-Detail Lists with the Windows Forms DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], master-details lists"
   - "related tables [Windows Forms], displaying in DataGrid control"
 ms.assetid: 20388c6a-94f9-4d96-be18-8c200491247f
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create Master/Detail Lists with the Windows Forms DataGrid Control
 > [!NOTE]
@@ -78,7 +64,7 @@ ms.workload:
     GridDetails->SetDataBinding(ds, "Customers.CustOrd");  
     ```  
   
-## See Also  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)
+## See also
+- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)
+- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)

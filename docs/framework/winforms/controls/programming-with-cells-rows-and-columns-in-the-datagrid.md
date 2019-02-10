@@ -1,14 +1,6 @@
 ---
 title: "Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data grids [Windows Forms], elements"
   - "columns [Windows Forms], data grids"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], programming with grid elements"
   - "rows [Windows Forms], data grids"
 ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control
 This section provides topics that demonstrate various programming tasks involving cell, row, and column objects.  
@@ -62,6 +48,6 @@ This section provides topics that demonstrate various programming tasks involvin
  [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
  Provides topics that describe commonly used cell, row, and column properties.  
   
-## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)
+## See also
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

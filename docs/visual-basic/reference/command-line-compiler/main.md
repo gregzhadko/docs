@@ -1,18 +1,11 @@
 ---
 title: "-main"
 ms.date: 03/13/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "main compiler option [Visual Basic]"
   - "/main compiler option [Visual Basic]"
   - "-main compiler option [Visual Basic]"
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
-author: rpetrusha
-ms.author: ronpet
 ---
 # -main
 Specifies the class or module that contains the `Sub Main` procedure.  
@@ -53,8 +46,8 @@ Specifies the class or module that contains the `Sub Main` procedure.
 vbc t2.vb t3.vb -main:Test2  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)

@@ -1,26 +1,12 @@
 ---
 title: "How to: Get or Set Canvas Positioning Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "Canvas control [WPF], setting positioning properties"
 ms.assetid: 1636b950-2b5a-4507-8a10-c5034cc58b1c
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Get or Set Canvas Positioning Properties
 This example shows how to use the positioning methods of the <xref:System.Windows.Controls.Canvas> element to position child content. This example uses content in a <xref:System.Windows.Controls.ListBoxItem> to represent positioning values and converts the values into instances of <xref:System.Double>, which is a required argument for positioning. The values are then converted back into strings and displayed as text in a <xref:System.Windows.Controls.TextBlock> element by using the <xref:System.Windows.Controls.Canvas.GetLeft%2A> method.  
@@ -37,8 +23,8 @@ This example shows how to use the positioning methods of the <xref:System.Window
  [!code-csharp[CanvasPositioningProperties#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasPositioningProperties/CSharp/Window1.xaml.cs#2)]
  [!code-vb[CanvasPositioningProperties#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasPositioningProperties/VisualBasic/Window1.xaml.vb#2)]  
   
-## See Also  
- <xref:System.Windows.Controls.Canvas>  
- <xref:System.Windows.Controls.ListBoxItem>  
- <xref:System.Windows.LengthConverter>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+## See also
+- <xref:System.Windows.Controls.Canvas>
+- <xref:System.Windows.Controls.ListBoxItem>
+- <xref:System.Windows.LengthConverter>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

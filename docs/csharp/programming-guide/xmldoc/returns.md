@@ -1,10 +1,7 @@
 ---
-title: "&lt;returns&gt; (C# Programming Guide)"
+title: "<returns> - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "returns"
   - "<returns>"
@@ -12,11 +9,8 @@ helpviewer_keywords:
   - "<returns> C# XML tag"
   - "returns C# XML tag"
 ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
-# &lt;returns&gt; (C# Programming Guide)
+# \<returns> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -35,6 +29,7 @@ ms.author: "wiwagn"
 ## Example  
  [!code-csharp[csProgGuideDocComments#10](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/returns_1.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

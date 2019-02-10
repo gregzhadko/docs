@@ -1,18 +1,11 @@
 ---
 title: "-imports (Visual Basic)"
 ms.date: 03/10/2018
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "/imports compiler option [Visual Basic]"
   - "imports compiler option [Visual Basic]"
   - "-imports compiler option [Visual Basic]"
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # -imports (Visual Basic)
 Imports namespaces from a specified assembly.  
@@ -43,7 +36,7 @@ Imports namespaces from a specified assembly.
   
  [!code-vb[imports example](codesnippet/VisualBasic/imports_2.vb)]  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

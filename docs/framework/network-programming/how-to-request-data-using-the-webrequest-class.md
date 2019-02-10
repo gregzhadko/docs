@@ -1,12 +1,6 @@
 ---
 title: "How to: Request Data Using the WebRequest Class"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +11,6 @@ helpviewer_keywords:
   - "receiving data, using WebRequest class"
   - "Internet, requesting data"
 ms.assetid: 368b8d0f-dc5e-4469-a8b8-b2adbf5dd800
-caps.latest.revision: 8
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Request Data Using the WebRequest Class
 The following procedure describes the steps used to request a resource from a server, for example, a Web page or file. The resource must be identified by a URI.  
@@ -178,9 +166,9 @@ Namespace Examples.System.Net
 End Namespace  
 ```  
   
-## See Also  
- [Creating Internet Requests](../../../docs/framework/network-programming/creating-internet-requests.md)  
- [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)  
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)  
- [How to: Send Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-send-data-using-the-webrequest-class.md)
+## See also
+- [Creating Internet Requests](../../../docs/framework/network-programming/creating-internet-requests.md)
+- [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)
+- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+- [How to: Send Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-send-data-using-the-webrequest-class.md)

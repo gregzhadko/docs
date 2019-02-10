@@ -1,25 +1,11 @@
 ---
 title: "GridView Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "GridView view mode [WPF]"
   - "ListView controls [WPF], GridView view mode"
   - "controls [WPF], ListView"
 ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # GridView Overview
 <xref:System.Windows.Controls.GridView> view mode is one of the view modes for a <xref:System.Windows.Controls.ListView> control. The <xref:System.Windows.Controls.GridView> class and its supporting classes enable you and your users to view item collections in a table that typically uses buttons as interactive column headers. This topic introduces the <xref:System.Windows.Controls.GridView> class and outlines its use.  
@@ -136,14 +122,14 @@ ms.workload:
   
 -   <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
   
-## See Also  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.ListViewItem>  
- <xref:System.Windows.Controls.GridViewColumn>  
- <xref:System.Windows.Controls.GridViewColumnHeader>  
- <xref:System.Windows.Controls.GridViewRowPresenter>  
- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>  
- <xref:System.Windows.Controls.ViewBase>  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [Sort a GridView Column When a Header Is Clicked](../../../../docs/framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.ListViewItem>
+- <xref:System.Windows.Controls.GridViewColumn>
+- <xref:System.Windows.Controls.GridViewColumnHeader>
+- <xref:System.Windows.Controls.GridViewRowPresenter>
+- <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
+- <xref:System.Windows.Controls.ViewBase>
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [Sort a GridView Column When a Header Is Clicked](../../../../docs/framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)

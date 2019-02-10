@@ -1,25 +1,11 @@
 ---
 title: "How to: Set Up Notification of Binding Updates"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "notifications [WPF], binding updates"
   - "data binding [WPF], notification of binding updates"
   - "binding [WPF], updates [WPF], notifications of"
 ms.assetid: 5673073e-dbe1-49da-980a-484a88f9595a
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set Up Notification of Binding Updates
 This example shows how to set up to be notified when the binding target (target) or the binding source (source) property of a binding has been updated.  
@@ -40,6 +26,6 @@ This example shows how to set up to be notified when the binding target (target)
   
  Parameters of the event can be used to determine details about the property that changed (such as the type or the specific element if the same handler is attached to more than one element), which can be useful if there are multiple bound properties on a single element.  
   
-## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

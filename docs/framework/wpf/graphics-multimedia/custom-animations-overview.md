@@ -1,14 +1,6 @@
 ---
 title: "Custom Animations Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom classes [WPF], animation"
   - "key frames [WPF], custom"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "animation [WPF], custom classes"
   - "custom animation classes [WPF]"
 ms.assetid: 9be69d50-3384-4938-886f-08ce00e4a7a6
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Custom Animations Overview
 This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation system by creating custom key frames, animation classes, or by using per-frame callback to bypass it.  
@@ -82,7 +68,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  Because the *\<Type>*AnimationBase classes inherit from the <xref:System.Windows.Freezable> class, you must also override <xref:System.Windows.Freezable.CreateInstanceCore%2A> core to return a new instance of your class. If the class does not use dependency properties to store its data or it requires extra initialization after creation, you might need to override additional methods; see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md) for more information.  
   
- For more information, see the GetCurrentValueCore method documentation for the *\<Type>*AnimationBase class for the type that you want to animate. For an example, see the [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)  
+ For more information, see the GetCurrentValueCore method documentation for the *\<Type>*AnimationBase class for the type that you want to animate. For an example, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)  
   
  **Alternative Approaches**  
   
@@ -131,13 +117,13 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  For more information, see the <xref:System.Windows.Media.CompositionTarget.Rendering> page.  
   
-## See Also  
- <xref:System.Windows.Media.Animation.AnimationTimeline>  
- <xref:System.Windows.Media.Animation.IKeyFrame>  
- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)  
- [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)
+## See also
+- <xref:System.Windows.Media.Animation.AnimationTimeline>
+- <xref:System.Windows.Media.Animation.IKeyFrame>
+- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)
+- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)

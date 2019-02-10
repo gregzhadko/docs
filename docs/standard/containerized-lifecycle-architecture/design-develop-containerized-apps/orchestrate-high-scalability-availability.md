@@ -1,13 +1,9 @@
 ---
 title: Orchestrating microservices and multicontainer applications for high scalability and availability
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Orchestrating microservices and multicontainer applications for high scalability and availability
 
@@ -37,10 +33,10 @@ Table 4-1: Software platforms for container clustering, orchestration, and sched
 
 | Platform | Description |
 |---|---|
-| Docker Swarm<br/> ![http://rancher.com/wp-content/themes/rancher-2016/assets/images/swarm.png?v=2016-07-10-am](./media/image7.png) | Docker Swarm gives you the ability to cluster and schedule Docker containers. By using Swarm, you can turn a pool of Docker hosts into a single, virtual Docker host. Clients can make API requests to Swarm in the same way that they do to hosts, meaning that Swarm makes it easy for applications to scale to multiple hosts. <br /><br /> Docker Swarm is a product from Docker, the company. <br /><br /> Docker v1.12 or later can run native and built-in Swarm Mode. |
-| Mesosphere DC/OS<br/>![https://mesosphere.com/wp-content/uploads/2016/04/logo-horizontal-styled.png](./media/image8.png) |  Mesosphere Enterprise DC/OS (based on Apache Mesos) is a production-ready platform for running containers and distributed applications. <br /><br /> DC/OS works by abstracting a collection of the resources available in the cluster and making those resources available to components built on top of it. Marathon is usually used as a scheduler integrated with DC/OS. |
-| Google Kubernetes<br />![https://pbs.twimg.com/media/Bt\_pEfqCAAAiVyz.png](./media/image9.png) | Kubernetes is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. With it, you can automate deployment, scaling, and operations of application containers across clusters of hosts. <br /><br /> Kubernetes provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery. |
-| Azure Service Fabric<br />![https://azure.microsoft.com/svghandler/service-fabric?width=600&height=315](./media/image10.png) | [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It is an [orchestrator](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. By default, Service Fabric deploys and activates services as processes, but Service Fabric can deploy services in Docker container images. More important, you can mix services in processes with services in containers in the same application. <br /><br /> As of May 2017, the feature of Service Fabric that supports deploying services as Docker containers is in preview state. <br /><br /> You can develop Service Fabric services in many ways, from using the [Service Fabric programming models](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework) to deploying [guest executables](https://docs.microsoft.com/azure/service-fabric/service-fabric-deploy-existing-app) as well as containers. Service Fabric supports prescriptive application models like [stateful services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
+| Docker Swarm<br/> ![Docker Swarm logo](./media/image7.png) | Docker Swarm gives you the ability to cluster and schedule Docker containers. By using Swarm, you can turn a pool of Docker hosts into a single, virtual Docker host. Clients can make API requests to Swarm in the same way that they do to hosts, meaning that Swarm makes it easy for applications to scale to multiple hosts. <br /><br /> Docker Swarm is a product from Docker, the company. <br /><br /> Docker v1.12 or later can run native and built-in Swarm Mode. |
+| Mesosphere DC/OS<br/>![Mesosphere DC/OS logo](./media/image8.png) |  Mesosphere Enterprise DC/OS (based on Apache Mesos) is a production-ready platform for running containers and distributed applications. <br /><br /> DC/OS works by abstracting a collection of the resources available in the cluster and making those resources available to components built on top of it. Marathon is usually used as a scheduler integrated with DC/OS. |
+| Google Kubernetes<br />![Google Kubernetes logo](./media/image9.png) | Kubernetes is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. With it, you can automate deployment, scaling, and operations of application containers across clusters of hosts. <br /><br /> Kubernetes provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery. |
+| Azure Service Fabric<br />![Azure Service Fabric logo](./media/image10.png) | [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) is a Microsoft microservices platform for building applications. It is an [orchestrator](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-resource-manager-introduction) of services and creates clusters of machines. By default, Service Fabric deploys and activates services as processes, but Service Fabric can deploy services in Docker container images. More important, you can mix services in processes with services in containers in the same application. <br /><br /> As of May 2017, the feature of Service Fabric that supports deploying services as Docker containers is in preview state. <br /><br /> You can develop Service Fabric services in many ways, from using the [Service Fabric programming models](https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework) to deploying [guest executables](https://docs.microsoft.com/azure/service-fabric/service-fabric-deploy-existing-app) as well as containers. Service Fabric supports prescriptive application models like [stateful services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 
 ## Using container-based orchestrators in Azure
 
@@ -99,7 +95,7 @@ Following are locations where you can find additional information:
     <https://docs.mesosphere.com/1.7/overview/>
 
 -   Kubernetes (the official site):  
-    <http://kubernetes.io/>
+    <https://kubernetes.io/>
 
 ## Using Service Fabric
 
@@ -173,11 +169,10 @@ Stateless and stateful services are complementary. For instance, a stateful serv
 
 Stateful services do have drawbacks. They impose a level of complexity that allows them to scale out. Functionality that would usually be implemented by external database systems must be addressed for tasks such as data replication across stateful microservices and data partitioning. However, this is one of the areas where an orchestrator like [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-platform-architecture) with its [stateful reliable services](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can help the most—by simplifying the development and lifecycle of stateful microservices using the [Reliable Services API](https://docs.microsoft.com/azure/service-fabric/service-fabric-work-with-reliable-collections) and [Reliable Actors](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction).
 
-Other microservice frameworks that allow stateful services, that support the Actor pattern, and that improve fault tolerance and latency between business logic and data are Microsoft [Orleans](https://github.com/dotnet/orleans), from Microsoft Research, and [Akka.NET](http://getakka.net/). Both frameworks are currently improving their support for Docker.
+Other microservice frameworks that allow stateful services, that support the Actor pattern, and that improve fault tolerance and latency between business logic and data are Microsoft [Orleans](https://github.com/dotnet/orleans), from Microsoft Research, and [Akka.NET](https://getakka.net/). Both frameworks are currently improving their support for Docker.
 
 Note that Docker containers are themselves stateless. If you want to implement a stateful service, you need one of the additional prescriptive and higher-level frameworks noted earlier. However, as of this writing, stateful services in Service Fabric are not supported as containers, only as plain microservices. Reliable services support in containers will be available in upcoming versions of Service Fabric.
 
-
 >[!div class="step-by-step"]
-[Previous] (soa-applications.md)
-[Next] (docker-apps-development-environment.md)
+>[Previous](soa-applications.md)
+>[Next](docker-apps-development-environment.md)

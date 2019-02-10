@@ -1,32 +1,18 @@
 ---
 title: "XAML Resources"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "reusing resources [WPF]"
   - "resources [WPF], reusing"
   - "reusing commonly defined objects [WPF]"
   - "XAML [WPF], reusing resources"
 ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
-caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # XAML Resources
 A resource is an object that can be reused in different places in your application. Examples of resources include brushes and styles. This overview describes how to use resources in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. You can also create and access resources by using code, or interchangeably between code and [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. For more information, see [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md).  
   
 > [!NOTE]
->  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Managing Application Resources (.NET)](http://msdn.microsoft.com/library/f2582734-8ada-4baa-8a7c-e2ef943ddf7e).  
+>  The resource files described in this topic are different than the resource files described in [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md) and different than the embedded or linked resources described in [Managing Application Resources (.NET)](https://msdn.microsoft.com/library/f2582734-8ada-4baa-8a7c-e2ef943ddf7e).  
   
   
 <a name="usingresources"></a>   
@@ -155,18 +141,18 @@ A resource is an object that can be reused in different places in your applicati
   
  That style really does have a key: the implicit key `typeof(`<xref:System.Windows.Controls.Button>`)`. In markup, you can specify a <xref:System.Windows.Style.TargetType%2A> directly as the type name (or you can optionally use [{x:Type...}](../../../../docs/framework/xaml-services/x-type-markup-extension.md) to return a <xref:System.Type>.  
   
- Through the default theme style mechanisms used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], that style is applied as the runtime style of a <xref:System.Windows.Controls.Button> on the page, even though the <xref:System.Windows.Controls.Button> itself does not attempt to specify its <xref:System.Windows.FrameworkElement.Style%2A> property or a specific resource reference to the style. Your style defined in the page is found earlier in the lookup sequence earlier than the theme dictionary style, using the same key that the theme dictionary style has. You could just specify `<Button>Hello</Button>` anywhere in the page, and the style you defined with <xref:System.Windows.Style.TargetType%2A> of `Button` would apply to that button. If you want, you can still explicitly key the style with the same type value as <xref:System.Windows.Style.TargetType%2A>, for clarity in your markup, but that is optional.  
+ Through the default theme style mechanisms used by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], that style is applied as the runtime style of a <xref:System.Windows.Controls.Button> on the page, even though the <xref:System.Windows.Controls.Button> itself does not attempt to specify its <xref:System.Windows.FrameworkElement.Style%2A> property or a specific resource reference to the style. Your style defined in the page is found earlier in the lookup sequence than the theme dictionary style, using the same key that the theme dictionary style has. You could just specify `<Button>Hello</Button>` anywhere in the page, and the style you defined with <xref:System.Windows.Style.TargetType%2A> of `Button` would apply to that button. If you want, you can still explicitly key the style with the same type value as <xref:System.Windows.Style.TargetType%2A>, for clarity in your markup, but that is optional.  
   
  Implicit keys for styles do not apply on a control if <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> is `true` (also note that <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> might be set as part of native behavior for the control class, rather than explicitly on an instance of the control). Also, in order to support implicit keys for derived class scenarios, the control must override <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> (all existing controls provided as part of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] do this). For more information about styles, themes, and control design, see [Guidelines for Designing Stylable Controls](../../../../docs/framework/wpf/controls/guidelines-for-designing-stylable-controls.md).  
   
  <xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../../../docs/framework/xaml-services/x-type-markup-extension.md). For details, see [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md).  
   
-## See Also  
- <xref:System.Windows.ResourceDictionary>  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+## See also
+- <xref:System.Windows.ResourceDictionary>
+- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)
+- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)
+- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)
+- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)

@@ -1,19 +1,13 @@
 ---
-title: "Abstract and Sealed Classes and Class Members (C# Programming Guide)"
+title: "Abstract and Sealed Classes and Class Members - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "abstract classes [C#]"
   - "sealed classes [C#]"
   - "C# language, abstract classes"
   - "C# language, sealed"
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Abstract and Sealed Classes and Class Members (C# Programming Guide)
 The [abstract](../../../csharp/language-reference/keywords/abstract.md) keyword enables you to create classes and [class](../../../csharp/language-reference/keywords/class.md) members that are incomplete and must be implemented in a derived class.  
@@ -48,10 +42,11 @@ The [abstract](../../../csharp/language-reference/keywords/abstract.md) keyword 
   
  [!code-csharp[csProgGuideInheritance#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/abstract-and-sealed-classes-and-class-members_5.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
- [How to: Define Abstract Properties](../../../csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)
+- [How to: Define Abstract Properties](../../../csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties.md)

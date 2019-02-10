@@ -1,14 +1,6 @@
 ---
 title: "Shapes and Basic Drawing in WPF Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +12,6 @@ helpviewer_keywords:
   - "vectors [WPF], drawing"
   - "Shape objects [WPF]"
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Shapes and Basic Drawing in WPF Overview
 This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Shape> objects. A <xref:System.Windows.Shapes.Shape> is a type of <xref:System.Windows.UIElement> that enables you to draw a shape to the screen. Because they are UI elements, <xref:System.Windows.Shapes.Shape> objects can be used inside <xref:System.Windows.Controls.Panel> elements and most controls.  
@@ -115,7 +101,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
 ## Painting Shapes  
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color keywords, see properties of the <xref:System.Windows.Media.Colors> class in the <xref:System.Windows.Media> namespace.  
   
-```  
+```xaml
 <Canvas Background="LightGray">   
    <Ellipse  
       Canvas.Top="50"  
@@ -134,7 +120,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  Alternatively, you can use property element syntax to explicitly create a <xref:System.Windows.Media.SolidColorBrush> object to paint the shape with a solid color.  
   
-```  
+```xaml
 <!-- This polygon shape uses pre-defined color values for its Stroke and  
      Fill properties.   
      The SolidColorBrush's Opacity property affects the fill color in   
@@ -175,8 +161,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  In the following example, a <xref:System.Windows.Shapes.Polygon> is used to draw a very small triangle from (0,0) to (0,1) to (1,1). The <xref:System.Windows.Shapes.Polygon> object's <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> are set to 100, and its stretch property is set to Fill. As a result, the <xref:System.Windows.Shapes.Polygon> object's contents (the triangle) are stretched to fill the larger space.  
   
-```  
-...  
+```xaml
 <Polygon  
   Points="0,0 0,1 1,1"  
   Fill="Blue"  
@@ -185,11 +170,9 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   Stretch="Fill"  
   Stroke="Black"  
   StrokeThickness="2" />  
-...  
-```  
-  
-```  
-...  
+```
+
+```csharp
 PointCollection myPointCollection = new PointCollection();  
 myPointCollection.Add(new Point(0,0));  
 myPointCollection.Add(new Point(0,1));  
@@ -203,9 +186,8 @@ myPolygon.Height = 100;
 myPolygon.Stretch = Stretch.Fill;  
 myPolygon.Stroke = Brushes.Black;  
 myPolygon.StrokeThickness = 2;  
-...  
-```  
-  
+```
+
 <a name="transforms"></a>   
 ## Transforming Shapes  
  The <xref:System.Windows.Media.Transform> class provides the means to transform shapes in a two-dimensional plane.  The different types of transformation include rotation (<xref:System.Windows.Media.RotateTransform>), scale (<xref:System.Windows.Media.ScaleTransform>), skew (<xref:System.Windows.Media.SkewTransform>), and translation (<xref:System.Windows.Media.TranslateTransform>).  
@@ -226,9 +208,9 @@ myPolygon.StrokeThickness = 2;
   
  In the previous examples, a single transform was applied to each shape object. To apply multiple transforms to a shape (or any other UI element), use a <xref:System.Windows.Media.TransformGroup>.  
   
-## See Also  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+## See also
+- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

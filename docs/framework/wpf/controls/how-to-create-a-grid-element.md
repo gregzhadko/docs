@@ -1,26 +1,12 @@
 ---
 title: "How to: Create a Grid Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "Grid control [WPF], creating [WPF], grid instance"
 ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Grid Element
 ## Example  
@@ -30,6 +16,9 @@ ms.workload:
  [!code-vb[Grid#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Grid/VisualBasic/grid_vb.vb#3)]
  [!code-xaml[Grid#3](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Grid/XAML/default.xaml#3)]  
   
-## See Also  
- <xref:System.Windows.Controls.Grid>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+  Either approach will generate a user interface that looks much the same, like the one below.
+
+  ![a screenshot depicts a WPF user interface which contains a grid broken into three columns.  It bears the heading '2018 Products Shipped' spanning all columns of the top row, and has three columns each with sales figures for a certain quarter.  The bottom row has text spanning two columns with the message 'Total Units: 300,000'](./media/how-to-create-a-grid-element/how-to-create-a-grid-element.png)
+## See also
+- <xref:System.Windows.Controls.Grid>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

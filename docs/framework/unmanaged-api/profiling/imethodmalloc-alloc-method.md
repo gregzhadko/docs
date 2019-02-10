@@ -1,14 +1,6 @@
 ---
 title: "IMethodMalloc::Alloc Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IMethodMalloc.Alloc"
 api_location: 
@@ -23,12 +15,8 @@ helpviewer_keywords:
 ms.assetid: 8653bd4c-2290-43d2-a3e1-cbbd50033f4f
 topic_type: 
   - "apiref"
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # IMethodMalloc::Alloc Method
 Attempts to allocate a specified amount of memory for a new Microsoft intermediate language (MSIL) function body.  
@@ -59,5 +47,5 @@ PVOID Alloc (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IMethodMalloc Interface](../../../../docs/framework/unmanaged-api/profiling/imethodmalloc-interface.md)
+## See also
+- [IMethodMalloc Interface](../../../../docs/framework/unmanaged-api/profiling/imethodmalloc-interface.md)

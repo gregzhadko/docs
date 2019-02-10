@@ -1,17 +1,9 @@
 ---
 title: .NET Core CLI extensibility model
 description: Learn how you can extend the Command-line Interface (CLI) tools.
-keywords: CLI, extensibility, custom commands, .NET Core
 author: blackdwarf
-ms.author: mairaw
 ms.date: 04/12/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
-ms.workload: 
-  - dotnetcore
+ms.custom: "seodec18"
 ---
 
 # .NET Core CLI tools extensibility model
@@ -24,15 +16,15 @@ The CLI tools can be extended in three main ways:
 
 1. [Via NuGet packages on a per-project basis](#per-project-based-extensibility)
 
-  Per-project tools are contained within the project's context, but they allow easy installation through restoration.
+   Per-project tools are contained within the project's context, but they allow easy installation through restoration.
 
 2. [Via NuGet packages with custom targets](#custom-targets)
 
-  Custom targets allow you to easily extend the build process with custom tasks.
+   Custom targets allow you to easily extend the build process with custom tasks.
 
 3. [Via the system's PATH](#path-based-extensibility)
 
-  PATH-based tools are good for general, cross-project tools that are usable on a single machine.
+   PATH-based tools are good for general, cross-project tools that are usable on a single machine.
 
 The three extensibility mechanisms outlined above are not exclusive. You can use one, or all, or a combination of them. Which one to pick
 depends largely on the goal you are trying to achieve with your extension.
@@ -64,7 +56,7 @@ API, here is a console application's project file that uses that tool:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <!-- The tools reference -->
@@ -95,8 +87,8 @@ These kinds of tools have a dependency graph that is completely separate from th
 uses them. The restore process first restores the project's dependencies and then restores each of the tools and
 their dependencies.
 
-You can find richer examples and different combinations of this in the [.NET Core CLI repo](https://github.com/dotnet/cli/tree/rel/1.0.1/TestAssets/TestProjects).
-You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/rel/1.0.1/TestAssets/TestPackages) in the same repo.
+You can find richer examples and different combinations of this in the [.NET Core CLI repo](https://github.com/dotnet/cli/tree/release/2.1/TestAssets/TestProjects).
+You can also see the [implementation of tools used](https://github.com/dotnet/cli/tree/release/2.1/TestAssets/TestPackages) in the same repo.
 
 ### Custom targets
 NuGet has the capability to [package custom MSBuild targets and props files](/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). With the move of the .NET Core CLI tools to use MSBuild, the same mechanism of extensibility now applies to .NET Core projects. You would use this type of extensibility when you want to extend the build process, or when you want to access any of the artifacts in the build process, such as generated files, or you want to inspect the configuration under which the build is invoked, etc.
@@ -153,7 +145,7 @@ defined beneath it.
 
 Consuming custom targets is done by providing a `<PackageReference>` that points to the package and its version inside the project that is being extended. Unlike the tools, the custom targets package does get included into the consuming project's dependency closure.
 
-Using the custom target depends solely on how you configure it. Since it's an MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the `dotnet msbuild /t:<target-name>` command.
+Using the custom target depends solely on how you configure it. Since it's an MSBuild target, it can depend on a given target, run after another target and can also be manually invoked using the `dotnet msbuild -t:<target-name>` command.
 
 However, if you want to provide a better user experience to your users, you can combine per-project tools and custom targets. In this scenario, the per-project tool would essentially just accept whatever needed parameters and would translate that into the required [`dotnet msbuild`](dotnet-msbuild.md) invocation that would execute the target. You can see a sample of this kind of synergy on the [MVP Summit 2016 Hackathon samples](https://github.com/dotnet/MVPSummitHackathon2016) repo in the [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer) project.
 

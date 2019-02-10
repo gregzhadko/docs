@@ -1,13 +1,7 @@
 ---
 title: "Regular Expression Options"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +12,8 @@ helpviewer_keywords:
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Regular Expression Options
 <a name="Top"></a> By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. These options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.  
@@ -47,7 +36,7 @@ ms.workload:
   
 -   In the `options` parameter of a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static (`Shared` in Visual Basic) pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. The `options` parameter is a bitwise OR combination of <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumerated values.  
   
-     When options are supplied to a <xref:System.Text.RegularExpressions.Regex> instance by using the `options` parameter of a class constructor, the options are are assigned to the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property. However, the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property does not reflect inline options in the regular expression pattern itself.  
+     When options are supplied to a <xref:System.Text.RegularExpressions.Regex> instance by using the `options` parameter of a class constructor, the options are assigned to the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property. However, the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property does not reflect inline options in the regular expression pattern itself.  
   
      The following example provides an illustration. It uses the `options` parameter of the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".  
   
@@ -280,7 +269,7 @@ ms.workload:
   
 -   White space within a character class is always interpreted literally. For example, the regular expression pattern `[ .,;:]` matches any single white-space character, period, comma, semicolon, or colon.  
   
--   White space isn't allowed within a bracketed quantifier, such as `{`*n*`}`, `{`*n*`,}`, and `{`*n*`,`*m*`}`. For example, the regular expression pattern `\d{1. 3}` fails to match any sequences of digits from one to three digits because it contains a white-space character.  
+-   White space isn't allowed within a bracketed quantifier, such as `{`*n*`}`, `{`*n*`,}`, and `{`*n*`,`*m*`}`. For example, the regular expression pattern `\d{1, 3}` fails to match any sequences of digits from one to three digits because it contains a white-space character.  
   
 -   White space isn't allowed within a character sequence that introduces a language element. For example:  
   
@@ -399,5 +388,6 @@ ms.workload:
  [!code-csharp[Conceptual.Regex.Language.Options#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/culture1.cs#15)]
  [!code-vb[Conceptual.Regex.Language.Options#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#15)]  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

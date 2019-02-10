@@ -1,19 +1,13 @@
 ---
-title: "Using Namespaces (C# Programming Guide)"
+title: "Using Namespaces - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.names"
 helpviewer_keywords: 
   - "fully qualified names [C#]"
   - "namespaces [C#], how to use"
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Namespaces (C# Programming Guide)
 Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Framework classes use namespaces to organize its many classes. Secondly, declaring your own namespaces can help control the scope of class and method names in larger programming projects.  
@@ -88,10 +82,11 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
  See the topic [How to: Use the Global Namespace Alias](../../../csharp/programming-guide/namespaces/how-to-use-the-global-namespace-alias.md) for more information regarding the `global` alias.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
- [extern](../../../csharp/language-reference/keywords/extern.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
+- [extern](../../../csharp/language-reference/keywords/extern.md)

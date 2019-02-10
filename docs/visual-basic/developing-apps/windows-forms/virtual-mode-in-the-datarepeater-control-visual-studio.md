@@ -1,11 +1,6 @@
 ---
 title: "Virtual Mode in the DataRepeater Control (Visual Studio)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,9 +9,6 @@ helpviewer_keywords:
   - "DataRepeater"
   - "DataRepeater, virtual mode"
 ms.assetid: 5fb805dc-2d8b-4139-b1e3-86e4c2667221
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Virtual Mode in the DataRepeater Control (Visual Studio)
 When you want to display large quantities of tabular data in a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control, you can improve performance by setting the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.VirtualMode%2A> property to `True` and explicitly managing the control's interaction with its data source. The <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control provides several events that you can handle to interact with your data source and display the data as needed at run time.  
@@ -75,8 +67,8 @@ When you want to display large quantities of tabular data in a <xref:Microsoft.V
      [!code-vb[VbPowerPacksDataRepeaterVirtualMode#6](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/virtual-mode-in-the-datarepeater-control-visual-studio_6.vb)]
      [!code-csharp[VbPowerPacksDataRepeaterVirtualMode#6](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/virtual-mode-in-the-datarepeater-control-visual-studio_6.cs)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed>  
- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.NewItemNeeded>  
- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValueNeeded>  
- [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)
+## See also
+- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValuePushed>
+- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.NewItemNeeded>
+- <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemValueNeeded>
+- [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)

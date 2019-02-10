@@ -1,19 +1,14 @@
 ---
-title: "Jagged Arrays (C# Programming Guide)"
+title: "Jagged Arrays - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "jagged arrays [C#]"
   - "arrays [C#], jagged"
 ms.assetid: 537c65a6-0e0a-4a00-a2b8-086f38519c70
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Jagged Arrays (C# Programming Guide)
+
 A jagged array is an array whose elements are arrays. The elements of a jagged array can be of different dimensions and sizes. A jagged array is sometimes called an "array of arrays." The following examples show how to declare, initialize, and access jagged arrays.  
   
  The following is a declaration of a single-dimensional array that has three elements, each of which is a single-dimensional array of integers:  
@@ -58,14 +53,16 @@ A jagged array is an array whose elements are arrays. The elements of a jagged a
   
  returns a value of 3.  
   
-## Example  
+## Example
+
  This example builds an array whose elements are themselves arrays. Each one of the array elements has a different size.  
   
  [!code-csharp[csProgGuideArrays#18](../../../csharp/programming-guide/arrays/codesnippet/CSharp/jagged-arrays_10.cs)]  
   
-## See Also  
- <xref:System.Array>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
+## See also
+
+- <xref:System.Array>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)
+- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)
+- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)

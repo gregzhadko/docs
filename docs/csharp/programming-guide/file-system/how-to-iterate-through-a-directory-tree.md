@@ -1,17 +1,11 @@
 ---
-title: "How to: Iterate Through a Directory Tree (C# Programming Guide)"
+title: "How to: Iterate Through a Directory Tree - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "iterating through folders [C#]"
   - "file iteration [C#]"
 ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
-caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Iterate Through a Directory Tree (C# Programming Guide)
 The phrase "iterate a directory tree" means to access each file in each nested subdirectory under a specified root folder, to any depth. You do not necessarily have to open each file. You can just retrieve the name of the file or subdirectory as a `string`, or you can retrieve additional information in the form of a <xref:System.IO.FileInfo?displayProperty=nameWithType> or <xref:System.IO.DirectoryInfo?displayProperty=nameWithType> object.  
@@ -55,9 +49,10 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
  If you must store the contents of a directory tree, either in memory or on disk, the best option is to store only the <xref:System.IO.FileSystemInfo.FullName%2A> property (of type `string`) for each file. You can then use this string to create a new <xref:System.IO.FileInfo> or <xref:System.IO.DirectoryInfo> object as necessary, or open any file that requires additional processing.  
   
 ## Robust Programming  
- Robust file iteration code must take into account many complexities of the file system. For more information on the Windows file system, see [NTFS Technical Reference](https://technet.microsoft.com/library/81cc8a8a-bd32-4786-a849-03245d68d8e4).  
+ Robust file iteration code must take into account many complexities of the file system. For more information on the Windows file system, see [NTFS overview](/windows-server/storage/file-server/ntfs-overview).  
   
-## See Also  
- <xref:System.IO>  
- [LINQ and File Directories](../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)  
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+## See also
+
+- <xref:System.IO>
+- [LINQ and File Directories](../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

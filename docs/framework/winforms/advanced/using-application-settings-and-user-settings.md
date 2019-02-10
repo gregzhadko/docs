@@ -1,24 +1,10 @@
 ---
 title: "Using Application Settings and User Settings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "user settings [Windows Forms]"
   - "application settings [Windows Forms], how-to topics"
 ms.assetid: 54682d3b-1cbf-4683-9351-012b8b4286b5
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Using Application Settings and User Settings
 Starting with the .NET Framework 2.0, you can create and access values that are persisted between application execution sessions. These values are called *settings*. Settings can represent user preferences, or valuable information the application needs to use. For example, you might create a series of settings that store user preferences for the color scheme of an application. Or you might store the connection string that specifies a database that your application uses. Settings allow you to both persist information that is critical to the application outside the code, and to create profiles that store the preferences of individual users.  
@@ -50,5 +36,5 @@ Starting with the .NET Framework 2.0, you can create and access values that are 
   
  Details how to add multiple sets of settings to an application with C#.  
   
-## See Also  
- [Application Settings for Windows Forms](../../../../docs/framework/winforms/advanced/application-settings-for-windows-forms.md)
+## See also
+- [Application Settings for Windows Forms](../../../../docs/framework/winforms/advanced/application-settings-for-windows-forms.md)

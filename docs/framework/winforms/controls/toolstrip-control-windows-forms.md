@@ -1,24 +1,10 @@
 ---
 title: "ToolStrip Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
-caps.latest.revision: 28
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ToolStrip Control (Windows Forms)
 <xref:System.Windows.Forms.ToolStrip> controls are toolbars that can host menus, controls, and user controls in your Windows Forms applications.  
@@ -81,17 +67,17 @@ ms.workload:
  [How to: Implement a Custom ToolStripRenderer](../../../../docs/framework/winforms/controls/how-to-implement-a-custom-toolstriprenderer.md)  
  Describes how to customize the appearance of a <xref:System.Windows.Forms.ToolStrip> control by implementing a class that derives from <xref:System.Windows.Forms.ToolStripRenderer>.  
   
--   [How to: Create a Basic Windows Forms ToolStrip with Standard Items Using the Designer](http://msdn.microsoft.com/library/571c1z99\(v=vs.110\))  
+-   [How to: Create a Basic Windows Forms ToolStrip with Standard Items Using the Designer](https://msdn.microsoft.com/library/571c1z99\(v=vs.110\))  
   
--   [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](http://msdn.microsoft.com/library/ms171701\(v=vs.110\))  
+-   [How to: Move a ToolStrip Out of a ToolStripContainer onto a Form](how-to-move-a-toolstrip-out-of-a-toolstripcontainer-onto-a-form.md)  
   
--   [Walkthrough: Creating a Professionally Styled ToolStrip Control](http://msdn.microsoft.com/library/ms233664\(v=vs.110\))  
+-   [Walkthrough: Creating a Professionally Styled ToolStrip Control](walkthrough-creating-a-professionally-styled-toolstrip-control.md)  
   
--   [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](http://msdn.microsoft.com/library/ms233676\(v=vs.110\))  
+-   [Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls](walkthrough-creating-an-mdi-form-with-menu-merging-and-toolstrip-controls.md)  
   
--   [ToolStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
+-   [ToolStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
   
--   [ToolStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
+-   [ToolStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
   
 ## Reference  
  <xref:System.Windows.Forms.ToolStrip> class  

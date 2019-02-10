@@ -1,18 +1,10 @@
 ---
 title: Building a complete .NET Core solution on Windows, using Visual Studio 2017
 description: Learn how to build a complete .NET Core solution in Visual Studio 2017 on Windows.
-keywords: .NET, .NET Core
 author: bleroy
-ms.author: mairaw
 ms.date: 11/16/2016
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: ba7e082c-a7c8-431e-a342-f67734b660f6
-ms.workload: 
-  - dotnetcore
+ms.custom: "vs-dotnet, seodec18"
 ---
-
 # Building a complete .NET Core solution on Windows, using Visual Studio 2017
 
 Visual Studio 2017 provides a full-featured development environment for developing .NET Core applications. The procedures in this document describe the steps necessary to build a typical .NET Core solution that includes reusable libraries, testing, and using third-party libraries. 
@@ -25,7 +17,7 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 ### Writing the library
 
-1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Standard** node, and then choose **Class Library (.NET Standard)**. 
+1. In Visual Studio, choose **File**, **New**, **Project**. In the **New Project** dialog, expand the **Visual C#** node and choose the **.NET Standard** node, and then choose **Class Library (.NET Standard)**. This creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.0 of the [.NET Standard](../../standard/net-standard.md).
 
 2. Name the project "Library" and the solution "Golden". Leave **Create directory for solution** checked. Click **OK**.
 
@@ -74,6 +66,6 @@ Follow the instructions on [our prerequisites page](../windows-prerequisites.md)
 
 8. Set a breakpoint after the line that you just added.
 
-9. Press F5 to run the application..
+9. Press F5 to run the application.
 
    The application should build without error, and should hit the breakpoint. You should also be able to check that the application output "The answer is 42.".

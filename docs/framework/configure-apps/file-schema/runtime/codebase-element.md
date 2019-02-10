@@ -1,14 +1,6 @@
 ---
-title: "&lt;codeBase&gt; Element"
-ms.custom: ""
+title: "<codeBase> Element"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#codeBase"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/codeBase"
@@ -17,14 +9,8 @@ helpviewer_keywords:
   - "container tags, <codeBase> element"
   - "codeBase element"
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
-caps.latest.revision: 10
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;codeBase&gt; Element
+# \<codeBase> Element
 Specifies where the common language runtime can find an assembly.  
   
  \<configuration>  
@@ -95,8 +81,8 @@ href="URL of assembly"/>
 </configuration>  
 ```  
   
-## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)
+- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

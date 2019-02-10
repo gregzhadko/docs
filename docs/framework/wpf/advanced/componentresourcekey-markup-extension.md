@@ -1,14 +1,6 @@
 ---
 title: "ComponentResourceKey Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "ComponentResourceKey"
   - "ComponentResourceKeyExtension"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "ComponentResourceKey markup extension [WPF]"
   - "XAML [WPF], ComponentResourceKey markup extension"
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ComponentResourceKey Markup Extension
 Defines and references keys for resources that are loaded from external assemblies. This enables a resource lookup to specify a target type in an assembly, rather than an explicit resource dictionary in an assembly or on a class.  
@@ -82,9 +68,9 @@ Defines and references keys for resources that are loaded from external assembli
   
  `ComponentResourceKey` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
-## See Also  
- <xref:System.Windows.ComponentResourceKey>  
- <xref:System.Windows.Controls.ControlTemplate>  
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+## See also
+- <xref:System.Windows.ComponentResourceKey>
+- <xref:System.Windows.Controls.ControlTemplate>
+- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)
+- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

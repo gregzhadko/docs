@@ -1,18 +1,7 @@
 ---
 title: "Assemblies and the Global Assembly Cache (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: fcf78ff1-f1ab-4a5d-b6d8-00d2046b6c80
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Assemblies and the Global Assembly Cache (Visual Basic)
 Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET-based application. Assemblies take the form of an executable (.exe) file or dynamic link library (.dll) file, and are the building blocks of the .NET Framework. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.  
@@ -53,12 +42,12 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 > [!NOTE]
 >  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
   
-## See Also  
- [Assemblies in the Common Language Runtime](../../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [Friend Assemblies (Visual Basic)](friend-assemblies.md)  
- [How to: Share an Assembly with Other Applications (Visual Basic)](how-to-share-an-assembly-with-other-applications.md)  
- [How to: Load and Unload Assemblies (Visual Basic)](how-to-load-and-unload-assemblies.md)  
- [How to: Determine If a File Is an Assembly (Visual Basic)](how-to-determine-if-a-file-is-an-assembly.md)  
- [How to: Create and Use Assemblies Using the Command Line (Visual Basic)](how-to-create-and-use-assemblies-using-the-command-line.md)  
- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-types-from-managed-assemblies-in-vs.md)  
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)
+## See also
+- [Assemblies in the Common Language Runtime](../../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Friend Assemblies (Visual Basic)](friend-assemblies.md)
+- [How to: Share an Assembly with Other Applications (Visual Basic)](how-to-share-an-assembly-with-other-applications.md)
+- [How to: Load and Unload Assemblies (Visual Basic)](how-to-load-and-unload-assemblies.md)
+- [How to: Determine If a File Is an Assembly (Visual Basic)](how-to-determine-if-a-file-is-an-assembly.md)
+- [How to: Create and Use Assemblies Using the Command Line (Visual Basic)](how-to-create-and-use-assemblies-using-the-command-line.md)
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-types-from-managed-assemblies-in-vs.md)
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)

@@ -1,14 +1,6 @@
 ---
 title: "Freezable Objects Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "unfreezing Freezable objects [WPF]"
   - "classes [WPF], Freezable"
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
-caps.latest.revision: 30
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Freezable Objects Overview
 This topic describes how to effectively use and create <xref:System.Windows.Freezable> objects, which provide special features that can help improve application performance. Examples of freezable objects include brushes, pens, transformations, geometries, and animations.  
@@ -162,15 +148,15 @@ mc:Ignorable="PresentationOptions"
   
 -   Call the <xref:System.Windows.Freezable.WritePostscript%2A> method before exiting methods that write to non-dependency property data members.  
   
- If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change on of their values, even if you're setting the member to `null`.  
+ If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change one of their values, even if you're setting the member to `null`.  
   
 > [!NOTE]
 >  It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.  
   
- For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981).  
+ For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   
-## See Also  
- <xref:System.Windows.Freezable>  
- [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+## See also
+- <xref:System.Windows.Freezable>
+- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

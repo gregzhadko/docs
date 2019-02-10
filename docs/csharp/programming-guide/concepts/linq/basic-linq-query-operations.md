@@ -1,13 +1,6 @@
 ---
 title: "Basic LINQ Query Operations (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "orderby clause [LINQ in C#]"
   - "ordering data [LINQ in C#]"
@@ -24,9 +17,6 @@ helpviewer_keywords:
   - "join clause [LINQ in C#]"
   - "group clause [LINQ in C#]"
 ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
-caps.latest.revision: 39
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Basic LINQ Query Operations (C#)
 This topic gives a brief introduction to [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions and some of the typical kinds of operations that you perform in a query. More detailed information is in the following topics:  
@@ -94,7 +84,7 @@ This topic gives a brief introduction to [!INCLUDE[vbteclinq](~/includes/vbtecli
   
  In [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] you do not have to use `join` as often as you do in SQL because foreign keys in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] are represented in the object model as properties that hold a collection of items. For example, a `Customer` object contains a collection of `Order` objects. Rather than performing a join, you access the orders by using dot notation:  
   
-```  
+```csharp
 from order in Customer.Orders...  
 ```  
   
@@ -103,9 +93,10 @@ from order in Customer.Orders...
 ## Selecting (Projections)  
  The `select` clause produces the results of the query and specifies the "shape" or type of each returned element. For example, you can specify whether your results will consist of complete `Customer` objects, just one member, a subset of members, or some completely different result type based on a computation or new object creation. When the `select` clause produces something other than a copy of the source element, the operation is called a *projection*. The use of projections to transform data is a powerful capability of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions. For more information, see [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md) and [select clause](../../../../csharp/language-reference/keywords/select-clause.md).  
   
-## See Also  
- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)  
- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+## See also
+
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)
+- [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)
+- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

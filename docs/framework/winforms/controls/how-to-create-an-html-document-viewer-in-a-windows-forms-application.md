@@ -1,14 +1,6 @@
 ---
 title: "How to: Create an HTML Document Viewer in a Windows Forms Application"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "document viewers"
   - "Windows Forms, creating document viewers"
 ms.assetid: 6a6338fe-f7ee-4f5e-9d8f-0465c57e9039
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create an HTML Document Viewer in a Windows Forms Application
 You can use the <xref:System.Windows.Forms.WebBrowser> control to display and print HTML documents without providing the full functionality of an Internet Web browser. This is useful when you want to take advantage of the formatting capabilities of HTML but do not want your users to load arbitrary Web pages that may contain untrusted Web controls or potentially malicious script code. You might want to restrict the capability of the <xref:System.Windows.Forms.WebBrowser> control in this manner, for example, to use it as an HTML email viewer or to provide HTML-formatted help in your application.  
@@ -46,11 +32,11 @@ You can use the <xref:System.Windows.Forms.WebBrowser> control to display and pr
   
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
-## See Also  
- <xref:System.Windows.Forms.WebBrowser>  
- <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A>  
- <xref:System.Windows.Forms.WebBrowser.Url%2A>  
- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)  
- [WebBrowser Security](../../../../docs/framework/winforms/controls/webbrowser-security.md)  
- [How to: Navigate to a URL with the WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-navigate-to-a-url-with-the-webbrowser-control.md)  
- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)
+## See also
+- <xref:System.Windows.Forms.WebBrowser>
+- <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A>
+- <xref:System.Windows.Forms.WebBrowser.Url%2A>
+- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)
+- [WebBrowser Security](../../../../docs/framework/winforms/controls/webbrowser-security.md)
+- [How to: Navigate to a URL with the WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-navigate-to-a-url-with-the-webbrowser-control.md)
+- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)

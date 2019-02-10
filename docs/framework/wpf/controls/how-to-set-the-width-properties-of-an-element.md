@@ -1,14 +1,6 @@
 ---
 title: "How to: Set the Width Properties of an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "width properties [WPF]"
   - "Panel control [WPF], width properties of elements"
 ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Set the Width Properties of an Element
 ## Example  
@@ -39,15 +25,15 @@ ms.workload:
  [!code-csharp[WidthMinWidthMaxWidth#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WidthMinWidthMaxWidth/CSharp/Window1.xaml.cs#3)]
  [!code-vb[WidthMinWidthMaxWidth#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WidthMinWidthMaxWidth/VisualBasic/Window1.xaml.vb#3)]  
   
- For the complete sample, see [Width Properties Comparison Sample](http://go.microsoft.com/fwlink/?LinkID=160050).  
+ For the complete sample, see [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050).  
   
-## See Also  
- <xref:System.Windows.Controls.ListBox>  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.FrameworkElement.ActualWidth%2A>  
- <xref:System.Windows.FrameworkElement.MaxWidth%2A>  
- <xref:System.Windows.FrameworkElement.MinWidth%2A>  
- <xref:System.Windows.FrameworkElement.Width%2A>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [Set the Height Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  
- [Width Properties Comparison Sample](http://go.microsoft.com/fwlink/?LinkID=160050)
+## See also
+- <xref:System.Windows.Controls.ListBox>
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.FrameworkElement.ActualWidth%2A>
+- <xref:System.Windows.FrameworkElement.MaxWidth%2A>
+- <xref:System.Windows.FrameworkElement.MinWidth%2A>
+- <xref:System.Windows.FrameworkElement.Width%2A>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Set the Height Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)
+- [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050)

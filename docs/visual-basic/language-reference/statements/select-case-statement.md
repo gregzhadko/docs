@@ -1,12 +1,6 @@
 ---
 title: "Select...Case Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Select"
   - "vb.Case"
@@ -27,9 +21,6 @@ helpviewer_keywords:
   - "End keyword [Visual Basic], Select Case statements"
   - "Case statement [Visual Basic], Select...Case"
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Select...Case Statement (Visual Basic)
 Runs one of several groups of statements, depending on the value of an expression.  
@@ -85,9 +76,9 @@ End Select
   
  [!code-vb[VbVbalrStatements#54](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/select-case-statement_1.vb)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>  
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+## See also
+- <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
+- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)

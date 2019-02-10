@@ -1,14 +1,6 @@
 ---
 title: "How to: Diagnose Problematic Print Job"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,15 +10,9 @@ helpviewer_keywords:
   - "print jobs [WPF], troubleshooting"
   - "print jobs [WPF], diagnosing problems"
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Diagnose Problematic Print Job
-Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] provide a means for performing a rapid remote diagnosis of print jobs.  
+Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
   
 ## Example  
  The major steps for creating this kind of utility are as follows.  
@@ -89,11 +75,11 @@ Network administrators often field complaints from users about print jobs that d
  [!code-csharp[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#handlepausedjob)]
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
-## See Also  
- <xref:System.Printing.PrintJobStatus>  
- <xref:System.Printing.PrintSystemJobInfo>  
- <xref:System.FlagsAttribute>  
- <xref:System.Printing.PrintQueue>  
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+## See also
+- <xref:System.Printing.PrintJobStatus>
+- <xref:System.Printing.PrintSystemJobInfo>
+- <xref:System.FlagsAttribute>
+- <xref:System.Printing.PrintQueue>
+- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

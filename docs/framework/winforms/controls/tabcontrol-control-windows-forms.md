@@ -1,14 +1,6 @@
 ---
 title: "TabControl Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TabControl control [Windows Forms]"
   - "tab controls"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "property pages [Windows Forms], creating"
   - "tab dialog boxes"
 ms.assetid: 915091af-93ac-4d3d-8283-738dd2d21ea7
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # TabControl Control (Windows Forms)
 The Windows Forms `TabControl` displays multiple tabs, like dividers in a notebook or labels in a set of folders in a filing cabinet. The tabs can contain pictures and other controls. Use the `TabControl` to create property pages.  
@@ -44,7 +30,7 @@ The Windows Forms `TabControl` displays multiple tabs, like dividers in a notebo
  [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  
  Explains how to restrict access to a tab page, possibly based on user credentials.  
   
- Also see [How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer](http://msdn.microsoft.com/library/ms233654\(v=vs.110\)), [How to: Add a Control to a Tab Page Using the Designer](http://msdn.microsoft.com/library/ms233668\(v=vs.110\))  
+ Also see [How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer](add-and-remove-tabs-with-wf-tabcontrol-using-the-designer.md), [How to: Add a Control to a Tab Page Using the Designer](how-to-add-a-control-to-a-tab-page-using-the-designer.md)  
   
 ## Reference  
  <xref:System.Windows.Forms.TabControl> class  

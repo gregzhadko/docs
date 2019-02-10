@@ -1,23 +1,10 @@
 ---
-title: "&lt;identityConfiguration&gt;"
-ms.custom: ""
+title: "<identityConfiguration>"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 1db76253-07da-447b-9e7a-3705c7228cf4
-caps.latest.revision: 13
 author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
-ms.workload: 
-  - "dotnet"
 ---
-# &lt;identityConfiguration&gt;
+# \<identityConfiguration>
 Specifies service-level identity settings.  
   
  \<system.identityModel>  
@@ -100,6 +87,6 @@ Specifies service-level identity settings.
 </system.identityModel>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Configuration.IdentityConfiguration>  
- <xref:System.IdentityModel.Configuration.IdentityConfigurationElement>
+## See also
+- <xref:System.IdentityModel.Configuration.IdentityConfiguration>
+- <xref:System.IdentityModel.Configuration.IdentityConfigurationElement>

@@ -1,12 +1,6 @@
 ---
 title: "+ Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.+"
 helpviewer_keywords: 
@@ -16,17 +10,14 @@ helpviewer_keywords:
   - "strings [Visual Basic], concatenating"
   - "sum operator [Visual Basic]"
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # + Operator (Visual Basic)
 Adds two numbers or returns the positive value of a numeric expression. Can also be used to concatenate two string expressions.  
   
 ## Syntax  
   
-```  
-      expression1 + expression2  
+```vb
+expression1 + expression2  
 - or -  
 + expression1  
 ```  
@@ -111,11 +102,11 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
   
  To eliminate ambiguity, you should use the `&` operator instead of `+` for concatenation.  
   
-## See Also  
- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## See also
+- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)
+- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)
+- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)

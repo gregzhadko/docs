@@ -1,14 +1,6 @@
 ---
 title: "How to: Bind to a Web Service"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,18 +9,12 @@ helpviewer_keywords:
   - "Web service binding [WPF]"
   - "data binding [WPF], Web service"
 ms.assetid: 77e2d373-69ba-4cbd-b6f5-2c83c38fc98b
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to a Web Service
 This example shows how to bind to objects returned by Web service method calls.  
   
 ## Example  
- This example uses the [MSDN/TechNet Publishing System (MTPS) Content Service](http://go.microsoft.com/fwlink/?LinkId=95677) to retrieve the list of languages supported by a specified document.  
+ This example uses the [MSDN/TechNet Publishing System (MTPS) Content Service](https://go.microsoft.com/fwlink/?LinkId=95677) to retrieve the list of languages supported by a specified document.  
   
  Before you call a Web service, you need to create a reference to it. To create a Web reference to the MTPS service using [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], follow the following steps:  
   
@@ -36,7 +22,7 @@ This example shows how to bind to objects returned by Web service method calls.
   
 2.  From the **Project** menu, click **Add Web Reference**.  
   
-3.  In the dialog box, set the **URL** to [http://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl](http://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl).  
+3.  In the dialog box, set the **URL** to [http://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl](https://services.msdn.microsoft.com/contentservices/contentservice.asmx?wsdl).  
   
 4.  Press **Go** and then **Add Reference**.  
   
@@ -51,9 +37,9 @@ This example shows how to bind to objects returned by Web service method calls.
   
  [!code-xaml[BindToWebService#Binding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BindToWebService/CSharp/Window1.xaml#binding)]  
   
- For information about the structure of **getContentResponse**, see [Content Service documentation](http://services.msdn.microsoft.com/ContentServices/ContentService.asmx).  
+ For information about the structure of **getContentResponse**, see [Content Service documentation](https://services.msdn.microsoft.com/ContentServices/ContentService.asmx).  
   
-## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
- [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)
+## See also
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)
+- [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)

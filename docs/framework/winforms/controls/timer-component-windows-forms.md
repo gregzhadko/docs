@@ -1,25 +1,11 @@
 ---
 title: "Timer Component (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Timer component [Windows Forms]"
   - "timers"
   - "timers [Windows Forms], creating"
 ms.assetid: 6700e534-6382-43d5-98ed-14205435fff7
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Timer Component (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises an event at regular intervals. This component is designed for a Windows Forms environment.  
@@ -45,5 +31,5 @@ The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises a
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- [Timer Control for Visual Basic 6.0 Users](http://msdn.microsoft.com/library/38e5184a-1e50-45cf-b936-dae566c0cfc5)  
+ [Timer Control for Visual Basic 6.0 Users](https://msdn.microsoft.com/library/38e5184a-1e50-45cf-b936-dae566c0cfc5)  
  Describes how timer functionality has changed in Visual Basic as compared to previous versions.

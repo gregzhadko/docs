@@ -1,26 +1,12 @@
 ---
 title: "How to: Remove an Adorner from an Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "adorners [WPF], removing"
 ms.assetid: 97cf4d9f-0596-429e-8526-32a30aa4ae99
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Remove an Adorner from an Element
 This example shows how to programmatically remove a specific adorner from a specified <xref:System.Windows.UIElement>.  
@@ -37,5 +23,5 @@ This example shows how to programmatically remove a specific adorner from a spec
  [!code-csharp[AdornersMiscCode#_RemoveSpecificAdornerShort](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AdornersMiscCode/CSharp/Window1.xaml.cs#_removespecificadornershort)]
  [!code-vb[AdornersMiscCode#_RemoveSpecificAdornerShort](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/AdornersMiscCode/visualbasic/window1.xaml.vb#_removespecificadornershort)]  
   
-## See Also  
- [Adorners Overview](../../../../docs/framework/wpf/controls/adorners-overview.md)
+## See also
+- [Adorners Overview](../../../../docs/framework/wpf/controls/adorners-overview.md)

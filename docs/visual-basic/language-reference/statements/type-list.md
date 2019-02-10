@@ -1,10 +1,6 @@
 ---
 title: "Type List (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "StructureConstraint"
   - "vb.StructureConstraint"
@@ -28,9 +24,6 @@ helpviewer_keywords:
   - "type parameters"
   - "constraints, Class keyword"
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
-caps.latest.revision: 33
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Type List (Visual Basic)
 Specifies the *type parameters* for a *generic* programming element. Multiple parameters are separated by commas. Following is the syntax for one type parameter.  
@@ -93,15 +86,15 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
   
  [!code-vb[VbVbalrStatements#5](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_3.vb)]  
   
-## See Also  
- [Of](../../../visual-basic/language-reference/statements/of-clause.md)  
- [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)  
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)  
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+## See also
+- [Of](../../../visual-basic/language-reference/statements/of-clause.md)
+- [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)
+- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
+- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

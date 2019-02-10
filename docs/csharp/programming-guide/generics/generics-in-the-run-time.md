@@ -1,16 +1,10 @@
 ---
-title: "Generics in the Run Time (C# Programming Guide)"
+title: "Generics in the Run Time - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], at run time"
 ms.assetid: 119df7e6-9ceb-49df-af36-24f8f8c0747f
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Generics in the Run Time (C# Programming Guide)
 When a generic type or method is compiled into Microsoft intermediate language (MSIL), it contains metadata that identifies it as having type parameters. How the MSIL for a generic type is used differs based on whether the supplied type parameter is a value type or reference type.  
@@ -47,8 +41,9 @@ When a generic type or method is compiled into Microsoft intermediate language (
   
  Moreover, when a generic C# class is instantiated by using a value type or reference type parameter, reflection can query it at runtime and both its actual type and its type parameter can be ascertained.  
   
-## See Also  
- <xref:System.Collections.Generic>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [Generics](~/docs/standard/generics/index.md)
+## See also
+
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Generics](~/docs/standard/generics/index.md)

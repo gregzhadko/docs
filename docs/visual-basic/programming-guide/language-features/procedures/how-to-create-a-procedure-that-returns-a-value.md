@@ -1,21 +1,11 @@
 ---
 title: "How to: Create a Procedure that Returns a Value (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], returning a value"
 ms.assetid: 8ee19f95-a9ef-4033-963b-d224dca207c4
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a Procedure that Returns a Value (Visual Basic)
 You use a `Function` procedure to return a value to the calling code.  
@@ -40,12 +30,12 @@ You use a `Function` procedure to return a value to the calling code.
   
      [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/how-to-create-a-procedure-that-returns-a-value_2.vb)]  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)  
- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)
+## See also
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)
+- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)

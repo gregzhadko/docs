@@ -1,19 +1,14 @@
 ---
-title: "Single-Dimensional Arrays (C# Programming Guide)"
+title: "Single-Dimensional Arrays - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "single-dimensional arrays [C#]"
   - "arrays [C#], single-dimensional"
 ms.assetid: 2cec1196-1de0-49d2-baf2-c607c33310e8
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Single-Dimensional Arrays (C# Programming Guide)
+
 You can declare a single-dimensional array of five integers as shown in the following example:  
   
  [!code-csharp[csProgGuideArrays#4](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_1.cs)]  
@@ -24,8 +19,9 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  [!code-csharp[csProgGuideArrays#5](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_2.cs)]  
   
-## Array Initialization  
- It is possible to initialize an array upon declaration, in which case, the rank specifier is not needed because it is already supplied by the number of elements in the initialization list. For example:  
+## Array Initialization
+
+ It is possible to initialize an array upon declaration, in which case, the length specifier is not needed because it is already supplied by the number of elements in the initialization list. For example:  
   
  [!code-csharp[csProgGuideArrays#6](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_3.cs)]  
   
@@ -43,7 +39,8 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  C# 3.0 introduces implicitly typed arrays. For more information, see [Implicitly Typed Arrays](../../../csharp/programming-guide/arrays/implicitly-typed-arrays.md).  
   
-## Value Type and Reference Type Arrays  
+## Value Type and Reference Type Arrays
+
  Consider the following array declaration:  
   
  [!code-csharp[csProgGuideArrays#10](../../../csharp/programming-guide/arrays/codesnippet/CSharp/single-dimensional-arrays_7.cs)]  
@@ -52,9 +49,10 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  For more information about value types and reference types, see [Types](../../../csharp/language-reference/keywords/types.md).  
   
-## See Also  
- <xref:System.Array>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
- [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)
+## See also
+
+- <xref:System.Array>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)
+- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
+- [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)

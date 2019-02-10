@@ -1,12 +1,6 @@
 ---
 title: "OrElse Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "OrElse"
   - "vb.OrElse"
@@ -17,9 +11,6 @@ helpviewer_keywords:
   - "short-circuit evaluation"
   - "OrElse operator [Visual Basic]"
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # OrElse Operator (Visual Basic)
 Performs short-circuiting inclusive logical disjunction on two expressions.  
@@ -69,10 +60,10 @@ result = expression1 OrElse expression2
   
  [!code-vb[VbVbalrOperators#38](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/orelse-operator_2.vb)]  
   
-## See Also  
- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Or Operator](../../../visual-basic/language-reference/operators/or-operator.md)  
- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)  
- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+## See also
+- [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Or Operator](../../../visual-basic/language-reference/operators/or-operator.md)
+- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
+- [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

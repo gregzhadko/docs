@@ -1,17 +1,11 @@
 ---
-title: "Explicit Interface Implementation (C# Programming Guide)"
+title: "Explicit Interface Implementation - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "explicit interfaces [C#]"
   - "interfaces [C#], explicit"
 ms.assetid: 181c901f-0d4c-4f29-97fc-895079617bf2
-caps.latest.revision: 14
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Explicit Interface Implementation (C# Programming Guide)
 If a [class](../../../csharp/language-reference/keywords/class.md) implements two interfaces that contain a member with the same signature, then implementing that member on the class will cause both interfaces to use that member as their implementation. In the following example, all the calls to `Paint` invoke the same method.  
@@ -34,8 +28,9 @@ If a [class](../../../csharp/language-reference/keywords/class.md) implements tw
   
  [!code-csharp[csProgGuideInheritance#43](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/explicit-interface-implementation_5.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Hit Test Geometry in a Visual"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "visual objects [WPF], hit tests on"
   - "Geometry objects [WPF], visual objects comprising"
 ms.assetid: 8bf2643f-d7f9-4cb4-9ea6-5b893c23200d
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Hit Test Geometry in a Visual
 This example shows how to perform a hit test on a visual object that is composed of one or more <xref:System.Windows.Media.Geometry> objects.  
@@ -43,6 +29,6 @@ This example shows how to perform a hit test on a visual object that is composed
 > [!NOTE]
 >  This sample does not take into account any transforms or clipping that may be applied to the geometry. In addition, this sample will not work with a styled control, since it does not have any drawings directly associated with it.  
   
-## See Also  
- [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)  
- [Hit Test Using Geometry as a Parameter](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-geometry-as-a-parameter.md)
+## See also
+- [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)
+- [Hit Test Using Geometry as a Parameter](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-geometry-as-a-parameter.md)

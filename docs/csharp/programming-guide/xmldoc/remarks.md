@@ -1,10 +1,7 @@
 ---
-title: "&lt;remarks&gt; (C# Programming Guide)"
+title: "<remarks> - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "remarks"
   - "<remarks>"
@@ -12,11 +9,8 @@ helpviewer_keywords:
   - "remarks C# XML tag"
   - "<remarks> C# XML tag"
 ms.assetid: f8641391-31f3-4735-af7a-c502a5b6a251
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
-# &lt;remarks&gt; (C# Programming Guide)
+# \<remarks> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -35,6 +29,7 @@ ms.author: "wiwagn"
 ## Example  
  [!code-csharp[csProgGuideDocComments#9](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/remarks_1.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

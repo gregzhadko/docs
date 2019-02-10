@@ -1,25 +1,11 @@
 ---
 title: "PresentationOptions:Freeze Attribute"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Freeze attribute [WPF]"
   - "Freezable elements [WPF]"
   - "PresentationOptions prefix [WPF]"
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # PresentationOptions:Freeze Attribute
 Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the containing <xref:System.Windows.Freezable> element. Default behavior for a <xref:System.Windows.Freezable> without the `PresentationOptions:Freeze` attribute specified is that <xref:System.Windows.Freezable.IsFrozen%2A> is `false` at load time, and dependent on general <xref:System.Windows.Freezable> behavior at runtime.  
@@ -49,7 +35,7 @@ Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the cont
   
  Any value for the `Freeze` attribute other than `true` (not case sensitive) generates a load time error. (Specifying the `Freeze` attribute as `false` is not an error, but that is already the default, so setting to `false` does nothing).  
   
-## See Also  
- <xref:System.Windows.Freezable>  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [mc:Ignorable Attribute](../../../../docs/framework/wpf/advanced/mc-ignorable-attribute.md)
+## See also
+- <xref:System.Windows.Freezable>
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [mc:Ignorable Attribute](../../../../docs/framework/wpf/advanced/mc-ignorable-attribute.md)

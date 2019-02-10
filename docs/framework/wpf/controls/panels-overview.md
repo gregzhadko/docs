@@ -1,14 +1,6 @@
 ---
 title: "Panels Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "Panel control [WPF], about Panel control"
   - "controls [WPF], Panel"
 ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
-caps.latest.revision: 48
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Panels Overview
 <xref:System.Windows.Controls.Panel> elements are components that control the rendering of elements—their size and dimensions, their position, and the arrangement of their child content. The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a number of predefined <xref:System.Windows.Controls.Panel> elements as well as the ability to construct custom <xref:System.Windows.Controls.Panel> elements.  
@@ -109,7 +95,7 @@ ms.workload:
 #### ClipToBounds Within a Canvas  
  <xref:System.Windows.Controls.Canvas> can position child elements at any position on the screen, even at coordinates that are outside of its own defined <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A>. Furthermore, <xref:System.Windows.Controls.Canvas> is not affected by the size of its children. As a result, it is possible for a child element to overdraw other elements outside the bounding rectangle of the parent <xref:System.Windows.Controls.Canvas>. The default behavior of a <xref:System.Windows.Controls.Canvas> is to allow children to be drawn outside the bounds of the parent <xref:System.Windows.Controls.Canvas>. If this behavior is undesirable, the <xref:System.Windows.UIElement.ClipToBounds%2A> property can be set to `true`. This causes <xref:System.Windows.Controls.Canvas> to clip to its own size. <xref:System.Windows.Controls.Canvas> is the only layout element that allows children to be drawn outside its bounds.  
   
- This behavior is graphically illustrated in the [Width Properties Comparison Sample](http://go.microsoft.com/fwlink/?LinkID=160050).  
+ This behavior is graphically illustrated in the [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050).  
   
 #### Defining and Using a Canvas  
  A <xref:System.Windows.Controls.Canvas> can be instantiated simply by using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] or code. The following example demonstrates how to use <xref:System.Windows.Controls.Canvas> to absolutely position content. This code produces three 100-pixel squares. The first square is red, and its top-left (*x, y*) position is specified as (0, 0). The second square is green, and its top-left position is (100, 100), just below and to the right of the first square. The third square is blue, and its top-left position is (50, 50), thus encompassing the lower-right quadrant of the first square and the upper-left quadrant of the second. Because the third square is laid out last, it appears to be on top of the other two squares—that is, the overlapping portions assume the color of the third box.  
@@ -200,7 +186,7 @@ ms.workload:
   
  The <xref:System.Windows.Controls.VirtualizingStackPanel> element is automatically set as the items host for controls such as the <xref:System.Windows.Controls.ListBox>. When hosting a data bound collection, content is automatically virtualized, as long as the content is within the bounds of a <xref:System.Windows.Controls.ScrollViewer>. This greatly improves performance when hosting many child items.  
   
- The following markup demonstrates how to use a <xref:System.Windows.Controls.VirtualizingStackPanel> as an items host. The <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty%2A?displayProperty=nameWithType> attached property must be set to `true` (default) for virtualization to occur.  
+ The following markup demonstrates how to use a <xref:System.Windows.Controls.VirtualizingStackPanel> as an items host. The <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty?displayProperty=nameWithType> attached property must be set to `true` (default) for virtualization to occur.  
   
  [!code-xaml[VirtualizingStackPanel_Intro#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#1)]  
   
@@ -246,7 +232,7 @@ ms.workload:
  [!code-csharp[PlotPanel#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#1)]
  [!code-vb[PlotPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#1)]  
   
- To view a more complex custom panel implementation, see [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979).  
+ To view a more complex custom panel implementation, see [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979).  
   
 <a name="Panels_global_localization"></a>   
 ## Localization/Globalization Support  
@@ -260,13 +246,13 @@ ms.workload:
   
  For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md).  
   
-## See Also  
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
- [WPF Layout Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160054)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
- [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)  
- [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)  
- [Create a Custom Content-Wrapping Panel Sample](http://go.microsoft.com/fwlink/?LinkID=159979)  
- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)  
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+## See also
+- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
+- [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md)
+- [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979)
+- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)
+- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
+- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)

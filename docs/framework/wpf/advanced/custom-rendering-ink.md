@@ -1,14 +1,6 @@
 ---
 title: "Custom Rendering Ink"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,15 +9,9 @@ helpviewer_keywords:
   - "ink [WPF], custom-rendering"
   - "classes [WPF], InkCanvas"
 ms.assetid: 65c978a7-0ee0-454f-ac7f-b1bd2efecac5
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Custom Rendering Ink
-The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke allows you to specify the appearance of a stroke, such as its size, color, and shape, but there may be times that you want to customize the appearance beyond what <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> allow. You may want to customize the appearance of ink by rendering in the appearance of an air brush, oil paint, and many other effects. The [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] allows you to custom render ink by implementing a custom <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and <xref:System.Windows.Ink.Stroke> object.  
+The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke allows you to specify the appearance of a stroke, such as its size, color, and shape, but there may be times that you want to customize the appearance beyond what <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> allow. You may want to customize the appearance of ink by rendering in the appearance of an air brush, oil paint, and many other effects. The Windows Presentation Foundation (WPF) allows you to custom render ink by implementing a custom <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and <xref:System.Windows.Ink.Stroke> object.  
   
  This topic contains the following subsections:  
   
@@ -99,5 +85,5 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
 ## Conclusion  
  You can customize the appearance of ink by deriving your own <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, <xref:System.Windows.Ink.Stroke>, and <xref:System.Windows.Controls.InkCanvas> classes. Together, these classes ensure that the appearance of the stroke is consistent when the user draws the stroke and after it is collected.  
   
-## See Also  
- [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)
+## See also
+- [Advanced Ink Handling](../../../../docs/framework/wpf/advanced/advanced-ink-handling.md)

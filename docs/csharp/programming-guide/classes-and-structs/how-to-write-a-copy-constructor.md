@@ -1,17 +1,11 @@
 ---
-title: "How to: Write a Copy Constructor (C# Programming Guide)"
+title: "How to: Write a Copy Constructor - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# Language, copy constructor"
   - "copy constructor [C#]"
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
-caps.latest.revision: 20
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Write a Copy Constructor (C# Programming Guide)
 C# doesn't provide a copy constructor for objects, but you can write one yourself.  
@@ -21,9 +15,10 @@ C# doesn't provide a copy constructor for objects, but you can write one yoursel
   
  [!code-csharp[csProgGuideObjects#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-write-a-copy-constructor_1.cs)]  
   
-## See Also  
- <xref:System.ICloneable>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+## See also
+
+- <xref:System.ICloneable>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

@@ -1,24 +1,10 @@
 ---
 title: "XAMLServices Class and Basic XAML Reading or Writing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], XamlServices class"
   - "XamlServices class [XAML Services], how to use"
 ms.assetid: 6ac27fad-3687-4d7a-add1-3e90675fdfde
-caps.latest.revision: 11
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # XAMLServices Class and Basic XAML Reading or Writing
 <xref:System.Xaml.XamlServices> is a class provided by .NET Framework XAML Services that can be used to address XAML scenarios that do not require specific access to the XAML node stream, or XAML type system information obtained from those nodes. <xref:System.Xaml.XamlServices> API can be summarized as the following: `Load` or `Parse` to support a XAML load path, `Save` to support a XAML save path, and `Transform` to provide a technique that joins a load path and save path. `Transform` can be used to change from one XAML schema to another. This topic summarizes each of these API classifications and describes the differences between particular method overloads.  
@@ -69,7 +55,7 @@ ms.workload:
   
  For operations that rely on examining each node in a XAML node stream, you typically do not use <xref:System.Xaml.XamlServices.Transform%2A>. Instead you need to define your own load path-save path operation series and interject your own logic. In one of the paths, use a XAML reader/XAML writer pair around your own node loop. For example, load the initial XAML using <xref:System.Xaml.XamlXmlReader> and step into the nodes with successive <xref:System.Xaml.XamlXmlReader.Read%2A> calls. Operating at the XAML node stream level you can now adjust individual nodes (types, members, other nodes) to apply a transformation, or leave the node as-is. Then you send the node onwards to the relevant `Write` API of a <xref:System.Xaml.XamlObjectWriter> and write out the object. For more information, see [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md).  
   
-## See Also  
- <xref:System.Xaml.XamlObjectWriter>  
- <xref:System.Xaml.XamlServices>  
- [XAML Services](../../../docs/framework/xaml-services/index.md)
+## See also
+- <xref:System.Xaml.XamlObjectWriter>
+- <xref:System.Xaml.XamlServices>
+- [XAML Services](../../../docs/framework/xaml-services/index.md)

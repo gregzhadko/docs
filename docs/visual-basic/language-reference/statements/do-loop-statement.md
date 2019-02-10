@@ -1,12 +1,6 @@
 ---
 title: "Do...Loop Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Do"
   - "vb.Loop"
@@ -26,9 +20,6 @@ helpviewer_keywords:
   - "loops, exiting"
   - "Loop keyword [Visual Basic], Do...Loop statement"
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Do...Loop Statement (Visual Basic)
 Repeats a block of statements while a `Boolean` condition is `True` or until the condition becomes `True`.  
@@ -109,10 +100,10 @@ Loop { While | Until } condition
   
  [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
   
-## See Also  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+## See also
+- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)
+- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

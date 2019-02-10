@@ -1,17 +1,9 @@
 ---
 title: Get started with Azure Blob storage using F#
 description: Store unstructured data in the cloud with Azure Blob storage.
-keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
-ms.author: phcart
 ms.date: 09/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: c5b74a4f-dcd1-4849-930c-904b6c8a04e1
 ---
-
 # Get started with Azure Blob storage using F# #
 
 Azure Blob storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
@@ -170,7 +162,7 @@ file created earlier in this tutorial).
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L162-L166)]
 
-Now, call the routine. You use ``Async.RunSynchronously`` to force the execution of the asynchronous operation.
+Now, call the routine. You use `Async.RunSynchronously` to force the execution of the asynchronous operation.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L168-L168)]
 
@@ -245,7 +237,7 @@ Now that you've learned the basics of Blob storage, follow these links to learn 
 
 ### Related guides
 
-- [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/documentation/samples/storage-blob-dotnet-getting-started/)
+- [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/)
 - [Transfer data with the AzCopy command-line utility on Windows](/azure/storage/common/storage-use-azcopy)
 - [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)

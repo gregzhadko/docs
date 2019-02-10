@@ -1,23 +1,9 @@
 ---
 title: "Maximize WPF 3D Performance"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "3-D graphics [WPF]"
 ms.assetid: 4bcf949d-d92f-4d8d-8a9b-1e4c61b25bf6
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Maximize WPF 3D Performance
 As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] to build 3D controls and include 3D scenes in your applications, it is important to consider performance optimization. This topic provides a list of 3D classes and properties that have performance implications for your application, along with recommendations for optimizing performance when you use them.  
@@ -67,5 +53,5 @@ As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-win
 |Light|Black lights won’t be visible, but they will add to render time; consider omitting them.|  
 |<xref:System.Windows.Media.Media3D.MeshGeometry3D>|To minimize the construction time of large collections in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], such as a MeshGeometry3D’s <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A>, and <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A>, pre-size the collections before value population. If possible, pass the collections’ constructors prepopulated data structures such as arrays or Lists.|  
   
-## See Also  
- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)
+## See also
+- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)

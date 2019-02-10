@@ -1,20 +1,13 @@
 ---
-title: What's New in C# 7 - C# Guide
-description: Get an overview of the new features coming in the upcoming version 7 of the C# language.    
-keywords: C#, .NET, .NET Core, Latest Features, What's New
-author: BillWagner
-ms.author: wiwagn
+title: What's New in C# 7.0 - C# Guide
+description: Get an overview of the new features coming in the upcoming version 7 of the C# language.
 ms.date: 12/21/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 ---
 
-# What's new in C# 7
+# What's new in C# 7.0
 
-C# 7 adds a number of new features to the C# language:
+C# 7.0 adds a number of new features to the C# language:
 * [`out` variables](#out-variables)
     - You can declare `out` values inline as arguments to the method where they are used.
 * [Tuples](#tuples)
@@ -24,7 +17,7 @@ C# 7 adds a number of new features to the C# language:
 * [Pattern Matching](#pattern-matching)
     - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
-    - Method arguments and local variables can be references to other storage.
+    - Method local variables and return values can be references to other storage.
 * [Local Functions](#local-functions)
     - You can nest functions inside other functions to limit their scope and visibility.
 * [More expression-bodied members](#more-expression-bodied-members)
@@ -109,14 +102,14 @@ that contain multiple fields to represent the data members.
 The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
-> Tuples were available before C# 7,
+> Tuples were available before C# 7.0,
 > but they were inefficient and had no language support.
 > This meant that tuple elements could only be referenced as
-> `Item1`, `Item2` and so on. C# 7 introduces language support for tuples,
+> `Item1`, `Item2` and so on. C# 7.0 introduces language support for tuples,
 > which enables semantic names for the fields of a tuple using new,
 > more efficient tuple types.
 
-You can create a tuple by assigning each member to a value:
+You can create a tuple by assigning a value to each member:
 
 [!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
@@ -176,9 +169,6 @@ for each of the values in the tuple. This is called *deconstructing* the tuple:
 
 [!code-csharp[CallingWithDeconstructor](../../../samples/snippets/csharp/new-in-7/program.cs#10_CallingWithDeconstructor "Deconstructing a tuple")]
 
-<!-- Add wildcards here, if they are in C# 7
--->
-
 You can also provide a similar deconstruction for any type in .NET. This is
 done by writing a `Deconstruct` method as a member of the class. That
 `Deconstruct` method provides a set of `out` arguments for each of the
@@ -188,7 +178,7 @@ the `X` and `Y` coordinates:
 
 [!code-csharp[PointWithDeconstruction](../../../samples/snippets/csharp/new-in-7/point.cs#11_PointWithDeconstruction "Point with deconstruction method")]
  
-You can extract the individual fields by assigning a tuple to a `Point`:
+You can extract the individual fields by assigning a `Point` to a tuple:
 
 [!code-csharp[DeconstructPoint](../../../samples/snippets/csharp/new-in-7/program.cs#12_DeconstructPoint "Deconstruct a point")]
 
@@ -219,7 +209,7 @@ The following example defines a `QueryCityDataForYears` method that returns a 6-
 [!code-csharp[Tuple-discard](../../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
 For more information, see [Discards](../discards.md).
- 
+
 ## Pattern matching
 
 *Pattern matching* is a feature that allows you to implement method dispatch on
@@ -238,7 +228,7 @@ rules to the pattern.
 
 ### `is` expression
 
-The `is` pattern expression extends the familiar `is` operator to query an object beyond its type.
+The `is` pattern expression extends the familiar [`is` operator](../language-reference/keywords/is.md#pattern-matching-with-is) to query an object beyond its type.
 
 Let's start with a simple scenario. We'll add capabilities to this scenario
 that demonstrate how pattern matching expressions make algorithms that work
@@ -412,7 +402,11 @@ the `ref` locals and returns:
 
 The addition of ref locals and ref returns enable algorithms that are more
 efficient by avoiding copying values, or performing dereferencing operations
-multiple times. 
+multiple times.
+
+Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
+
+For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
 
 ## Local functions
 
@@ -486,8 +480,8 @@ work begins:
 ## More expression-bodied members
 
 C# 6 introduced [expression-bodied members](csharp-6.md#expression-bodied-function-members)
-for member functions, and read-only properties. C# 7 expands the allowed
-members that can be implemented as expressions. In C# 7, you can implement
+for member functions, and read-only properties. C# 7.0 expands the allowed
+members that can be implemented as expressions. In C# 7.0, you can implement
 *constructors*, *finalizers*, and `get` and `set` accessors on *properties*
 and *indexers*. The following code shows examples of each:
 
@@ -506,6 +500,8 @@ an important milestone for the C# language: These features
 were implemented by community members working on the open-source
 [Roslyn](https://github.com/dotnet/Roslyn) project.
 
+Changing a method to an expression bodied member is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+
 ## Throw expressions
 
 In C#, `throw` has always been a statement. Because `throw` is a statement,
@@ -513,7 +509,7 @@ not an expression, there were C# constructs where you could not use it. These
 included conditional expressions, null coalescing expressions, and some lambda
 expressions. The addition of expression-bodied members adds more locations
 where `throw` expressions would be useful. So that you can write any of these
-constructs, C# 7 introduces *throw expressions*.
+constructs, C# 7.0 introduces *throw expressions*.
 
 The syntax is the same as you've always used for `throw` statements. The only difference
 is that now you can place them in new locations, such as in a conditional expression:
@@ -567,16 +563,18 @@ with a `Task` parameter so that you can construct a `ValueTask` from the
 return value of any existing async method:
 
 [!code-csharp[AsyncOptimizedValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#31_AsyncOptimizedValueTask "Return async result or cached value")]
- 
+
 As with all performance recommendations, you should benchmark
 both versions before making large scale changes to your code.
+
+When the return value is the target of an `await` statement, changing an API from a <xref:System.Threading.Tasks.Task%601> to a <xref:System.Threading.Tasks.ValueTask%601> is a [source compatible change](version-update-considerations.md#source-compatible-changes). In general, changing to `ValueTask` is not.
 
 ## Numeric literal syntax improvements
 
 Misreading numeric constants can make it harder to understand
 code when reading it for the first time. This often
 occurs when those numbers are used as bit masks or other symbolic
-rather than numeric values. C# 7 includes two new features to
+rather than numeric values. C# 7.0 includes two new features to
 make it easier to write numbers in the most readable fashion
 for the intended use: *binary literals*, and *digit separators*.
 

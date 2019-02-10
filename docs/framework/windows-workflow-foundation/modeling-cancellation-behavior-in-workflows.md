@@ -1,19 +1,7 @@
 ---
 title: "Modeling Cancellation Behavior in Workflows"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d48f6cf3-cdde-4dd3-8265-a665acf32a03
-caps.latest.revision: 11
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Modeling Cancellation Behavior in Workflows
 Activities can be canceled inside a workflow, for example by a <xref:System.Activities.Statements.Parallel> activity canceling incomplete branches when its <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> evaluates to `true`, or from outside the workflow, if the host calls <xref:System.Activities.WorkflowApplication.Cancel%2A>. To provide cancellation handling, workflow authors can use the <xref:System.Activities.Statements.CancellationScope> activity, the <xref:System.Activities.Statements.CompensableActivity> activity, or create custom activities that provide cancellation logic. This topic provides an overview of cancellation in workflows.  
@@ -22,7 +10,7 @@ Activities can be canceled inside a workflow, for example by a <xref:System.Acti
  Transactions give your application the ability to abort (roll back) all changes executed within the transaction if any errors occur during any part of the transaction process. However, not all work that may need to be canceled or undone is appropriate for transactions, such as long-running work or work that does not involve transactional resources. Compensation provides a model for undoing previously completed non-transactional work if there is a subsequent failure in the workflow. Cancellation provides a model for workflow and activity authors to handle non-transactional work that was not completed. If an activity has not completed its execution and it is canceled, its cancellation logic will be invoked if it is available.  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../../../includes/crabout-md.md)] transactions and compensation, see [Transactions](../../../docs/framework/windows-workflow-foundation/workflow-transactions.md) and [Compensation](../../../docs/framework/windows-workflow-foundation/compensation.md).  
+>  For more information about transactions and compensation, see [Transactions](../../../docs/framework/windows-workflow-foundation/workflow-transactions.md) and [Compensation](../../../docs/framework/windows-workflow-foundation/compensation.md).  
   
 ## Using CancellationScope  
  The <xref:System.Activities.Statements.CancellationScope> activity has two sections that can contain child activities: <xref:System.Activities.Statements.CancellationScope.Body%2A> and <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>. The <xref:System.Activities.Statements.CancellationScope.Body%2A> is where the activities that make up the logic of the activity are placed, and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> is where the activities that provide cancellation logic for the activity are placed. An activity can be canceled only if it has not completed. In the case of the <xref:System.Activities.Statements.CancellationScope> activity, completion refers to the completion of the activities in the <xref:System.Activities.Statements.CancellationScope.Body%2A>. If a cancellation request is scheduled and the activities in the <xref:System.Activities.Statements.CancellationScope.Body%2A> have not completed, then the <xref:System.Activities.Statements.CancellationScope> will be marked as <xref:System.Activities.ActivityInstanceState.Canceled> and the <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> activities will be executed.  
@@ -104,7 +92,7 @@ protected override void Cancel(NativeActivityContext context)
  <xref:System.Activities.NativeActivity> derived activities can determine if cancellation has been requested by inspecting the <xref:System.Activities.NativeActivityContext.IsCancellationRequested%2A> property, and mark themselves as canceled by calling the <xref:System.Activities.NativeActivityContext.MarkCanceled%2A> method. Calling <xref:System.Activities.NativeActivityContext.MarkCanceled%2A> does not immediately complete the activity. As usual, the runtime will complete the activity when it has no more outstanding work, but if <xref:System.Activities.NativeActivityContext.MarkCanceled%2A> is called the final state will be <xref:System.Activities.ActivityInstanceState.Canceled> instead of <xref:System.Activities.ActivityInstanceState.Closed>.  
   
 ### Cancellation using AsyncCodeActivity  
- <xref:System.Activities.AsyncCodeActivity> based activities can also provide custom cancellation logic by overriding the <xref:System.Activities.AsyncCodeActivity.Cancel%2A> method. If this method is not overridden, then no cancellation handling is performed if the activity is canceled. In the following example, the <xref:System.Activities.AsyncCodeActivity.Cancel%2A> override of an <xref:System.Activities.AsyncCodeActivity> based custom `ExecutePowerShell` activity is defined. When the activity is canceled, it performs the desired cancellation behavior. This example is part of the [Using the InvokePowerShell Activity](../../../docs/framework/windows-workflow-foundation/samples/using-the-invokepowershell-activity.md) sample.  
+ <xref:System.Activities.AsyncCodeActivity> based activities can also provide custom cancellation logic by overriding the <xref:System.Activities.AsyncCodeActivity.Cancel%2A> method. If this method is not overridden, then no cancellation handling is performed if the activity is canceled. In the following example, the <xref:System.Activities.AsyncCodeActivity.Cancel%2A> override of an <xref:System.Activities.AsyncCodeActivity> based custom `ExecutePowerShell` activity is defined. When the activity is canceled, it performs the desired cancellation behavior.
   
  [!code-csharp[CFX_WorkflowApplicationExample#1020](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1020)]  
   

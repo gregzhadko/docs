@@ -1,14 +1,6 @@
 ---
 title: "DataGrid Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "datasets [Windows Forms], user interface"
   - "DataGrid control [Windows Forms]"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "displaying data [Windows Forms], on forms"
   - "data [Windows Forms], displaying on Windows Forms"
 ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid Control (Windows Forms)
 > [!NOTE]
@@ -85,6 +71,6 @@ ms.workload:
  [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
  Provides links to topics on data binding in Windows Forms.  
   
-## See Also  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)
+## See also
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)

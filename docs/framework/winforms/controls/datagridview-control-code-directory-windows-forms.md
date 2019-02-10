@@ -1,26 +1,12 @@
 ---
 title: "DataGridView Control Code Directory (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "data grids [Windows Forms], examples"
   - "examples [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], examples"
   - "DataGridView control [Windows Forms], code directory"
 ms.assetid: ea8bd66a-5ed6-491b-b9da-63873e275a0a
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGridView Control Code Directory (Windows Forms)
 This topic provides links to <xref:System.Windows.Forms.DataGridView>-related code examples available in the documentation.  
@@ -160,6 +146,6 @@ This topic provides links to <xref:System.Windows.Forms.DataGridView>-related co
   
 -   [Implementing Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/implementing-virtual-mode-jit-data-loading-in-the-datagrid.md)  
   
-## See Also  
- <xref:System.Windows.Forms.DataGridView>  
- [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.DataGridView>
+- [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)

@@ -1,13 +1,8 @@
 ---
-title: "Backreference Constructs in Regular Expressions"
-ms.custom: ""
+title: Backreference Constructs in .NET Regular Expressions
+desription: Learn how to identify repeated text elements by using backreference constructs in a regular expression.
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,13 +12,9 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, backreference constructs"
   - "regular expressions, backreference constructs"
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
-caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
+ms.custom: seodec18
 ---
 # Backreference Constructs in Regular Expressions
 Backreferences provide a convenient way to identify a repeated character or substring within a string. For example, if the input string contains multiple occurrences of an arbitrary substring, you can match the first occurrence with a capturing group, and then use a backreference to match subsequent occurrences of the substring.  
@@ -108,7 +99,7 @@ However, if *name* is the string representation of a number and the capturing gr
 |Pattern|Description|  
 |-------------|-----------------|  
 |`(?<1>a)`|Match the character "a" and assign the result to the capturing group named `1`.|  
-|`(?<1>\1b)*`|Match 0 or 1 occurrence of the group named `1` along with a "b", and assign the result to the capturing group named `1`.|  
+|`(?<1>\1b)*`|Match zero or more occurrences of the group named `1` along with a "b", and assign the result to the capturing group named `1`.|  
   
  [!code-csharp[RegularExpressions.Language.Backreferences#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference4.cs#4)]
  [!code-vb[RegularExpressions.Language.Backreferences#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference4.vb#4)]  
@@ -119,7 +110,7 @@ However, if *name* is the string representation of a number and the capturing gr
   
 2.  It advances to the second character, and successfully matches the string "ab" with the expression `\1b`, or "ab". It then assigns the result, "ab" to `\1`.  
   
-3.  It advances to the fourth character. The expression `(?<1>\1b)` is to be matched zero or more times, so it successfully matches the string "abb" with the expression `\1b`. It assigns the result, "abb", back to `\1`.  
+3.  It advances to the fourth character. The expression `(?<1>\1b)*` is to be matched zero or more times, so it successfully matches the string "abb" with the expression `\1b`. It assigns the result, "abb", back to `\1`.  
   
  In this example, `*` is a looping quantifier -- it is evaluated repeatedly until the regular expression engine cannot match the pattern it defines. Looping quantifiers do not clear group definitions.  
   
@@ -138,5 +129,6 @@ However, if *name* is the string representation of a number and the capturing gr
  [!code-csharp[RegularExpressions.Language.Backreferences#5](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference5.cs#5)]
  [!code-vb[RegularExpressions.Language.Backreferences#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference5.vb#5)]  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

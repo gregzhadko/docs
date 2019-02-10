@@ -1,22 +1,12 @@
 ---
 title: "Windows Forms Add Configuration Element"
-ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms Add configuration element"
   - "configuring Windows Forms applications"
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Windows Forms Add Configuration Element
 
@@ -96,7 +86,7 @@ The single default opt-in setting provided by setting `DpiAwareness` to `PerMoni
 ```xml
 <System.Windows.Forms.ApplicationConfigurationSection>
    <add key="DpiAwareness" value="PerMonitorV2" />
-   <--! Disable dynamic DPI support -->
+   <!-- Disable dynamic DPI support -->
    <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" />
 </System.Windows.Forms.ApplicationConfigurationSection>
 ```
@@ -113,6 +103,6 @@ Starting with the .NET Framework 4.7, Windows Forms controls raise a number of e
 Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.  
 
 ## See also
- 
-[Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)   
-[High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)
+
+- [Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)
+- [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

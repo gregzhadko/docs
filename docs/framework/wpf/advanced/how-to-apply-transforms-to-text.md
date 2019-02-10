@@ -1,14 +1,6 @@
 ---
 title: "How to: Apply Transforms to Text"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "typography [WPF], rotated text"
   - "typography [WPF], scaled text"
@@ -23,12 +15,6 @@ helpviewer_keywords:
   - "scaled text [WPF]"
   - "typography [WPF], skewed text"
 ms.assetid: 0d61678a-4185-4f2a-85c6-c1d020f96fa0
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Apply Transforms to Text
 Transforms can alter the display of text in your application. The following examples use different types of rendering transforms to affect the display of text in a <xref:System.Windows.Controls.TextBlock> control.  
@@ -76,5 +62,5 @@ Example of translated text
 > [!NOTE]
 >  The <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> provides a rich set of features for providing shadow effects. For more information, see [Create Text with a Shadow](../../../../docs/framework/wpf/advanced/how-to-create-text-with-a-shadow.md).  
   
-## See Also  
- [Apply Animations to Text](../../../../docs/framework/wpf/advanced/how-to-apply-animations-to-text.md)
+## See also
+- [Apply Animations to Text](../../../../docs/framework/wpf/advanced/how-to-apply-animations-to-text.md)

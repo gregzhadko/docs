@@ -1,16 +1,10 @@
 ---
-title: "Benefits of Generics (C# Programming Guide)"
+title: "Benefits of Generics - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "generics [C#], benefits"
 ms.assetid: 80f037cd-9ea7-48be-bfc1-219bfb2d4277
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Benefits of Generics (C# Programming Guide)
 Generics provide the solution to a limitation in earlier versions of the common language runtime and the C# language in which generalization is accomplished by casting types to and from the universal base type <xref:System.Object>. By creating a generic class, you can create a collection that is type-safe at compile-time.  
@@ -35,10 +29,11 @@ Generics provide the solution to a limitation in earlier versions of the common 
   
  For client code, the only added syntax with <xref:System.Collections.Generic.List%601> compared to <xref:System.Collections.ArrayList> is the type argument in the declaration and instantiation. In return for this slightly more coding complexity, you can create a list that is not only safer than <xref:System.Collections.ArrayList>, but also significantly faster, especially when the list items are value types.  
   
-## See Also  
- <xref:System.Collections.Generic>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)  
- [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)  
- [Guidelines for Collections](../../../standard/design-guidelines/guidelines-for-collections.md)   
+## See also
+
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)
+- [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)
+- [Guidelines for Collections](../../../standard/design-guidelines/guidelines-for-collections.md)

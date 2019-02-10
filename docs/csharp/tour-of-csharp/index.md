@@ -1,14 +1,7 @@
 ---
 title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
-keywords: .NET, .NET Core, C#, C# Primer, C# Guide
-author: BillWagner
-ms.author: wiwagn
 ms.date: 08/10/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: ebc727cd-8112-42e7-b59c-3c2873ad661c
 ---
 
@@ -78,4 +71,4 @@ There's a lot more to learn about C#.  The following topics provide an overview 
  	* ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
 
 >[!div class="step-by-step"]
-[Next](program-structure.md)
+>[Next](program-structure.md)

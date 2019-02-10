@@ -1,24 +1,10 @@
 ---
 title: "FilterInputMessage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "raw input [WPF]"
   - "FilterInputMessage method [WPF]"
 ms.assetid: 4d74c6cf-7d1d-49ff-96c1-231340ce54f5
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # FilterInputMessage
 Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.  
@@ -50,5 +36,5 @@ HRESULT FilterInputMessage( [in] MSG* pMsg ) ;
   
  The hosted application receives raw input messages by registering with the set of raw input devices (Human Interface Devices) returned by [GetRawInputDevices](../../../../docs/framework/wpf/app-development/getrawinputdevices.md).  
   
-## See Also  
- [WM_INPUT Notification](http://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputmessages/wm_input.asp)
+## See also
+- [WM_INPUT Notification](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputmessages/wm_input.asp)

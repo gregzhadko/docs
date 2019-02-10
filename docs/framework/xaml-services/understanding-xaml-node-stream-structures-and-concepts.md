@@ -1,25 +1,11 @@
 ---
 title: "Understanding XAML Node Stream Structures and Concepts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "XAML node streams [XAML Services]"
   - "nodes [XAML Services], XAML node stream"
   - "XAML [XAML Services], XAML node streams"
 ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
-caps.latest.revision: 14
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Understanding XAML Node Stream Structures and Concepts
 XAML readers and XAML writers as implemented in .NET Framework XAML Services are based on the design concept of a XAML node stream. The XAML node stream is a conceptualization of a set of XAML nodes. In this conceptualization, a XAML processor walks through the structure of the node relationships in the XAML one at a time. At any time, only one current record or current position exists in an open XAML node stream, and many aspects of the API report only the information available from that position. The current node in a XAML node stream can be described as being an object, a member, or a value. By treating XAML as a XAML node stream, XAML readers can communicate with XAML writers and enable a program to view, interact with, or alter the contents of a XAML node stream during either a load path or a save path operation that involves XAML. XAML reader and writer API design and the XAML node stream concept are similar to previous related reader and writer designs and concepts, such as the [!INCLUDE[TLA#tla_xmldom](../../../includes/tlasharptla-xmldom-md.md)] and the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. This topic discusses XAML node stream concepts and describes how you can write routines that interact with XAML representations at the XAML node level.  
@@ -88,7 +74,7 @@ while (xxr.Read()) {
  There are potentially other ways to work with a XAML representation other than as a XAML node loop. For example, there could exist a XAML reader that can read an indexed node, or in particular accesses nodes directly by `x:Name`, by `x:Uid`, or through other identifiers. .NET Framework XAML Services does not provide a full implementation, but provides a suggested pattern through services and support types. For more information, see <xref:System.Xaml.IXamlIndexingReader> and <xref:System.Xaml.XamlNodeList>.  
   
 > [!TIP]
->  Microsoft also produces an out-of-band release known as the Microsoft XAML Toolkit. This out-of-band release is still in its pre-release stages. However, if you are willing to work with pre-release components, the Microsoft XAML Toolkit provides some interesting resources for XAML tooling and static analysis of XAML. The Microsoft XAML Toolkit includes a XAML DOM API, support for FxCop analysis, and a XAML schema context for Silverlight. For more information, see [Microsoft XAML Toolkit](http://code.msdn.microsoft.com/XAML).  
+>  Microsoft also produces an out-of-band release known as the Microsoft XAML Toolkit. This out-of-band release is still in its pre-release stages. However, if you are willing to work with pre-release components, the Microsoft XAML Toolkit provides some interesting resources for XAML tooling and static analysis of XAML. The Microsoft XAML Toolkit includes a XAML DOM API, support for FxCop analysis, and a XAML schema context for Silverlight. For more information, see [Microsoft XAML Toolkit](https://code.msdn.microsoft.com/XAML).  
   
 <a name="working_with_the_current_node"></a>   
 ## Working with the Current Node  
@@ -225,7 +211,7 @@ public class GameBoard {
 ### GetObject  
  `GetObject` represents a XAML node where rather than constructing a new object, a XAML object writer should instead get the value of the object's containing property. A typical  case where a `GetObject` node is encountered in a XAML node stream is for a collection object or a dictionary object, when the containing property is deliberately read-only in the backing type's object model. In this scenario, the collection or dictionary often is created and initialized (usually empty) by the initialization logic of an owning type.  
   
-## See Also  
- <xref:System.Xaml.XamlObjectReader>  
- [XAML Services](../../../docs/framework/xaml-services/index.md)  
- [XAML Namespaces](../../../docs/framework/xaml-services/xaml-namespaces-for-net-framework-xaml-services.md)
+## See also
+- <xref:System.Xaml.XamlObjectReader>
+- [XAML Services](../../../docs/framework/xaml-services/index.md)
+- [XAML Namespaces](../../../docs/framework/xaml-services/xaml-namespaces-for-net-framework-xaml-services.md)

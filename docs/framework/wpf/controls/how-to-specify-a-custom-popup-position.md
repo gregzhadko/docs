@@ -1,26 +1,12 @@
 ---
 title: "How to: Specify a Custom Popup Position"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "Popup control [WPF], specifying custom position"
 ms.assetid: 28c24f39-d3aa-4ee2-b950-384b4a5dab92
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Specify a Custom Popup Position
 This example shows how to specify a custom position for a <xref:System.Windows.Controls.Primitives.Popup> control when the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Custom>.  
@@ -38,9 +24,9 @@ This example shows how to specify a custom position for a <xref:System.Windows.C
  [!code-csharp[PopupCustomPlacement#DelegateDefinition](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegatedefinition)]
  [!code-vb[PopupCustomPlacement#DelegateDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegatedefinition)]  
   
- For the complete sample, see [Popup Placement Sample](http://go.microsoft.com/fwlink/?LinkID=160032).  
+ For the complete sample, see [Popup Placement Sample](https://go.microsoft.com/fwlink/?LinkID=160032).  
   
-## See Also  
- <xref:System.Windows.Controls.Primitives.Popup>  
- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.Primitives.Popup>
+- [Popup Overview](../../../../docs/framework/wpf/controls/popup-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)

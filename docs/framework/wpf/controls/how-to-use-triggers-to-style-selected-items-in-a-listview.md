@@ -1,23 +1,9 @@
 ---
 title: "How to: Use Triggers to Style Selected Items in a ListView"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls [WPF], styling"
 ms.assetid: 1e2bdce0-afe8-4507-9b18-f33de43de25a
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Triggers to Style Selected Items in a ListView
 This example shows how to define <xref:System.Windows.Style.Triggers%2A> for a <xref:System.Windows.Controls.ListViewItem> control so that when a property value of a <xref:System.Windows.Controls.ListViewItem> changes, the <xref:System.Windows.Style> of the <xref:System.Windows.Controls.ListViewItem> changes in response.  
@@ -37,10 +23,10 @@ This example shows how to define <xref:System.Windows.Style.Triggers%2A> for a <
 [!code-xaml[ListViewChkBox#MultiTrigger](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#multitrigger)]  
 [!code-xaml[ListViewChkBox#ListViewItemTriggersEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#listviewitemtriggersend)]  
   
-## See Also  
- <xref:System.Windows.Controls.Control>  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.GridView>  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+## See also
+- <xref:System.Windows.Controls.Control>
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.GridView>
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

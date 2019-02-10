@@ -1,14 +1,6 @@
 ---
 title: "ContextMenu Component (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "menus [Windows Forms], shortcut menus"
   - "Windows Forms, menus"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "context menus [Windows Forms], for Windows Forms"
   - "shortcut menus [Windows Forms], ContextMenu component"
 ms.assetid: 9b93ccbc-c0fe-44a2-968e-faac25971831
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ContextMenu Component (Windows Forms)
 > [!NOTE]
@@ -46,6 +32,6 @@ ms.workload:
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
-## See Also  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ContextMenuStrip>
+## See also
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ContextMenuStrip>

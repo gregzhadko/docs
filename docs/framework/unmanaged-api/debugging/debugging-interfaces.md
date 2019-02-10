@@ -1,25 +1,13 @@
 ---
 title: "Debugging Interfaces"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 helpviewer_keywords: 
   - "unmanaged interfaces [.NET Framework], debugging"
   - "debugging interfaces [.NET Framework]"
   - "interfaces [.NET Framework debugging]"
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
-caps.latest.revision: 32
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Debugging Interfaces
 This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).  
@@ -438,6 +426,21 @@ This section describes the unmanaged interfaces that handle the debugging of a p
   
  [ICorPublishProcessEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)  
  Provides methods that traverse a collection of `ICorPublishProcess` objects.  
+
+ [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)
+ Provides helper methods to access data from `SOS`.
+
+ [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)
+ Provides methods for querying information about a method definition.
+ 
+ [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)
+ Provides methods for querying information about a method instance.
+ 
+ [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
+ Provides methods for querying information about a loaded module.
+ 
+ [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+ Provides methods for querying information about a process.
   
 ## Related Sections  
  [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  

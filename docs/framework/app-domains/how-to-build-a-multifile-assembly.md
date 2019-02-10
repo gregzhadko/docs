@@ -1,14 +1,6 @@
 ---
 title: "How to: Build a Multifile Assembly"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -25,12 +17,8 @@ helpviewer_keywords:
   - "code modules"
   - "multifile assemblies"
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # How to: Build a Multifile Assembly
 This article explains how to create a multifile assembly and provides code that illustrates each step in the procedure.  
@@ -94,7 +82,7 @@ This article explains how to create a multifile assembly and provides code that 
   
      In this command, the *module name* arguments specify the name of each module to include in the assembly. The **/main:** option specifies the method name that is the assembly's entry point. The **/out:** option specifies the name of the output file, which contains assembly metadata. The **/target:** option specifies that the assembly is a console application executable (.exe) file, a Windows executable (.win) file, or a library (.lib) file.  
   
-     In the following example, Al.exe creates an assembly that is a console application executable called `myAssembly.exe`. The application consists of two modules called `Client.netmodule` and `Stringer.netmodule`, and the executable file called `myAssembly.exe,` which contains only assembly metadata . The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in `Client.dll`.  
+     In the following example, Al.exe creates an assembly that is a console application executable called `myAssembly.exe`. The application consists of two modules called `Client.netmodule` and `Stringer.netmodule`, and the executable file called `myAssembly.exe,` which contains only assembly metadata. The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in `Client.dll`.  
   
     ```  
     al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe   
@@ -102,8 +90,8 @@ This article explains how to create a multifile assembly and provides code that 
   
      You can use the [MSIL Disassembler (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.  
   
-## See Also  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
- [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)  
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)
+## See also
+- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
+- [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)

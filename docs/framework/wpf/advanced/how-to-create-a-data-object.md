@@ -1,14 +1,6 @@
 ---
 title: "How to: Create a Data Object"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "data objects [WPF], creating"
   - "drag-and-drop [WPF], creating data objects"
 ms.assetid: 022fa142-717d-4fea-a53c-3b52e9d91aff
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Create a Data Object
 The following examples show various ways to create a data object using the constructors provided by the <xref:System.Windows.DataObject> class.  
@@ -91,5 +77,5 @@ The following examples show various ways to create a data object using the const
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_autoconvert_condensed)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_autoconvert_condensed)]  
   
-## See Also  
- <xref:System.Windows.IDataObject>
+## See also
+- <xref:System.Windows.IDataObject>

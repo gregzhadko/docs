@@ -1,12 +1,6 @@
 ---
 title: "While...End While Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.While"
   - "vb.While...EndWhile"
@@ -15,9 +9,6 @@ helpviewer_keywords:
   - "While statement [Visual Basic]"
   - "While...End While statements [Visual Basic]"
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # While...End While Statement (Visual Basic)
 Runs a series of statements as long as a given condition is `True`.  
@@ -84,11 +75,11 @@ End While
   
  [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_3.vb)]  
   
-## See Also  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)
+## See also
+- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)
+- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)

@@ -1,13 +1,6 @@
 ---
 title: "Optional Parameters (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "parameters [Visual Basic], optional"
   - "Visual Basic code, procedures"
@@ -19,9 +12,6 @@ helpviewer_keywords:
   - "arguments [Visual Basic], optional"
   - "optional arguments [Visual Basic], and named arguments"
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Optional Parameters (Visual Basic)
 You can specify that a procedure parameter is optional and no argument has to be supplied for it when the procedure is called. *Optional parameters* are indicated by the `Optional` keyword in the procedure definition. The following rules apply:  
@@ -63,12 +53,12 @@ Sub name(argument 1, , , argument 4)
 ## Optional Parameters and Overloading  
  Another way to define a procedure with optional parameters is to use overloading. If you have one optional parameter, you can define two overloaded versions of the procedure, one accepting the parameter and one without it. This approach becomes more complicated as the number of optional parameters increases. However, its advantage is that you can be absolutely sure whether the calling program supplied each optional argument.  
   
-## See Also  
- [Procedures](./index.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)  
- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)  
- [Parameter Arrays](./parameter-arrays.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)  
- [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)
+## See also
+- [Procedures](./index.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
+- [Passing Arguments by Position and by Name](./passing-arguments-by-position-and-by-name.md)
+- [Parameter Arrays](./parameter-arrays.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)
+- [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)

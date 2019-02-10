@@ -1,4 +1,4 @@
-// compile with: csc /target:library abstractshape.cs
+// compile with: csc -target:library abstractshape.cs
 public abstract class Shape
 {
     private string name;
@@ -30,6 +30,6 @@ public abstract class Shape
 
     public override string ToString()
     {
-        return Id + " Area = " + string.Format("{0:F2}", Area);
+        return $"{Id} Area = {Area:F2}";
     }
 }

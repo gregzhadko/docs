@@ -1,21 +1,15 @@
 ---
-title: "Partial Classes and Methods (C# Programming Guide)"
+title: "Partial Classes and Methods - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "partial methods [C#]"
   - "partial classes [C#]"
   - "C# language, partial classes and methods"
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
-caps.latest.revision: 35
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Partial Classes and Methods (C# Programming Guide)
-It is possible to split the definition of a [class](../../../csharp/language-reference/keywords/class.md) or a [struct](../../../csharp/language-reference/keywords/struct.md), an [interface](../../../csharp/language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.  
+It is possible to split the definition of a [class](../../../csharp/language-reference/keywords/class.md), a [struct](../../../csharp/language-reference/keywords/struct.md), an [interface](../../../csharp/language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.  
   
 ## Partial Classes  
  There are several situations when splitting a class definition is desirable:  
@@ -133,7 +127,7 @@ It is possible to split the definition of a [class](../../../csharp/language-ref
   
  A partial method declaration consists of two parts: the definition, and the implementation. These may be in separate parts of a partial class, or in the same part. If there is no implementation declaration, then the compiler optimizes away both the defining declaration and all calls to the method.  
   
-```  
+```csharp  
 // Definition in file1.cs  
 partial void onNameChanged();  
   
@@ -159,11 +153,13 @@ partial void onNameChanged()
 -   You can make a [delegate](../../../csharp/language-reference/keywords/delegate.md) to a partial method that has been defined and implemented, but not to a partial method that has only been defined.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Partial types](~/_csharplang/spec/classes.md#partial-types) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)

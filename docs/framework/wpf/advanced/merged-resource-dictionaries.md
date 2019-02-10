@@ -1,24 +1,10 @@
 ---
 title: "Merged Resource Dictionaries"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "merged resource dictionaries [WPF]"
   - "dictionaries [WPF], merged resources"
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Merged Resource Dictionaries
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] resources support a merged resource dictionary feature. This feature provides a way to define the resources portion of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application outside of the compiled [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] application. Resources can then be shared across applications and are also more conveniently isolated for localization.  
@@ -59,8 +45,8 @@ ms.workload:
 ### Localization  
  If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], these files can be localized separately. This technique is a lightweight alternative to localizing  the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md).  
   
-## See Also  
- <xref:System.Windows.ResourceDictionary>  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
+## See also
+- <xref:System.Windows.ResourceDictionary>
+- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
+- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)
+- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

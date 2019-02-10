@@ -1,25 +1,17 @@
----
+﻿---
 title: Async in depth
 description: Learn how writing I/O-bound and CPU-bound asynchronous code is straightforward using the .NET Task-based async model.
-keywords: .NET, .NET Core, .NET Standard
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
-
 # Async in depth
 
 Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` keywords in C# and Visual Basic. (Language-specific resources are found in the [See also](#see-also) section.) This article explains how to use .NET async and provides insight into the async framework used under the covers.
 
-## Task and Task&lt;T&gt;
+## Task and Task\<T>
 
 Tasks are constructs used to implement what is known as the [Promise Model of Concurrency](https://en.wikipedia.org/wiki/Futures_and_promises).  In short, they offer you a "promise" that work will be completed at a later point, letting you coordinate with the promise with a clean API.
 
@@ -46,7 +38,7 @@ public Task<string> GetHtmlAsync()
  	// Execution is synchronous here
 	var client = new HttpClient();
 	
-	return client.GetStringAsync("http://www.dotnetfoundation.org");
+	return client.GetStringAsync("https://www.dotnetfoundation.org");
 }
 ```
 
@@ -60,7 +52,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 	
 	// Execution of GetFirstCharactersCountAsync() is yielded to the caller here
 	// GetStringAsync returns a Task<string>, which is *awaited*
-	var page = await client.GetStringAsync("http://www.dotnetfoundation.org");
+	var page = await client.GetStringAsync("https://www.dotnetfoundation.org");
 	
 	// Execution resumes when the client.GetStringAsync task completes,
     // becoming synchronous again.
@@ -116,7 +108,7 @@ More importantly, because I/O-bound work spends virtually no time on the CPU, de
 
 Additionally, dispatching work to the UI thread (such as updating a UI) is very simple with `async` methods, and does not require extra work (such as calling a thread-safe delegate).
 
-## Deeper Dive into Task and Task<T> for a CPU-Bound Operation
+## Deeper Dive into Task and Task\<T> for a CPU-Bound Operation
 
 CPU-bound `async` code is a bit different than I/O-bound `async` code.  Because the work is done on the CPU, there's no way to get around dedicating a thread to the computation.  The use of `async` and `await` provides you with a clean way to interact with a background thread and keep the caller of the async method responsive.  Note that this does not provide any protection for shared data.  If you are using shared data, you will still need to apply an appropriate synchronization strategy.
 
@@ -148,7 +140,7 @@ Once `await` is encountered, the execution of `CalculateResult()` is yielded to 
 
 ## See also
 
-[Asynchronous programming in C#](~/docs/csharp/async.md)   
-[Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)  
-[Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
-[Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [Asynchronous programming in C#](~/docs/csharp/async.md)
+- [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
+- [Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)

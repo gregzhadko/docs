@@ -1,18 +1,10 @@
 ---
 title: Reducing Package Dependencies with project.json
 description: Reduce package dependencies when authoring project.json-based libraries.
-keywords: .NET, .NET Core
 author: cartermp
-ms.author: mairaw
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
-ms.workload: 
-  - dotnetcore
+ms.custom: "seodec18"
 ---
-
 # Reducing Package Dependencies with project.json
 
 This article covers what you need to know about reducing your package dependencies when authoring `project.json` libraries. By the end of this article, you will learn how to compose your library such that it only uses the dependencies it needs. 
@@ -38,7 +30,7 @@ Currently, there is no official `dotnet` command which trims package references.
 You can find out which packages you don't need by one of the following ways:
 
 1. Trial and error.  This involves removing a package, restoring, seeing if your library still compiles, and repeating this process.
-2. Using a tool such as [ILSpy](http://ilspy.net) or [.NET Reflector](http://www.red-gate.com/products/dotnet-development/reflector) to peek at references to see what your code is actually using.  You can then remove packages which don't correspond to types you're using.
+2. Using a tool such as [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------) or [.NET Reflector](https://www.red-gate.com/products/dotnet-development/reflector) to peek at references to see what your code is actually using.  You can then remove packages which don't correspond to types you're using.
 
 ## Example 
 
@@ -129,7 +121,7 @@ Next, copy over the package references into the `dependencies` section of the li
 }
 ```
 
-That's quite a lot of packages, many of which which certainly aren't necessary for extending collection types.  You can either remove packages manually or use a tool such as [ILSpy](http://ilspy.net) or [.NET Reflector](http://www.red-gate.com/products/dotnet-development/reflector) to identify which packages your code actually uses.
+That's quite a lot of packages, many of which certainly aren't necessary for extending collection types.  You can either remove packages manually or use a tool such as [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------) or [.NET Reflector](https://www.red-gate.com/products/dotnet-development/reflector/) to identify which packages your code actually uses.
 
 Here's what a trimmed package could look like:
 

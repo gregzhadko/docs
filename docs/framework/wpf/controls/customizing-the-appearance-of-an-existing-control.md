@@ -1,14 +1,6 @@
 ---
 title: "Customizing the Appearance of an Existing Control by Creating a ControlTemplate"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,17 +12,11 @@ helpviewer_keywords:
   - "controls [WPF], appearance specified by state"
   - "templates [WPF], custom for existing controls"
 ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Customizing the Appearance of an Existing Control by Creating a ControlTemplate
 <a name="introduction"></a> A <xref:System.Windows.Controls.ControlTemplate> specifies the visual structure and visual behavior of a control. You can customize the appearance of a control by giving it a new <xref:System.Windows.Controls.ControlTemplate>. When you create a <xref:System.Windows.Controls.ControlTemplate>, you replace the appearance of an existing control without changing its functionality. For example, you can make the buttons in your application round instead of the default square shape, but the button will still raise the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
- This topic explains the various parts of a <xref:System.Windows.Controls.ControlTemplate>, demonstrates creating a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>, and explains how to understand the control contract of a control so that you can customize its appearance. Because you create a <xref:System.Windows.Controls.ControlTemplate> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you can change a control's appearance without writing any code. You can also use a designer, such as Microsoft Expression Blend, to create custom control templates. This topic shows examples in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that customize the appearance of a <xref:System.Windows.Controls.Button> and lists the complete example at the end of the topic. For more information about using Expression Blend, see [Styling a control that supports templates](http://go.microsoft.com/fwlink/?LinkId=161153).  
+ This topic explains the various parts of a <xref:System.Windows.Controls.ControlTemplate>, demonstrates creating a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>, and explains how to understand the control contract of a control so that you can customize its appearance. Because you create a <xref:System.Windows.Controls.ControlTemplate> in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you can change a control's appearance without writing any code. You can also use a designer, such as Microsoft Expression Blend, to create custom control templates. This topic shows examples in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] that customize the appearance of a <xref:System.Windows.Controls.Button> and lists the complete example at the end of the topic. For more information about using Expression Blend, see [Styling a control that supports templates](https://go.microsoft.com/fwlink/?LinkId=161153).  
   
  The following illustrations show a <xref:System.Windows.Controls.Button> that uses the <xref:System.Windows.Controls.ControlTemplate> that is created in this topic.  
   
@@ -259,9 +245,9 @@ A button that uses a custom control template in the pressed state
   
  When creating a <xref:System.Windows.Controls.ControlTemplate>, it is often easiest to begin with an existing <xref:System.Windows.Controls.ControlTemplate> and make changes to it. You can do one of the following to change an existing <xref:System.Windows.Controls.ControlTemplate>:  
   
--   Use a designer, such as Expression Blend, which provides a graphical user interface for creating control templates. For more information, see [Styling a control that supports templates](http://go.microsoft.com/fwlink/?LinkId=161153).  
+-   Use a designer, such as Expression Blend, which provides a graphical user interface for creating control templates. For more information, see [Styling a control that supports templates](https://go.microsoft.com/fwlink/?LinkId=161153).  
   
--   Get the default <xref:System.Windows.Controls.ControlTemplate> and edit it. To find the default control templates that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+-   Get the default <xref:System.Windows.Controls.ControlTemplate> and edit it. To find the default control templates that are included with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 <a name="complete_example"></a>   
 ## Complete Example  
@@ -269,5 +255,5 @@ A button that uses a custom control template in the pressed state
   
  [!code-xaml[VSMButtonTemplate#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#3)]  
   
-## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

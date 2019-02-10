@@ -1,14 +1,7 @@
 ---
 title: Translating Expression Trees
 description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 
@@ -96,7 +89,7 @@ same node can be reused whenever its needed.
 
 Let's verify this by building a second visitor that walks the tree
 of addition nodes and computes the result. You can do this by
-making a couple modifications to the vistor that you've seen so
+making a couple modifications to the visitor that you've seen so
 far. In this new version, the visitor will return the partial sum
 of the addition operation up to this point. For a constant expression,
 that is simply the value of the constant expression. For an addition
@@ -243,7 +236,7 @@ This sample shows a small subset of the code you would build to traverse
 and interpret the algorithms represented by an expression tree. For a complete
 discussion of all the work necessary to build a general purpose library that
 translates expression trees into another language, please read
-[this series](http://blogs.msdn.com/b/mattwar/archive/2008/11/18/linq-links.aspx)
+[this series](https://blogs.msdn.com/b/mattwar/archive/2008/11/18/linq-links.aspx)
 by Matt Warren. It goes into great detail on how to translate any of the code
 you might find in an expression tree.
 

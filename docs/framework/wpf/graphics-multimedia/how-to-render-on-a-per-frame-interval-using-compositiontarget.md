@@ -1,14 +1,6 @@
 ---
 title: "How to: Render on a Per Frame Interval Using CompositionTarget"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "CompositionTarget objects [WPF], rendering per frame"
   - "rendering per frame using CompositionTarget objects [WPF]"
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Render on a Per Frame Interval Using CompositionTarget
 The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine provides many features for creating frame-based animation. However, there are application scenarios in which you need finer-grained control over rendering on a per frame basis. The <xref:System.Windows.Media.CompositionTarget> object provides the ability to create custom animations based on a per-frame callback.  
@@ -29,7 +15,7 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
  <xref:System.Windows.Media.CompositionTarget> is a static class which represents the display surface on which your application is being drawn. The <xref:System.Windows.Media.CompositionTarget.Rendering> event is raised each time the application's scene is drawn. The rendering frame rate is the number of times the scene is drawn per second.  
   
 > [!NOTE]
->  For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](http://go.microsoft.com/fwlink/?LinkID=160045).  
+>  For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](https://go.microsoft.com/fwlink/?LinkID=160045).  
   
 ## Example  
  The <xref:System.Windows.Media.CompositionTarget.Rendering> event fires during the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering process. The following example shows how you register an <xref:System.EventHandler> delegate to the static <xref:System.Windows.Media.CompositionTarget.Rendering> method on <xref:System.Windows.Media.CompositionTarget>.  
@@ -48,6 +34,6 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
   
  Adding or removing a rendering <xref:System.EventHandler> delegate while the event is firing will be delayed until after the event is finished firing. This is consistent with how <xref:System.MulticastDelegate>-based events are handled in the Common Language Runtime (CLR). Also note that rendering events are not guaranteed to be called in any particular order. If you have multiple <xref:System.EventHandler> delegates that rely on a particular order, you should register a single <xref:System.Windows.Media.CompositionTarget.Rendering> event and multiplex the delegates in the correct order yourself.  
   
-## See Also  
- <xref:System.Windows.Media.CompositionTarget>  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## See also
+- <xref:System.Windows.Media.CompositionTarget>
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

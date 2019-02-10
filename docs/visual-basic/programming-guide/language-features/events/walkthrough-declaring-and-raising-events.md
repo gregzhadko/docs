@@ -1,13 +1,6 @@
 ---
 title: "Declaring and Raising Events (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "declarations [Visual Basic], events"
   - "events [Visual Basic], walkthroughs"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "events [Visual Basic], raising"
   - "raising events [Visual Basic], walkthroughs"
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Declaring and Raising Events (Visual Basic)
 This walkthrough demonstrates how to declare and raise events for a class named `Widget`. After you complete the steps, you might want to read the companion topic, [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md), which shows how to use events from `Widget` objects to provide status information in an application.  
@@ -32,7 +22,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
 #### To build the code example for this topic  
   
-1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project and create a form named `Form1`.  
+1.  Open a new Visual Basic Windows Application project and create a form named `Form1`.  
   
 2.  Add two buttons and a label to `Form1`.  
   
@@ -77,8 +67,8 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
  Now that the `Widget` class can raise events, you can move to the next walkthrough. [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md) demonstrates how to use `WithEvents` to associate an event handler with the `PercentDone` event.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>  
- <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>  
- [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+- <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
+- <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>
+- [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

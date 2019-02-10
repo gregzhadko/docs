@@ -1,12 +1,7 @@
 ---
 title: Work with the .NET Compiler Platform SDK workspace model
 description: This overview provides an understanding of the type you use to query and manipulate the workspace and projects for your code.
-author: billwagner
-ms.author: wiwagn
 ms.date: 10/15/2017
-ms.topic: conceptual
-ms.prod: .net
-ms.devlang: devlang-csharp
 ms.custom: mvc
 ---
 
@@ -36,7 +31,7 @@ A document is also a part of the overall immutable solution model. A document re
 
 The following diagram is a representation of how the Workspace relates to the host environment, tools, and how edits are made.
 
-![the relationships between different elements of a workspace containing projects and source files](media/workspace-obj-relations.png)
+![the relationships between different elements of a workspace containing projects and source files](media/work-with-workspace/workspace-obj-relations.png)
 
 ## Summary
 

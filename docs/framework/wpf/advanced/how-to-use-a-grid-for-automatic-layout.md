@@ -1,24 +1,10 @@
 ---
 title: "How to: Use a Grid for Automatic Layout"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "grids [WPF], automatic layout"
   - "automatic layout [WPF], grid use"
 ms.assetid: ab9de407-e0c1-4047-bdf0-24951bf73879
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use a Grid for Automatic Layout
 This example describes how to use a grid in the automatic layout approach to creating a localizable application.  
@@ -37,6 +23,6 @@ This example describes how to use a grid in the automatic layout approach to cre
  ![Grid example](../../../../docs/framework/wpf/advanced/media/glob-grid.png "glob_grid")  
 Grid  
   
-## See Also  
- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)  
- [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)
+## See also
+- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
+- [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)

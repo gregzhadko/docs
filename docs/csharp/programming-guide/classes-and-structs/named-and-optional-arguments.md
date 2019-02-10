@@ -1,10 +1,7 @@
 ---
-title: "Named and Optional Arguments (C# Programming Guide)"
+title: "Named and Optional Arguments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "namedParameter_CSharpKeyword"
   - "cs_namedParameter"
@@ -17,9 +14,6 @@ helpviewer_keywords:
   - "parameters [C#], optional"
   - "named and optional arguments [C#]"
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
-caps.latest.revision: 43
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Named and Optional Arguments (C# Programming Guide)
 [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)] introduces named and optional arguments. *Named arguments* enable you to specify an argument for a particular parameter by associating the argument with the parameter's name rather than with the parameter's position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.  
@@ -39,7 +33,7 @@ ms.author: "wiwagn"
   
  `PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);`
   
- Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` cannot be null or whitespace. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
+ Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` cannot be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
   
  Named arguments, when used with positional arguments, are valid as long as 
 
@@ -102,7 +96,7 @@ Optional parameters in ExampleMethod
 ## COM Interfaces  
  Named and optional arguments, along with support for dynamic objects and other enhancements, greatly improve interoperability with COM APIs, such as Office Automation APIs.  
   
- For example, the [AutoFormat](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range.autoformat(v=office.15).aspx) method in the Microsoft Office Excel [Range](https://msdn.microsoft.com/library/microsoft.office.interop.excel.range(v=office.15).aspx) interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
+ For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> method in the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Range> interface has seven parameters, all of which are optional. These parameters are shown in the following illustration.  
   
  ![IntelliSense Quick Info for the AutoFormat method.](../../../csharp/programming-guide/classes-and-structs/media/autoformat_parameters.png "AutoFormat_Parameters")  
 AutoFormat parameters  
@@ -129,8 +123,9 @@ AutoFormat parameters
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)
+## See also
+
+- [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)
+- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)
+- [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)

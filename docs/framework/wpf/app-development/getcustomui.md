@@ -1,23 +1,9 @@
 ---
 title: "GetCustomUI"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom error messages [WPF]"
 ms.assetid: e55180fc-35bb-4f80-a136-772b5eb3e4e5
-caps.latest.revision: 6
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # GetCustomUI
 Called by PresentationHost.exe to get custom progress and error messages from the host, if implemented.  
@@ -53,5 +39,5 @@ HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgres
   
  This function is called once during PresentationHost’s initialization.  
   
-## See Also  
- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)
+## See also
+- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)

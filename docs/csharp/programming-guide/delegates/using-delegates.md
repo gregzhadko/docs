@@ -1,16 +1,10 @@
 ---
-title: "Using Delegates (C# Programming Guide)"
+title: "Using Delegates - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "delegates [C#], how to use"
 ms.assetid: 99a2fc27-a32e-4a34-921c-e65497520eec
-caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Delegates (C# Programming Guide)
 A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate. The following example declares a delegate named `Del` that can encapsulate a method that takes a [string](../../../csharp/language-reference/keywords/string.md) as an argument and returns [void](../../../csharp/language-reference/keywords/void.md):  
@@ -65,10 +59,11 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
  [!code-csharp[csProgGuideDelegates#30](../../../csharp/programming-guide/delegates/codesnippet/CSharp/using-delegates_10.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Using Variance in Delegates](http://msdn.microsoft.com/library/e6acad03-93e0-4efb-a158-8696d5eb4ecf)  
- [Variance in Delegates](http://msdn.microsoft.com/library/e3b98197-6c5b-4e55-9c6e-9739b60645ca)  
- [Using Variance for Func and Action Generic Delegates](http://msdn.microsoft.com/library/e69c4f39-09aa-4c6d-a752-08cc767d8290)  
- [Events](../../../csharp/programming-guide/events/index.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Using Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md)
+- [Variance in Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
+- [Using Variance for Func and Action Generic Delegates](../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+- [Events](../../../csharp/programming-guide/events/index.md)

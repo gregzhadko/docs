@@ -1,14 +1,6 @@
 ---
 title: "Timing Events Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "timelines [WPF]"
   - "timing events [WPF]"
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Timing Events Overview
 This topic describes how to use the five timing events available on <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> objects.  
@@ -84,7 +70,7 @@ This topic describes how to use the five timing events available on <xref:System
   
  When you register for the <xref:System.Windows.Media.Animation.Timeline.Completed> event on a timeline, for example, you're actually telling the system to register for the <xref:System.Windows.Media.Animation.Clock.Completed> event of each clock that is created for the timeline. In code, you must register for this event before the <xref:System.Windows.Media.Animation.Clock> is created for this timeline; otherwise, you won't receive notification. This happens automatically in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]; the parser automatically registers for the event before the <xref:System.Windows.Media.Animation.Clock> is created.  
   
-## See Also  
- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md)
+## See also
+- [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Timing Behaviors Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md)

@@ -1,24 +1,10 @@
 ---
 title: "How to: Flip a UIElement Horizontally or Vertically"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "flipping UIElements [WPF]"
   - "UIElements [WPF], flipping"
 ms.assetid: 02c6730f-65c0-40d5-a553-4cb663721882
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Flip a UIElement Horizontally or Vertically
 This example shows how to use a <xref:System.Windows.Media.ScaleTransform> to flip a <xref:System.Windows.UIElement> horizontally or vertically. In this example, a <xref:System.Windows.Controls.Button> control (a type of <xref:System.Windows.UIElement>) is flipped by applying a <xref:System.Windows.Media.ScaleTransform> to its <xref:System.Windows.UIElement.RenderTransform%2A> property.  
@@ -57,5 +43,5 @@ The button with a RenderTransformOrigin of 0.5, 0.5
  ![A button flipped vertically about its center](../../../../docs/framework/wpf/advanced/media/graphicsmm-buttonflipverticalflip-inplace.gif "graphicsmm_buttonflipverticalflip_inplace")  
 The vertically flipped button  
   
-## See Also  
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+## See also
+- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

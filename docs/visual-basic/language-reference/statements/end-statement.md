@@ -1,12 +1,6 @@
 ---
-title: "End Statement"
+title: "End Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.End"
   - "End"
@@ -20,9 +14,6 @@ helpviewer_keywords:
   - "End statement [Visual Basic]"
   - "execution [Visual Basic], stopping"
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # End Statement
 Terminates execution immediately.  
@@ -58,7 +49,7 @@ End
 ## Smart Device Developer Notes  
  This statement is not supported.  
   
-## See Also  
- <xref:System.Security.Permissions.SecurityPermissionFlag>  
- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)  
- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)
+## See also
+- <xref:System.Security.Permissions.SecurityPermissionFlag>
+- [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)
+- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)

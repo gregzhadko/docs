@@ -1,14 +1,6 @@
 ---
 title: "DataGrid"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "DataGrid column types [WPF]"
   - "DataGrid scenarios [WPF]"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "DataGrid [WPF], customizing the appearance of"
   - "DataGrid columns [WPF], using"
 ms.assetid: bf89ea63-79b6-422b-bc9f-0485ad803216
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid
 The <xref:System.Windows.Controls.DataGrid> control enables you to display and edit data from many different sources, such as from a SQL database, LINQ query, or any other bindable data source. For more information, see [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md).  
@@ -64,10 +50,10 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to display and e
 |[How to: Group, Sort, and Filter Data in the DataGrid Control](../../../../docs/framework/wpf/controls/how-to-group-sort-and-filter-data-in-the-datagrid-control.md)|Describes how to view data in a <xref:System.Windows.Controls.DataGrid> in different ways by grouping, sorting, and filtering the data.|  
 |[Sizing Options in the DataGrid Control](../../../../docs/framework/wpf/controls/sizing-options-in-the-datagrid-control.md)|Describes how to control absolute and automatic sizing in the <xref:System.Windows.Controls.DataGrid>.|  
   
-## See Also  
- <xref:System.Windows.Controls.DataGrid>  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
- [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)
+## See also
+- <xref:System.Windows.Controls.DataGrid>
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+- [Controls](../../../../docs/framework/wpf/controls/index.md)
+- [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)

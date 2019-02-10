@@ -1,16 +1,10 @@
 ---
-title: "Using Constructors (C# Programming Guide)"
+title: "Using Constructors - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
-caps.latest.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Constructors (C# Programming Guide)
 When a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is created, its constructor is called. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.  
@@ -31,7 +25,7 @@ When a [class](../../../csharp/language-reference/keywords/class.md) or [struct]
   
  Constructors for [struct](../../../csharp/language-reference/keywords/struct.md) types resemble class constructors, but `structs` cannot contain an explicit default constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the default values. For more information, see [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). However, this default constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the default constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
   
-```  
+```csharp  
 int i = new int();  
 Console.WriteLine(i);  
 ```  
@@ -89,10 +83,12 @@ Console.WriteLine("{0}, {1}", a, b);
  A constructor can be declared static by using the [static](../../../csharp/language-reference/keywords/static.md) keyword. Static constructors are called automatically, immediately before any static fields are accessed, and are generally used to initialize static class members. For more information, see [Static Constructors](../../../csharp/programming-guide/classes-and-structs/static-constructors.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Instance constructors](~/_csharplang/spec/classes.md#instance-constructors) and [Static constructors](~/_csharplang/spec/classes.md#static-constructors) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

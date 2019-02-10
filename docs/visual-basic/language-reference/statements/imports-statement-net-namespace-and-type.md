@@ -1,12 +1,6 @@
 ---
-title: "Imports Statement (.NET Namespace and Type)"
+title: "Imports Statement - .NET Namespace and Type (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Imports"
   - "imports"
@@ -22,9 +16,6 @@ helpviewer_keywords:
   - "aliases [Visual Basic], import"
   - "declared elements [Visual Basic], container elements"
 ms.assetid: 7062f8aa-d890-4232-9eed-92836e13fb6e
-caps.latest.revision: 40
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Imports Statement (.NET Namespace and Type)
 Enables type names to be referenced without namespace qualification.  
@@ -101,9 +92,9 @@ Imports [ aliasname = ] namespace.element
   
  [!code-vb[VbVbalrStatements#158](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_7.vb)]  
   
-## See Also  
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)  
- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+## See also
+- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
+- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
+- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)

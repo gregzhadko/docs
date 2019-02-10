@@ -1,20 +1,12 @@
 ---
 title: "Code Access Security Policy Compatibility and Migration"
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 helpviewer_keywords: 
   - "policy migration, compatibility"
   - "CLR poliicy migration"
 ms.assetid: 19cb4d39-e38a-4262-b507-458915303115
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Code Access Security Policy Compatibility and Migration
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -143,6 +135,6 @@ ms.workload:
 </configuration>  
 ```  
   
-## See Also  
- [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)
+## See also
+- [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

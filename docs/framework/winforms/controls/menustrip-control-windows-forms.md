@@ -1,24 +1,10 @@
 ---
 title: "MenuStrip Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms]"
   - "menus"
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # MenuStrip Control (Windows Forms)
 This control groups application commands and makes them easily accessible.  
@@ -63,19 +49,19 @@ This control groups application commands and makes them easily accessible.
  [How to: Set Up Automatic Menu Merging for MDI Applications](../../../../docs/framework/winforms/controls/how-to-set-up-automatic-menu-merging-for-mdi-applications.md)  
  Describes how to merge menu items automatically at run time.  
   
--   [MenuStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
+-   [MenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
   
--   [How to: Copy ToolStripMenuItems](http://msdn.microsoft.com/library/ms171653\(v=vs.110\))  
+-   [How to: Copy ToolStripMenuItems](how-to-copy-toolstripmenuitems.md)  
   
--   [How to: Hide ToolStripMenuItems Using the Designer](http://msdn.microsoft.com/library/ms171658\(v=vs.110\))  
+-   [How to: Hide ToolStripMenuItems Using the Designer](how-to-hide-toolstripmenuitems-using-the-designer.md)  
   
--   [How to: Disable ToolStripMenuItems Using the Designer](http://msdn.microsoft.com/library/ms171656\(v=vs.110\))  
+-   [How to: Disable ToolStripMenuItems Using the Designer](how-to-disable-toolstripmenuitems-using-the-designer.md)  
   
--   [How to: Move ToolStripMenuItems](http://msdn.microsoft.com/library/ms171660\(v=vs.110\))  
+-   [How to: Move ToolStripMenuItems](how-to-move-toolstripmenuitems.md)  
   
--   [Walkthrough: Providing Standard Menu Items to a Form](http://msdn.microsoft.com/library/ms233662\(v=vs.110\))  
+-   [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md)  
   
--   [MenuStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
+-   [MenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
   
 ## Reference  
  <xref:System.Windows.Forms.MenuStrip>  

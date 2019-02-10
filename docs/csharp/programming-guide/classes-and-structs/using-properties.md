@@ -1,18 +1,12 @@
 ---
-title: "Using Properties (C# Programming Guide)"
+title: "Using Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "set accessor [C#]"
   - "get accessor [C#]"
   - "properties [C#], about properties"
 ms.assetid: f7f67b05-0983-4cdb-96af-1855d24c967c
-caps.latest.revision: 24
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Using Properties (C# Programming Guide)
 Properties combine aspects of both fields and methods. To the user of an object, a property appears to be a field, accessing the property requires the same syntax. To the implementer of a class, a property is one or two code blocks, representing a [get](../../../csharp/language-reference/keywords/get.md) accessor and/or a [set](../../../csharp/language-reference/keywords/set.md) accessor. The code block for the `get` accessor is executed when the property is read; the code block for the `set` accessor is executed when the property is assigned a new value. A property without a `set` accessor is considered read-only. A property without a `get` accessor is considered write-only. A property that has both accessors is read-write.  
@@ -100,8 +94,9 @@ Properties combine aspects of both fields and methods. To the user of an object,
   
  [!code-csharp[csProgGuideProperties#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-properties_12.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)
+- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)

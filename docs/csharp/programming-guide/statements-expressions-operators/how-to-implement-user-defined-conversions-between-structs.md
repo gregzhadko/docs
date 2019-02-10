@@ -1,16 +1,10 @@
 ---
-title: "How to: Implement User-Defined Conversions Between Structs (C# Programming Guide)"
+title: "How to: Implement User-Defined Conversions Between Structs - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "user-defined conversions [C#]"
 ms.assetid: 97839aef-8fbc-40d5-9769-6b569bc2710b
-caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Implement User-Defined Conversions Between Structs (C# Programming Guide)
 This example defines two structs, `RomanNumeral` and `BinaryNumeral`, and demonstrates conversions between them.  
@@ -32,7 +26,8 @@ This example defines two structs, `RomanNumeral` and `BinaryNumeral`, and demons
   
      performs a conversion from a `BinaryNumeral` to a `RomanNumeral`. Because `RomanNumeral` defines an implicit conversion from `BinaryNumeral`, no cast is required.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
+## See also
+
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)

@@ -1,14 +1,7 @@
 ---
 title: C# Expressions - A tour of the C# language
 description: expressions, operands, and operators are building blocks of the C# language
-keywords: .NET, csharp, expression, operator, operand
-author: BillWagner
-ms.author: wiwagn
 ms.date: 11/06/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 20d5eb10-7381-47b9-ad90-f1cc895aa27e
 ---
 
@@ -94,5 +87,5 @@ The following summarizes C#’s operators, listing the operator categories in or
 	- `(T x) => y`: Anonymous function (lambda expression)
 
 >[!div class="step-by-step"]
-[Previous](types-and-variables.md)
-[Next](statements.md)
+>[Previous](types-and-variables.md)
+>[Next](statements.md)

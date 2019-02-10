@@ -1,13 +1,9 @@
 ---
 title: Introduction to containers and Docker
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Introduction to containers and Docker
 
@@ -29,6 +25,5 @@ Another benefit you can derive from containerization is scalability. You can sca
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the entire application life cycle workflow. The most important benefit is the isolation provided between Dev and Ops.
 
-
 >[!div class="step-by-step"]
-[Next] (what-is-docker.md)
+>[Next](what-is-docker.md)

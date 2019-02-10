@@ -1,13 +1,6 @@
 ---
 title: "Array Dimensions in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "dimensions, arrays"
   - "arrays [Visual Basic], dimensions"
@@ -16,9 +9,6 @@ helpviewer_keywords:
   - "rectangular arrays"
   - "ranking, arrays"
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Array Dimensions in Visual Basic
 A *dimension* is a direction in which you can vary the specification of an array's elements. An array that holds the sales total for each day of the month has one dimension (the day of the month). An array that holds the sales total by department for each day of the month has two dimensions (the department number and the day of the month). The number of dimensions an array has is called its *rank*.  
@@ -93,6 +83,6 @@ Dim salesAmounts(4, 11, 30) As Double
 > [!NOTE]
 >  You can create an array without using the `Dim` statement or the `New` clause. For example, you can call the <xref:System.Array.CreateInstance%2A> method, or another component can pass your code an array created in this manner. Such an array can have a lower bound other than 0. You can always test for the lower bound of a dimension by using the <xref:System.Array.GetLowerBound%2A> method or the `LBound` function.  
   
-## See Also  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
+## See also
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

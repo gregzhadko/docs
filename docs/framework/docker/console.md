@@ -2,13 +2,7 @@
 title: Running Console applications in Docker
 description: Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.
 author: spboyer
-keywords: .NET, Container, Console, Applications
-
 ms.date: 09/28/2016
-ms.topic: article
-ms.prod: .net-framework
-ms.technology: vs-ide-deployment
-ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
 ---
 
@@ -22,7 +16,7 @@ The sample console application is a simple example which takes an argument, a qu
 
 In addition to the answer, the `Environment.MachineName` has been added to the response to show the difference between running the application locally and in a Windows container. When running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.
 
-The [complete example](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/docs repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+The [complete example](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 You need to be familiar with some Docker terms before you begin working
 on moving your application to a container.
@@ -55,7 +49,7 @@ Windows containers are supported on [Windows 10 Anniversary Update](https://www.
 [Windows Server 2016](https://www.microsoft.com/en-us/cloud-platform/windows-server).
 
 > [!NOTE]
->If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instructions from the [Container Host Deployment](https://msdn.microsoft.com/virtualization/windowscontainers/deployment/deployment) article to install the containers and Docker features.
+>If you are using Windows Server 2016, you must enable containers manually since the Docker for Windows installer will not enable the feature. Make sure all updates have run for the OS and then follow the instructions from the [Container Host Deployment](/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server) article to install the containers and Docker features.
 
 You need to have Docker for Windows, version 1.12 Beta 26 or higher to support Windows containers. By default, Docker enables Linux based containers; switch to Windows containers by right clicking the Docker icon in the system tray and select **Switch to Windows containers**. Docker will run the process to change and a restart may be required.
 
@@ -68,12 +62,12 @@ In *build.ps1*, the script uses [MSBuild](/visualstudio/msbuild/msbuild) to comp
 
 In the call to `Invoke-MSBuild` the `OutputPath` is set to **publish** and  `Configuration` set to **Release**. 
 
-```
+```powershell
 function Invoke-MSBuild ([string]$MSBuildPath, [string]$MSBuildParameters) {
     Invoke-Expression "$MSBuildPath $MSBuildParameters"
 }
 
-Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj /p:OutputPath=.\publish /p:Configuration=Release"
+Invoke-MSBuild -MSBuildPath "MSBuild.exe" -MSBuildParameters ".\ConsoleRandomAnswerGenerator.csproj -p:OutputPath=.\publish -p:Configuration=Release"
 ```
 
 ## Creating the Dockerfile
@@ -142,7 +136,7 @@ In the sample project files there is also a *run.ps1* which is an example of how
 
 To run, open PowerShell and use the following command:
 
-```
+```powershell
 .\run.ps1 "Is this easy or what?"
 ```
 

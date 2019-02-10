@@ -2,18 +2,12 @@
 title: "Additional resources for Visual Basic programmers"
 description: "Discover resources on the web for you to learn, ask questions and find out more information about Visual Basic."
 ms.date: 02/21/2018
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic, additional resources"
   - "resources [Visual Basic], additional"
   - "Help, Visual Basic Web sites"
   - "Visual Basic, videos"
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
-author: mairaw
-ms.author: mairaw
 ---
 # Additional resources
 
@@ -33,7 +27,7 @@ The following web sites provide guidance and can help you find answers to common
 |Term|Definition|
 |----------|----------------|
 |[Code Gallery](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Download and share sample applications and other resources with the developer community.|
-|[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
+|[Visual Basic documentation samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
 
 ### Forums
 
@@ -64,5 +58,5 @@ The following web sites provide guidance and can help you find answers to common
 
 ## See also
 
-[Get started with Visual Basic](../../visual-basic/getting-started/index.md)  
-[Talk to Us](/visualstudio/ide/talk-to-us)  
+- [Get started with Visual Basic](../../visual-basic/getting-started/index.md)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

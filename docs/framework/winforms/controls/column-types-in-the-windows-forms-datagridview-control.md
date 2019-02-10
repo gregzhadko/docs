@@ -1,25 +1,11 @@
 ---
 title: "Column Types in the Windows Forms DataGridView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "columns [Windows Forms], types"
   - "DataGridView control [Windows Forms], column types"
   - "data grids [Windows Forms], columns"
 ms.assetid: f0a0a9f1-8757-4bfd-891f-d7d12870dbed
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Column Types in the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control uses several column types to display its information and enable users to modify or add information.  
@@ -88,16 +74,16 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
   
  The <xref:System.Windows.Forms.DataGridViewLinkColumn> class provides several properties for modifying the appearance of links before, during, and after they are clicked.  
   
-## See Also  
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridViewColumn>  
- <xref:System.Windows.Forms.DataGridViewButtonColumn>  
- <xref:System.Windows.Forms.DataGridViewCheckBoxColumn>  
- <xref:System.Windows.Forms.DataGridViewComboBoxColumn>  
- <xref:System.Windows.Forms.DataGridViewImageColumn>  
- <xref:System.Windows.Forms.DataGridViewTextBoxColumn>  
- <xref:System.Windows.Forms.DataGridViewLinkColumn>  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [How to: Display Images in Cells of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)  
- [How to: Work with Image Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)  
- [Customizing the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customizing-the-windows-forms-datagridview-control.md)
+## See also
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridViewColumn>
+- <xref:System.Windows.Forms.DataGridViewButtonColumn>
+- <xref:System.Windows.Forms.DataGridViewCheckBoxColumn>
+- <xref:System.Windows.Forms.DataGridViewComboBoxColumn>
+- <xref:System.Windows.Forms.DataGridViewImageColumn>
+- <xref:System.Windows.Forms.DataGridViewTextBoxColumn>
+- <xref:System.Windows.Forms.DataGridViewLinkColumn>
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [How to: Display Images in Cells of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-display-images-in-cells-of-the-windows-forms-datagridview-control.md)
+- [How to: Work with Image Columns in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)
+- [Customizing the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/customizing-the-windows-forms-datagridview-control.md)

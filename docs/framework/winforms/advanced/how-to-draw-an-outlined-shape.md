@@ -1,14 +1,6 @@
 ---
 title: "How to: Draw an Outlined Shape"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -27,12 +19,6 @@ helpviewer_keywords:
   - "drawing [Windows Forms], circular shapes"
   - "shapes [Windows Forms], drawing"
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Draw an Outlined Shape
 This example draws outlined ellipses and rectangles on a form.  
@@ -48,10 +34,10 @@ This example draws outlined ellipses and rectangles on a form.
 ## Robust Programming  
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Pen> and <xref:System.Drawing.Graphics> objects.  
   
-## See Also  
- <xref:System.Drawing.Graphics.DrawEllipse%2A>  
- <xref:System.Windows.Forms.Control.OnPaint%2A>  
- <xref:System.Drawing.Graphics.DrawRectangle%2A>  
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
+## See also
+- <xref:System.Drawing.Graphics.DrawEllipse%2A>
+- <xref:System.Windows.Forms.Control.OnPaint%2A>
+- <xref:System.Drawing.Graphics.DrawRectangle%2A>
+- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
+- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
+- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

@@ -1,19 +1,12 @@
 ---
 title: "In (Generic Modifier) (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.VarianceIn"
 helpviewer_keywords: 
   - "contravariance, In keyword [Visual Basic]"
   - "In keyword [Visual Basic]"
 ms.assetid: 59bb13c5-fe96-42b8-8286-86293d1661c5
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # In (Generic Modifier) (Visual Basic)
 For generic type parameters, the `In` keyword specifies that the type parameter is contravariant.  
@@ -47,6 +40,6 @@ For generic type parameters, the `In` keyword specifies that the type parameter 
   
  [!code-vb[vbVarianceKeywords#2](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_2.vb)]  
   
-## See Also  
- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+## See also
+- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
+- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

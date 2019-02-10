@@ -1,21 +1,12 @@
 ---
 title: "TryCast Operator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.trycast"
   - "trycast"
 helpviewer_keywords: 
   - "TryCast keyword [Visual Basic]"
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # TryCast Operator (Visual Basic)
 Introduces a type conversion operation that does not throw an exception.  
@@ -42,6 +33,6 @@ Introduces a type conversion operation that does not throw an exception.
   
  [!code-vb[VbVbalrKeywords#6](../../../visual-basic/language-reference/codesnippet/VisualBasic/trycast-operator_1.vb)]  
   
-## See Also  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+## See also
+- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

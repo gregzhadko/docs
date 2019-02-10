@@ -1,25 +1,11 @@
 ---
 title: "How to: Resize Columns with a GridSplitter"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "grid columns [WPF], resizing"
   - "GridSplitter control [WPF], resizing grid columns"
   - "resizing grid columns [WPF]"
 ms.assetid: 47b20fe6-7adc-4aa6-9693-b4e184eef74b
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Resize Columns with a GridSplitter
 This example shows how to create a vertical <xref:System.Windows.Controls.GridSplitter> in order to redistribute the space between two columns in a <xref:System.Windows.Controls.Grid> without changing the dimensions of the <xref:System.Windows.Controls.Grid>.  
@@ -42,6 +28,6 @@ This example shows how to create a vertical <xref:System.Windows.Controls.GridSp
  [!code-xaml[GridSplitterRowColumn#GridSplitterEntireColumnPart1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart1)]  
 [!code-xaml[GridSplitterRowColumn#GridSplitterEntireColumnPart2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirecolumnpart2)]  
   
-## See Also  
- <xref:System.Windows.Controls.GridSplitter>  
- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.GridSplitter>
+- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)

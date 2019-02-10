@@ -1,14 +1,6 @@
 ---
 title: "Introduction to the GlyphRun Object and Glyphs Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "typography [WPF], Glyphs element"
   - "Glyphs elements [WPF]"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "glyphs [WPF]"
   - "typography [WPF], GlyphRun object"
 ms.assetid: 746ca769-a331-4435-9b95-f72a883b67c1
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Introduction to the GlyphRun Object and Glyphs Element
 This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xref:System.Windows.Documents.Glyphs> element.  
@@ -102,7 +88,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
  [!code-xaml[GlyphsOvwSamp2#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   
-## See Also  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
+## See also
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)

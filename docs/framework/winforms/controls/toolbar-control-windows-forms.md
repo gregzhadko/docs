@@ -1,24 +1,10 @@
 ---
 title: "ToolBar Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"
   - "ToolBar control [Windows Forms]"
 ms.assetid: 6b40e9ce-6a7a-4784-bfc9-7f1d36b7462e
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ToolBar Control (Windows Forms)
 > [!NOTE]
@@ -42,7 +28,7 @@ ms.workload:
  [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
  Gives directions on writing code to interpret which button the user clicks in a `ToolBar` control.  
   
- Also see [How to: Define an Icon for a ToolBar Button Using the Designer](http://msdn.microsoft.com/library/ms233659\(v=vs.110\)), [How to: Add Buttons to a ToolBar Control Using the Designer](http://msdn.microsoft.com/library/ms233650\(v=vs.110\)).  
+ Also see [How to: Define an Icon for a ToolBar Button Using the Designer](how-to-define-an-icon-for-a-toolbar-button-using-the-designer.md), [How to: Add Buttons to a ToolBar Control Using the Designer](how-to-add-buttons-to-a-toolbar-control-using-the-designer.md).  
   
 ## Reference  
  <xref:System.Windows.Forms.ToolBar> class  

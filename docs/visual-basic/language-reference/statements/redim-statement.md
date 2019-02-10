@@ -1,12 +1,6 @@
 ---
 title: "ReDim Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ReDim"
   - "vb.Preserve"
@@ -32,9 +26,6 @@ helpviewer_keywords:
   - "declaration statements [Visual Basic]"
   - "scalar variables [Visual Basic]"
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # ReDim Statement (Visual Basic)
 Reallocates storage space for an array variable.  
@@ -103,10 +94,10 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
-## See Also  
- <xref:System.IndexOutOfRangeException>  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)  
- [Nothing](../../../visual-basic/language-reference/nothing.md)  
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+## See also
+- <xref:System.IndexOutOfRangeException>
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Erase Statement](../../../visual-basic/language-reference/statements/erase-statement.md)
+- [Nothing](../../../visual-basic/language-reference/nothing.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

@@ -1,26 +1,12 @@
 ---
 title: "Dependency Property Value Precedence"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "dependency properties [WPF], classes as owners"
   - "dependency properties [WPF], metadata"
   - "classes [WPF], owners of dependency properties"
   - "metadata [WPF], dependency properties"
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
-caps.latest.revision: 27
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Dependency Property Value Precedence
 <a name="introduction"></a> This topic explains how the workings of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
@@ -92,7 +78,7 @@ ms.workload:
   
 -   **Default style**, also known as **theme style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly, and in fact will read as `null` up until run time. In this case, the style comes from the run-time theme evaluation that is part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation engine.  
   
- For implicit styles not in themes, the type must match exactly—a `MyButton``Button`-derived class will not implicitly use a style for `Button`.  
+ For implicit styles not in themes, the type must match exactly - a `MyButton` `Button`-derived class will not implicitly use a style for `Button`.  
   
 <a name="themestyles"></a>   
 ## Default (Theme) Styles  
@@ -120,7 +106,7 @@ ms.workload:
 ## Coercion, Animations, and Base Value  
  Coercion and animation both act on a value that is termed as the "base value" throughout this [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)]. The base value is thus whatever value is determined through evaluating upwards in the items until item 2 is reached.  
   
- For an animation, the base value can have an effect on the animated value, if that animation does not specify both "From" and "To" for certain behaviors, or if the animation deliberately reverts to the base value when completed. To see this in practice, run the [From, To, and By Animation Target Values Sample](http://go.microsoft.com/fwlink/?LinkID=159988). Try setting the local values of the rectangle height in the example, such that the initial local value differs from any "From" in the animation. You will note that the animations start right away using the "From" values and replace the base value once started. The animation might specify to return to the value found before animation once it is completed by specifying the Stop <xref:System.Windows.Media.Animation.FillBehavior>. Afterwards, normal precedence is used for the base value determination.  
+ For an animation, the base value can have an effect on the animated value, if that animation does not specify both "From" and "To" for certain behaviors, or if the animation deliberately reverts to the base value when completed. To see this in practice, run the [From, To, and By Animation Target Values Sample](https://go.microsoft.com/fwlink/?LinkID=159988). Try setting the local values of the rectangle height in the example, such that the initial local value differs from any "From" in the animation. You will note that the animations start right away using the "From" values and replace the base value once started. The animation might specify to return to the value found before animation once it is completed by specifying the Stop <xref:System.Windows.Media.Animation.FillBehavior>. Afterwards, normal precedence is used for the base value determination.  
   
  Multiple animations might be applied to a single property, with each of these animations possibly having been defined from different points in the value precedence. However, these animations will potentially composite their values, rather than just applying the animation from the higher precedence. This depends on exactly how the animations are defined, and the type of the value that is being animated. For more information about animating properties, see [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
   
@@ -134,9 +120,9 @@ ms.workload:
 ## ClearValue and Value Precedence  
  The <xref:System.Windows.DependencyObject.ClearValue%2A> method provides an expedient means to clear any locally applied value from a dependency property that is set on an element. However, calling <xref:System.Windows.DependencyObject.ClearValue%2A> is not a guarantee that the default as established in metadata during property registration is the new effective value. All of the other participants in value precedence are still active. Only the locally set value has been removed from the precedence sequence. For example, if you call <xref:System.Windows.DependencyObject.ClearValue%2A> on a property where that property is also set by a theme style, then the theme value is applied as the new value rather than the metadata-based default. If you want to take all property value participants out of the process and set the value to the registered metadata default, you can obtain that default value definitively by querying the dependency property metadata, and then you can use the default value to locally set the property with a call to <xref:System.Windows.DependencyObject.SetValue%2A>.  
   
-## See Also  
- <xref:System.Windows.DependencyObject>  
- <xref:System.Windows.DependencyProperty>  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)  
- [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)
+## See also
+- <xref:System.Windows.DependencyObject>
+- <xref:System.Windows.DependencyProperty>
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+- [Dependency Property Callbacks and Validation](../../../../docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md)

@@ -1,10 +1,7 @@
 ---
-title: "How to: Declare and Use Read Write Properties (C# Programming Guide)"
+title: "How to: Declare and Use Read Write Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "get accessor [C#], declaring properties"
   - "set accessor [C#]"
@@ -12,9 +9,6 @@ helpviewer_keywords:
   - "read/write properties [C#]"
   - "accessors [C#], declaring properties with"
 ms.assetid: a4962fef-af7e-4c4b-a929-4ae4d646ab8a
-caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Declare and Use Read Write Properties (C# Programming Guide)
 Properties provide the convenience of public data members without the risks that come with unprotected, uncontrolled, and unverified access to an object's data. This is accomplished through *accessors*: special methods that assign and retrieve values from the underlying data member. The [set](../../../csharp/language-reference/keywords/set.md) accessor enables data members to be assigned, and the [get](../../../csharp/language-reference/keywords/get.md) accessor retrieves data member values.  
@@ -45,7 +39,7 @@ Properties provide the convenience of public data members without the risks that
   
  If separate `set` and `get` methods were used to model properties, the equivalent code might look like this:  
   
-```  
+```csharp  
 person.SetAge(person.GetAge() + 1);   
 ```  
   
@@ -55,7 +49,8 @@ person.SetAge(person.GetAge() + 1);
   
  Notice that `ToString` is not explicitly used in the program. It is invoked by default by the `WriteLine` calls.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

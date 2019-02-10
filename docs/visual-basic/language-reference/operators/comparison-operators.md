@@ -1,12 +1,6 @@
 ---
 title: "Comparison Operators (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.<>"
   - "vb.>="
@@ -36,9 +30,6 @@ helpviewer_keywords:
   - "Is operator [Visual Basic]"
   - "comparison operators [Visual Basic], Visual Basicl"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Comparison Operators (Visual Basic)
 The following are the comparison operators defined in Visual Basic.  
@@ -153,10 +144,10 @@ result = string Like pattern
   
  In the preceding example, the first comparison returns `False` and the remaining comparisons return `True`.  
   
-## See Also  
- <xref:System.InvalidCastException>  
- [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+## See also
+- <xref:System.InvalidCastException>
+- [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)

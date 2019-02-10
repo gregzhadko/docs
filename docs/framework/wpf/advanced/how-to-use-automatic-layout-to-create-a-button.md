@@ -1,24 +1,10 @@
 ---
 title: "How to: Use Automatic Layout to Create a Button"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Button controls [WPF], creating with automatic layout"
   - "automatic layout [WPF], creating buttons"
 ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Automatic Layout to Create a Button
 This example describes how to use the automatic layout approach to create a button in a localizable application.  
@@ -37,6 +23,6 @@ This example describes how to use the automatic layout approach to create a butt
  ![The same button with text in different languages](../../../../docs/framework/wpf/advanced/media/globalizationbutton.png "GlobalizationButton")  
 Auto Resizable Button  
   
-## See Also  
- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)  
- [Use a Grid for Automatic Layout](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)
+## See also
+- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
+- [Use a Grid for Automatic Layout](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)

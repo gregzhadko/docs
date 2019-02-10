@@ -1,13 +1,9 @@
 ---
 title: SOA applications
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 09/22/2017
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # SOA applications
 
@@ -17,7 +13,6 @@ Today, you can deploy those services as Docker containers, which solves deployme
 
 At the end of the day, the container clustering solutions are useful for both a traditional SOA architecture or for a more advanced microservices architecture in which each microservice owns its data model. And, thanks to multiple databases, you also can scale-out the data tier instead of working with monolithic databases shared by the SOA services. However, the discussion about splitting the data is purely about architecture and design.
 
-
 >[!div class="step-by-step"]
-[Previous] (state-and-data-in-docker-applications.md)
-[Next] (orchestrate-high-scalability-availability.md)
+>[Previous](state-and-data-in-docker-applications.md)
+>[Next](orchestrate-high-scalability-availability.md)

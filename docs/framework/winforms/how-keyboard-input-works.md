@@ -1,25 +1,11 @@
 ---
 title: "How Keyboard Input Works"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], about keyboard input"
   - "keyboards [Windows Forms], keyboard input"
   - "Windows Forms, keyboard input"
 ms.assetid: 9a29433c-a180-49bb-b74c-d187786584c8
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How Keyboard Input Works
 Windows Forms processes keyboard input by raising keyboard events in response to Windows messages. Most Windows Forms applications process keyboard input exclusively by handling the keyboard events. However, you need to understand how keyboard messages work so you can implement more advanced keyboard-input scenarios, such as intercepting keys before they reach a control. This topic describes the types of key data that Windows Forms recognizes and provides an overview of how keyboard messages are routed. For information about keyboard events, see [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md).  
@@ -76,10 +62,10 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |Perform special input or navigation handling during a <xref:System.Windows.Forms.Control.KeyPress> event. For example, in a list control holding down the "r" key skips between items that begin with the letter r.|Override <xref:System.Windows.Forms.Control.ProcessDialogChar%2A>|  
 |Perform custom mnemonic handling; for example, you want to handle mnemonics on owner-drawn buttons contained in a toolbar.|Override <xref:System.Windows.Forms.Control.ProcessMnemonic%2A>.|  
   
-## See Also  
- <xref:System.Windows.Forms.Keys>  
- <xref:System.Windows.Forms.Control.WndProc%2A>  
- <xref:System.Windows.Forms.Control.PreProcessMessage%2A>  
- [My.Computer.Keyboard Object](~/docs/visual-basic/language-reference/objects/my-computer-keyboard-object.md)  
- [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)  
- [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md)
+## See also
+- <xref:System.Windows.Forms.Keys>
+- <xref:System.Windows.Forms.Control.WndProc%2A>
+- <xref:System.Windows.Forms.Control.PreProcessMessage%2A>
+- [My.Computer.Keyboard Object](~/docs/visual-basic/language-reference/objects/my-computer-keyboard-object.md)
+- [Accessing the Keyboard](~/docs/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)
+- [Using Keyboard Events](../../../docs/framework/winforms/using-keyboard-events.md)

@@ -1,17 +1,7 @@
 ---
 title: "Caller Information (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Caller Information (Visual Basic)
 By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools.  
@@ -78,8 +68,8 @@ End Sub
 |Attribute constructor|The name of the member to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|  
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|  
   
-## See Also  
- [Attributes (Visual Basic)](../../../visual-basic/language-reference/attributes.md)  
- [Common Attributes (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)  
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+## See also
+- [Attributes (Visual Basic)](../../../visual-basic/language-reference/attributes.md)
+- [Common Attributes (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)
+- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)

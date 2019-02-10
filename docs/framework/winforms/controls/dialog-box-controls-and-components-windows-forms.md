@@ -1,26 +1,12 @@
 ---
 title: "Dialog-Box Controls and Components (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "CommonDialog control"
   - "Windows Forms dialog boxes [Windows Forms], predefined"
   - "dialog boxes [Windows Forms], Windows Forms"
   - "Windows Forms, dialog boxes"
 ms.assetid: 6e5f5e9e-58d6-45f3-9df0-48b7bb6bfd5c
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Dialog-Box Controls and Components (Windows Forms)
 The following Windows Forms controls and components present standard dialog boxes. Follow the links for more information about the functions available in each dialog box.  
@@ -75,4 +61,4 @@ The following Windows Forms controls and components present standard dialog boxe
  [SaveFileDialog Component Overview](../../../../docs/framework/winforms/controls/savefiledialog-component-overview-windows-forms.md)  
  Selects files to save and where to save them.  
   
- Also see [Dialog Boxes in Windows Forms](http://msdn.microsoft.com/library/2chz8edb\(v=vs.110\)).
+ Also see [Dialog Boxes in Windows Forms](https://msdn.microsoft.com/library/2chz8edb\(v=vs.110\)).

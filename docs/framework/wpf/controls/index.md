@@ -1,26 +1,12 @@
 ---
 title: "Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "controls [WPF], about WPF controls"
 ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Controls
 <a name="introduction"></a>
@@ -102,18 +88,17 @@ ms.workload:
 -   <xref:System.Windows.Controls.HeaderedContentControl>-- Some examples of classes that inherit from this class are <xref:System.Windows.Controls.TabItem>, <xref:System.Windows.Controls.GroupBox>, and <xref:System.Windows.Controls.Expander>.  
   
 -   <xref:System.Windows.Controls.HeaderedItemsControl>--Some examples of classes that inherit from this class are <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Controls.TreeViewItem>, and <xref:System.Windows.Controls.ToolBar>.  
-  
--  
+
   
  For more information about these base classes, see [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md).  
   
-## See Also  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Controls by Category](../../../../docs/framework/wpf/controls/controls-by-category.md)  
- [Control Library](../../../../docs/framework/wpf/controls/control-library.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Input](../../../../docs/framework/wpf/advanced/input-wpf.md)  
- [Enable a Command](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)  
- [Walkthroughs: Create a Custom Animated Button](../../../../docs/framework/wpf/controls/walkthroughs-create-a-custom-animated-button.md)  
- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
+## See also
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Controls by Category](../../../../docs/framework/wpf/controls/controls-by-category.md)
+- [Control Library](../../../../docs/framework/wpf/controls/control-library.md)
+- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Input](../../../../docs/framework/wpf/advanced/input-wpf.md)
+- [Enable a Command](../../../../docs/framework/wpf/advanced/how-to-enable-a-command.md)
+- [Walkthroughs: Create a Custom Animated Button](../../../../docs/framework/wpf/controls/walkthroughs-create-a-custom-animated-button.md)
+- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)

@@ -1,13 +1,7 @@
 ---
 title: "Handling and Raising Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,18 +10,13 @@ helpviewer_keywords:
   - "application development [.NET Framework], events"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
-caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Handling and Raising Events
-Events in the .NET Framework are based on the delegate model. The delegate model follows the observer design pattern, which enables a subscriber to register with, and receive notifications from, a provider. An event sender pushes a notification that an event has happened, and an event receiver receives that notification and defines a response to it. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.  
+Events in the .NET Framework are based on the delegate model. The delegate model follows the observer design pattern, which enables a subscriber to register with, and receive notifications from a provider. An event sender pushes a notification that an event has happened, and an event receiver receives that notification and defines a response to it. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.  
   
- For information about handling events in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Events and routed events overview (Windows store apps)](http://go.microsoft.com/fwlink/p/?LinkId=261485).  
+ For information about handling events in Windows 8.x Store apps, see [Events and routed events overview](https://docs.microsoft.com/previous-versions/windows/apps/hh758286(v=win.10)).  
   
 ## Events  
  An event is a message sent by an object to signal the occurrence of an action. The action could be caused by user interaction, such as a button click, or it could be raised by some other program logic, such as changing a property’s value. The object that raises the event is called the *event sender*. The event sender doesn't know which object or method will receive (handle) the events it raises. The event is typically a member of the event sender; for example, the <xref:System.Web.UI.WebControls.Button.Click> event is a member of the <xref:System.Web.UI.WebControls.Button> class, and the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event is a member of the class that implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
@@ -50,7 +39,7 @@ Events in the .NET Framework are based on the delegate model. The delegate model
   
  Delegates are multicast, which means that they can hold references to more than one event-handling method. For details, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
- For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the `delegate` in (C#) and `Delegate` (in Visual Basic) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
+ For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the `delegate` (in C#) and `Delegate` (in Visual Basic) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
   
  [!code-csharp[EventsOverview#4](../../../samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
  [!code-vb[EventsOverview#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
@@ -76,7 +65,7 @@ Events in the .NET Framework are based on the delegate model. The delegate model
  [!code-vb[EventsOverview#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#2)]  
   
 ## Static and Dynamic Event Handlers  
- The .NET Framework allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) and [Events](../../csharp/programming-guide/events/index.md).  
+ The .NET Framework allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) (in Visual Basic) and [Events](../../csharp/programming-guide/events/index.md) (in C#).  
   
 ## Raising Multiple Events  
  If your class raises multiple events, the compiler generates one field per event delegate instance. If the number of events is large, the storage cost of one field per delegate may not be acceptable. For those situations, the .NET Framework provides event properties that you can use with another data structure of your choice to store event delegates.  
@@ -92,11 +81,12 @@ Events in the .NET Framework are based on the delegate model. The delegate model
 |[Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)|Describes the design pattern that enables a subscriber to register with, and receive notifications from, a provider.|  
 |[How to: Consume Events in a Web Forms Application](../../../docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)|Shows how to handle an event that is raised by a Web Forms control.|  
   
-## See Also  
- <xref:System.EventHandler>  
- <xref:System.EventHandler%601>  
- <xref:System.EventArgs>  
- <xref:System.Delegate>  
- [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)  
- [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)  
- [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)
+## See also
+
+- <xref:System.EventHandler>
+- <xref:System.EventHandler%601>
+- <xref:System.EventArgs>
+- <xref:System.Delegate>
+- [Events and routed events overview (UWP apps)](/windows/uwp/xaml-platform/events-and-routed-events-overview)
+- [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
+- [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

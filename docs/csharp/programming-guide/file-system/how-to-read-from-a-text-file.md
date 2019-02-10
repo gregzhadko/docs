@@ -1,10 +1,7 @@
 ---
-title: "How to: Read From a Text File (C# Programming Guide)"
+title: "How to: Read From a Text File - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "StreamReader.ReadToEnd"
 helpviewer_keywords: 
@@ -13,9 +10,6 @@ helpviewer_keywords:
   - "reading data, text files"
   - "text files, reading"
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
-caps.latest.revision: 17
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Read From a Text File (C# Programming Guide)
 This example reads the contents of a text file by using the static methods <xref:System.IO.File.ReadAllText%2A> and <xref:System.IO.File.ReadAllLines%2A> from the <xref:System.IO.File?displayProperty=nameWithType> class.  
@@ -41,7 +35,8 @@ This example reads the contents of a text file by using the static methods <xref
 ## .NET Framework Security  
  Do not rely on the name of a file to determine the contents of the file. For example, the file `myFile.cs` might not be a C# source file.  
   
-## See Also  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+## See also
+
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

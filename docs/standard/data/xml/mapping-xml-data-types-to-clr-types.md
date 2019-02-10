@@ -1,29 +1,17 @@
 ---
 title: "Mapping XML Data Types to CLR Types"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
-caps.latest.revision: 2
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
-  - "dotnetcore"
 ---
 # Mapping XML Data Types to CLR Types
-The following table describes the default mapping between the XML data types and the common language runtime (CLR) types.  
-  
-## The following table describes the default mappings of an XML data type to a CLR type.  
+
+The following table describes the default mapping between the XML data types and the common language runtime (CLR) types.
   
 > [!NOTE]
->  The `xs` and the `xdt` prefixes are mapped to the http://www.w3.org/2001/XMLSchema and the http://www.w3.org/2003/05/xpath-datatypes namespace URIs respectively.  
+> The `xs` and the `xdt` prefixes are mapped to the <https://www.w3.org/2001/XMLSchema> and the <https://www.w3.org/2003/05/xpath-datatypes> namespace URIs respectively.
   
 |XML Type|CLR Type|  
 |--------------|--------------|  
@@ -84,5 +72,6 @@ The following table describes the default mapping between the XML data types and
 |Comment node|<xref:System.Xml.XPath.XPathNavigator>|  
 |Processing instruction node|<xref:System.Xml.XPath.XPathNavigator>|  
   
-## See Also  
- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)
+## See also
+
+- [Type Support in the System.Xml Classes](../../../../docs/standard/data/xml/type-support-in-the-system-xml-classes.md)

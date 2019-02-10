@@ -1,14 +1,7 @@
 ---
 title: Building Expression Trees
 description: Learn about techniques for building expression trees.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 542754a9-7f40-4293-b299-b9f80241902c
 ---
 
@@ -58,10 +51,10 @@ Once you've got the addition expression, you can create the lambda
 expression:
 
 ```csharp
-var lamdba = Expression.Lambda(addition);
+var lambda = Expression.Lambda(addition);
 ```
 
-This is a very simple LambdaExpression, because it contains no arguments.
+This is a very simple lambda expression, because it contains no arguments.
 Later in this section, you'll see how to map arguments to parameters
 and build more complicated expressions.
 
@@ -201,7 +194,7 @@ The code to build the expression tree for the factorial function is quite a bit 
 more complicated, and it's riddled with labels and break statements and other elements
 we'd like to avoid in our everyday coding tasks. 
 
-For this section, I've also updated the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/docs/tree/master/samples/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+For this section, I've also updated the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/master/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Examining the APIs
 

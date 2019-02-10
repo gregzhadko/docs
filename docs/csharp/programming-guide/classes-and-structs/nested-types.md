@@ -1,16 +1,10 @@
 ---
-title: "Nested Types (C# Programming Guide)"
+title: "Nested Types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/10/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "nested types [C#]"
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
-caps.latest.revision: 13
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Nested Types (C# Programming Guide)
 A type defined within a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is called a nested type. For example:  
@@ -41,8 +35,9 @@ The following example makes the `Nested` class public:
   
  [!code-csharp[csProgGuideObjects#71](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/nested-types_4.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
+- [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)

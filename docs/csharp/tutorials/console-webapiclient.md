@@ -1,14 +1,7 @@
 ---
 title: Create a REST client using .NET Core
-description: This tutorial teaches you a number of features in .NET Core and the C# language. 
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
+description: This tutorial teaches you a number of features in .NET Core and the C# language.
 ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 
@@ -30,7 +23,7 @@ C# objects.
 
 There are a lot of features in this tutorial. Let’s build them one by one.
 
-If you prefer to follow along with the [final sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Prerequisites
 You’ll need to set up your machine to run .NET core. You can find the
@@ -63,8 +56,7 @@ run your application.
 
 ## Adding New Dependencies
 One of the key design goals for .NET Core is to minimize the size of
-the .NET framework installation. The .NET Core Application framework contains
-only the most common elements of the .NET full framework. If an application
+the .NET installation. If an application
 needs additional libraries for some of its features, you add those
 dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
 so your application can process JSON responses.
@@ -96,7 +88,7 @@ Now you're ready to start retrieving data from the web. In this
 application, you'll read information from the 
 [GitHub API](https://developer.github.com/v3/). Let's read information
 about the projects under the
-[.NET Foundation](http://www.dotnetfoundation.org/) umbrella. You'll
+[.NET Foundation](https://www.dotnetfoundation.org/) umbrella. You'll
 start by making the request to the GitHub API to retrieve information
 on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.
@@ -502,7 +494,7 @@ again:
 Console.WriteLine(repo.LastPush);
 ```
 
-Your version should now match the [finished sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient).
+Your version should now match the [finished sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient).
  
 ## Conclusion
 

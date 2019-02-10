@@ -1,24 +1,10 @@
 ---
 title: "How to: Bind to the Results of a LINQ Query"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "running a LINQ query [WPF], bind to results"
   - "binding to LINQ query results [WPF]"
 ms.assetid: ff2844d9-17ed-4ea6-aab1-5111af0bc684
-caps.latest.revision: 5
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Bind to the Results of a LINQ Query
 This example demonstrates how to run a LINQ query and then bind to the results.  
@@ -36,9 +22,9 @@ This example demonstrates how to run a LINQ query and then bind to the results.
   
  The second list box binds to that collection because its <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> value is set to `{Binding}`. As a result, it displays the returned collection (based on the `myTaskTemplate`<xref:System.Windows.DataTemplate>).  
   
-## See Also  
- [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)  
- [Bind to a Collection and Display Information Based on Selection](../../../../docs/framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md)  
- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)
+- [Bind to a Collection and Display Information Based on Selection](../../../../docs/framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
+- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

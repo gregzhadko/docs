@@ -1,14 +1,6 @@
 ---
 title: "DataGridView Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "tables [Windows Forms]"
   - "data grids [Windows Forms"
@@ -21,12 +13,6 @@ helpviewer_keywords:
   - "datasets [Windows Forms], displaying in DataGridView control"
   - "DataGridView control [Windows Forms]"
 ms.assetid: dbee73f2-bba6-4874-9389-cd21d44309be
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGridView Control (Windows Forms)
 The `DataGridView` control provides a powerful and flexible way to display data in a tabular format. You can use the `DataGridView` control to show read-only views of a small amount of data, or you can scale it to show editable views of very large sets of data.  
@@ -81,7 +67,7 @@ The `DataGridView` control provides a powerful and flexible way to display data 
  [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md)  
  Describes how the `DataGridView` control improves upon and replaces the <xref:System.Windows.Forms.DataGrid> control.  
   
- Also see [Using the Designer with the Windows Forms DataGridView Control](http://msdn.microsoft.com/library/ms171593\(v=vs.110\)).  
+ Also see [Using the Designer with the Windows Forms DataGridView Control](using-the-designer-with-the-windows-forms-datagridview-control.md).  
   
 ## Reference  
  <xref:System.Windows.Forms.DataGridView>  
@@ -90,5 +76,5 @@ The `DataGridView` control provides a powerful and flexible way to display data 
  <xref:System.Windows.Forms.BindingSource>  
  Provides reference documentation for the <xref:System.Windows.Forms.BindingSource> component. The <xref:System.Windows.Forms.DataGridView> control and the <xref:System.Windows.Forms.BindingSource> component are designed to work closely together.  
   
-## See Also  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

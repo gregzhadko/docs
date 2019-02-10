@@ -1,14 +1,6 @@
 ---
 title: "How to: Detect When the Enter Key Pressed"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "Enter key [WPF], detecting"
   - "keys [WPF], Enter"
 ms.assetid: a66f39d2-ef4a-43a5-b454-a4ea0fe88655
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Detect When the Enter Key Pressed
 This example shows how to detect when the <xref:System.Windows.Input.Key.Enter> key is pressed on the keyboard.  
@@ -40,6 +26,6 @@ This example shows how to detect when the <xref:System.Windows.Input.Key.Enter> 
  [!code-csharp[keydown#KeyDownSample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/KeyDown/CSharp/Window1.xaml.cs#keydownsample)]
  [!code-vb[keydown#KeyDownSample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/KeyDown/VisualBasic/Window1.xaml.vb#keydownsample)]  
   
-## See Also  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+## See also
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)

@@ -1,14 +1,6 @@
 ---
 title: "How to: Use Compositing Mode to Control Alpha Blending"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,12 +9,6 @@ helpviewer_keywords:
   - "colors [Windows Forms], blending"
   - "colors [Windows Forms], controlling transparency"
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
-caps.latest.revision: 14
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Use Compositing Mode to Control Alpha Blending
 There may be times when you want to create an off-screen bitmap that has the following characteristics:  
@@ -64,6 +50,6 @@ There may be times when you want to create an off-screen bitmap that has the fol
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
-## See Also  
- <xref:System.Drawing.Color.FromArgb%2A>  
- [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)
+## See also
+- <xref:System.Drawing.Color.FromArgb%2A>
+- [Alpha Blending Lines and Fills](../../../../docs/framework/winforms/advanced/alpha-blending-lines-and-fills.md)

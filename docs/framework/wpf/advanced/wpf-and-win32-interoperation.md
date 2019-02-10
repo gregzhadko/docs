@@ -1,26 +1,12 @@
 ---
 title: "WPF and Win32 Interoperation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "hosting WPF content in Win32 window [WPF]"
   - "HWND interop [WPF]"
   - "Win32 code [WPF], WPF interoperation"
   - "interoperability [WPF], Win32"
 ms.assetid: 0ffbde0d-701d-45a3-a6fa-dd71f4d9772e
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # WPF and Win32 Interoperation
 This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] code. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] code, it might be more effective to reuse some of that code.  
@@ -43,9 +29,9 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
  One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files into a [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] project.  There are several project division techniques to compensate for this.  
   
--   Create a [!INCLUDE[TLA2#tla_cshrp](../../../../includes/tla2sharptla-cshrp-md.md)] DLL that contains all your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages as a compiled assembly, and then have your [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] executable include that [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] as a reference.  
+-   Create a C# DLL that contains all your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages as a compiled assembly, and then have your [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] executable include that [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] as a reference.  
   
--   Create a [!INCLUDE[TLA2#tla_cshrp](../../../../includes/tla2sharptla-cshrp-md.md)] executable for the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and have it reference a [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] that contains the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] content.  
+-   Create a C# executable for the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content, and have it reference a [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)] [!INCLUDE[TLA2#tla_dll](../../../../includes/tla2sharptla-dll-md.md)] that contains the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] content.  
   
 -   Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] at run time, instead of compiling your [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
@@ -54,7 +40,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
  Use whatever approach works best for you.  
   
 > [!NOTE]
->  If you have not used [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)].  To learn more about the [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](http://go.microsoft.com/fwlink/?LinkId=98739).  
+>  If you have not used [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in [!INCLUDE[TLA2#tla_cpp](../../../../includes/tla2sharptla-cpp-md.md)].  To learn more about the [!INCLUDE[TLA#tla_cppcli](../../../../includes/tlasharptla-cppcli-md.md)] managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).  
   
 <a name="hwnds"></a>   
 ## How WPF Uses Hwnds  
@@ -164,9 +150,9 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
  The interfaces only provide support for what happens on the transition between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] regions. Within the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] region, tabbing behavior is entirely controlled by the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] implemented logic for tabbing, if any.  
   
-## See Also  
- <xref:System.Windows.Interop.HwndHost>  
- <xref:System.Windows.Interop.HwndSource>  
- <xref:System.Windows.Interop>  
- [Walkthrough: Hosting a Win32 Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-win32-control-in-wpf.md)  
- [Walkthrough: Hosting WPF Content in Win32](../../../../docs/framework/wpf/advanced/walkthrough-hosting-wpf-content-in-win32.md)
+## See also
+- <xref:System.Windows.Interop.HwndHost>
+- <xref:System.Windows.Interop.HwndSource>
+- <xref:System.Windows.Interop>
+- [Walkthrough: Hosting a Win32 Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-win32-control-in-wpf.md)
+- [Walkthrough: Hosting WPF Content in Win32](../../../../docs/framework/wpf/advanced/walkthrough-hosting-wpf-content-in-win32.md)

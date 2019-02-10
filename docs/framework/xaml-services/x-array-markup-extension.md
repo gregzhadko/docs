@@ -1,14 +1,6 @@
 ---
 title: "x:Array Markup Extension"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "x:Array"
   - "xArray"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "x:Array [XAML Services]"
   - "XAML [XAML Services], x:Array markup extension"
 ms.assetid: c5358e14-d24c-44c7-b5eb-6062a4fd981c
-caps.latest.revision: 20
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # x:Array Markup Extension
 Provides general support for arrays of objects in XAML through a markup extension. This corresponds to the `x:ArrayExtension` XAML type in [MS-XAML].  
@@ -77,6 +63,6 @@ Provides general support for arrays of objects in XAML through a markup extensio
   
  For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
   
-## See Also  
- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)  
- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+## See also
+- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

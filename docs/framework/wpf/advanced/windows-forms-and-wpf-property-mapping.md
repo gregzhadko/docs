@@ -1,14 +1,6 @@
 ---
 title: "Windows Forms and WPF Property Mapping"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "property mapping [WPF interoperability]"
   - "Windows Forms [WPF], interoperability with"
@@ -16,12 +8,6 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "WindowsFormsHost element property mapping [WPF]"
 ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Windows Forms and WPF Property Mapping
 The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures and provides the following capabilities:  
@@ -142,10 +128,10 @@ The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)
 |<xref:System.Windows.Forms.Control.RightToLeft%2A><br /><br /> (<xref:System.Windows.Forms.RightToLeft?displayProperty=nameWithType>)|<xref:System.Windows.FrameworkElement.FlowDirection%2A><br /><br /> (<xref:System.Windows.FlowDirection>)|<xref:System.Windows.Forms.RightToLeft.No> maps to <xref:System.Windows.FlowDirection.LeftToRight>.<br /><br /> <xref:System.Windows.Forms.RightToLeft.Yes> maps to <xref:System.Windows.FlowDirection.RightToLeft>.|  
 |<xref:System.Windows.Forms.Control.Visible%2A>|<xref:System.Windows.UIElement.Visibility%2A>|The <xref:System.Windows.Forms.Integration.ElementHost> control sets the <xref:System.Windows.UIElement.Visibility%2A> property on the hosted element by using the following rules:<br /><br /> -   <xref:System.Windows.Forms.Control.Visible%2A> = `true` maps to <xref:System.Windows.Visibility.Visible>.<br />-   <xref:System.Windows.Forms.Control.Visible%2A> = `false` maps to <xref:System.Windows.Visibility.Hidden>.|  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
- [WPF and Windows Forms Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-windows-forms-interoperation.md)  
- [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-windowsformshost-element.md)  
- [Walkthrough: Mapping Properties Using the ElementHost Control](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-elementhost-control.md)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
+- [WPF and Windows Forms Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-windows-forms-interoperation.md)
+- [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-windowsformshost-element.md)
+- [Walkthrough: Mapping Properties Using the ElementHost Control](../../../../docs/framework/wpf/advanced/walkthrough-mapping-properties-using-the-elementhost-control.md)

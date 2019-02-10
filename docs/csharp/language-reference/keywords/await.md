@@ -1,19 +1,14 @@
 ---
-title: "await (C# Reference)"
+title: "await - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/22/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
   - "await keyword [C#]"
   - "await [C#]"
 ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
-caps.latest.revision: 36
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # await (C# Reference)
 The `await` operator is applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the awaited task completes. The task represents ongoing work.  
@@ -66,9 +61,9 @@ The following example returns the total number of characters in the pages whose 
 
 [!code-csharp[await-example](../../../../samples/snippets/csharp/language-reference/keywords/await/await2.cs)]  
 
-Because the use of `async` and `await` in an application entry point is not supported, we cannot apply the `async` attribute to the `Main` method, nor can we await the `GetPageLengthsAsync` method call. We can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. 
+The preceding example uses C# 7.1, which supports the [`async` `Main` method](../../programming-guide/main-and-command-args/index.md). Because earlier C# versions don't support application entry points that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you cannot apply the `async` modifier to the `Main` method and await the `GetPageLengthsAsync` method call. In that case, you can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [Select the C# language version](../configure-language-version.md).
 
-## See also  
-[Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)   
-[Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
-[async](../../../csharp/language-reference/keywords/async.md)
+## See also
+- [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)
+- [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [async](../../../csharp/language-reference/keywords/async.md)

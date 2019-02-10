@@ -1,14 +1,7 @@
 ---
 title: "Programming Concepts (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Programming Concepts (Visual Basic)
 This section explains programming concepts in the Visual Basic language.  
@@ -29,7 +22,6 @@ This section explains programming concepts in the Visual Basic language.
 |[Object-Oriented Programming (Visual Basic)](../../../visual-basic/programming-guide/concepts/object-oriented-programming.md)|Describes common object-oriented concepts, including encapsulation, inheritance, and polymorphism.|  
 |[Reflection (Visual Basic)](../../../visual-basic/programming-guide/concepts/reflection.md)|Explains how to use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties.|
 |[Serialization (Visual Basic)](../../../visual-basic/programming-guide/concepts/serialization/index.md)|Describes key concepts in binary, XML, and SOAP serialization.|  
-|[Threading (Visual Basic)](../../../visual-basic/programming-guide/concepts/threading/index.md)|Provides an overview of the .NET threading model and shows how to write code that performs multiple tasks at the same time to improve the performance and responsiveness of your applications.|  
   
 ## Related Sections  
   

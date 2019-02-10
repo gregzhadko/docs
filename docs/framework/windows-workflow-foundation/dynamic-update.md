@@ -1,19 +1,7 @@
 ---
 title: "Dynamic Update"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8b6ef19b-9691-4b4b-824c-3c651a9db96e
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
-ms.workload: 
-  - "dotnet"
 ---
 # Dynamic Update
 Dynamic update provides a mechanism for workflow application developers to update the workflow definition of a persisted workflow instance. This can be to implement a bug fix, new requirements, or to accommodate unexpected changes. This topic provides an overview of the dynamic update functionality introduced in [!INCLUDE[net_v45](../../../includes/net-v45-md.md)].  
@@ -30,7 +18,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 4.  [Apply the update map to the desired persisted workflow instances](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Apply)  
   
 > [!NOTE]
->  Note that steps 1 through 3, which cover the creation of the update map, may be performed independently of applying the update. A common scenario that that the workflow developer will create the update map offline, and then an administrator will apply the update at a later time.  
+>  Note that steps 1 through 3, which cover the creation of the update map, may be performed independently of applying the update. A common scenario that the workflow developer will create the update map offline, and then an administrator will apply the update at a later time.  
   
  This topic provides an overview of the dynamic update process of adding a new activity to a persisted instance of a compiled Xaml workflow.  
   
@@ -63,7 +51,7 @@ DynamicUpdateServices.PrepareForUpdate(ab);
 ```  
   
 > [!NOTE]
->  To download the sample code that accompanies this topic, see [Dynamic Update sample code](http://go.microsoft.com/fwlink/?LinkId=227905).  
+>  To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).  
   
 ###  <a name="Update"></a> Update the workflow definition to reflect the desired changes  
  Once the workflow definition has been prepared for updating, the desired changes can be made. You can add or remove activities, add, move or delete public variables, add or remove arguments, and make changes to the signature of activity delegates. You cannot remove a running activity or change the signature of a running delegate. These changes may be made using code, or in a re-hosted workflow designer. In the following example, a custom `VerifyAppraisal` activity is added to the Sequence that makes up the body of the `MortgageWorkflow` from the previous example.  
@@ -170,7 +158,7 @@ foreach (Guid id in ids)
  Once dynamic update has been applied, the workflow instance may be resumed. Note that the new updated definition and <xref:System.Activities.WorkflowIdentity> must be used.  
   
 > [!NOTE]
->  For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see[Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
+>  For more information about working with <xref:System.Activities.WorkflowApplication> and <xref:System.Activities.WorkflowIdentity>, see [Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md).  
   
  In the following example, the `MortgageWorkflow_v1.1.xaml` workflow from the previous example has been compiled, and is loaded and resumed using the updated workflow definition.  
   
@@ -197,4 +185,4 @@ wfApp.Load(InstanceId);
 ```  
   
 > [!NOTE]
->  To download the sample code that accompanies this topic, see [Dynamic Update sample code](http://go.microsoft.com/fwlink/?LinkId=227905).
+>  To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).

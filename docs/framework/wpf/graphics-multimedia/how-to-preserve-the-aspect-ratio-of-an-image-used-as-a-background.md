@@ -1,25 +1,11 @@
 ---
 title: "How to: Preserve the Aspect Ratio of an Image Used as a Background"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "aspect ratios of background images [WPF], preserving"
   - "brushes [WPF], preserving aspect ratios of background images"
   - "background images [WPF], preserving aspect ratios"
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
-caps.latest.revision: 16
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # How to: Preserve the Aspect Ratio of an Image Used as a Background
 This example shows how to use the <xref:System.Windows.Media.TileBrush.Stretch%2A> property of an <xref:System.Windows.Media.ImageBrush> in order to preserve the aspect ratio of the image.  
@@ -45,8 +31,8 @@ This example shows how to use the <xref:System.Windows.Media.TileBrush.Stretch%2
   
  Note also that, although the <xref:System.Windows.Media.TileBrush.Stretch%2A> property appears to specify how the <xref:System.Windows.Media.TileBrush> content stretches to fit its output area, it actually specifies how the <xref:System.Windows.Media.TileBrush> content stretches to fill its base tile. For more information, see <xref:System.Windows.Media.TileBrush>.  
   
- This code example is part of a larger example that is provided for the <xref:System.Windows.Media.ImageBrush> class. For the complete sample, see [ImageBrush Sample](http://go.microsoft.com/fwlink/?LinkID=160005).  
+ This code example is part of a larger example that is provided for the <xref:System.Windows.Media.ImageBrush> class. For the complete sample, see [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005).  
   
-## See Also  
- <xref:System.Windows.Media.TileBrush>  
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+## See also
+- <xref:System.Windows.Media.TileBrush>
+- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)

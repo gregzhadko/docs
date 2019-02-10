@@ -1,14 +1,6 @@
 ---
 title: "DataGrid Control Overview (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "DataGrid"
 helpviewer_keywords: 
@@ -28,12 +20,6 @@ helpviewer_keywords:
   - "parent table navigation in DataGrid"
   - "child tables [Windows Forms], dataGrid control"
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # DataGrid Control Overview (Windows Forms)
 > [!NOTE]
@@ -98,7 +84,7 @@ A DataGrid bound to data with multiple tables
 |Multiple related tables.|The grid can display a tree view to select tables with, or you can specify that the grid display the parent table. Records in the parent table let users navigate to related child rows.|  
   
 > [!NOTE]
->  Tables in a dataset are related using a <xref:System.Data.DataRelation>.  Also see [HYPERLINK "http://msdn.microsoft.com/library/dbwcse3d(v=vs.110)" Relationships in Datasets](http://msdn.microsoft.com/library/dbwcse3d\(v=vs.110\)) or [Relationships in Datasets](http://msdn.microsoft.com/library/dbwcse3d\(v=vs.120\)).  
+> Tables in a dataset are related using a <xref:System.Data.DataRelation>. Also see [Create relationships between datasets](/visualstudio/data-tools/relationships-in-datasets).
   
  When the <xref:System.Windows.Forms.DataGrid> control is displaying a table and the <xref:System.Windows.Forms.DataGrid.AllowSorting%2A> property is set to `true`, data can be resorted by clicking the column headers. The user can also add rows and edit cells.  
   
@@ -132,7 +118,7 @@ The following illustration shows the objects included in the DataGrid control.
   
  Column styles are related to columns in a dataset just like table styles are related to data tables. Just as each table may only have one table style defined for it at a time, so too can each column only have one column style defined for it, in a particular table style. This relationship is defined in the column's <xref:System.Windows.Forms.DataGridColumnStyle.MappingName%2A> property.  
   
- If you have created a table style without column styles added to it, [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] will add default column styles when the form and grid are created at run time. However, if you have created a table style and added any column styles to it, [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] will not create any column styles. Also, you will need to define column styles and assign them with the mapping name to have the columns that you want appear in the grid.  
+ If you have created a table style without column styles added to it, Visual Studio will add default column styles when the form and grid are created at run time. However, if you have created a table style and added any column styles to it, Visual Studio will not create any column styles. Also, you will need to define column styles and assign them with the mapping name to have the columns that you want appear in the grid.  
   
  Because you specify which columns are included in the data grid by assigning them a column style and no column style has been assigned to the columns, you can include columns of data in the dataset that are not displayed in the grid. However, because the data column is included in the dataset, you can programmatically edit the data that is not displayed.  
   
@@ -147,9 +133,9 @@ The following illustration shows the objects included in the DataGrid control.
 ## Events  
  Besides the common control events such as <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.DataGrid.Scroll>, the <xref:System.Windows.Forms.DataGrid> control supports events associated with editing and navigation within the grid. The <xref:System.Windows.Forms.DataGrid.CurrentCell%2A> property determines which cell is selected. The <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event is raised when the user navigates to a new cell. When the user navigates to a new table through parent/child relations, the <xref:System.Windows.Forms.DataGrid.Navigate> event is raised. The <xref:System.Windows.Forms.DataGrid.BackButtonClick> event is raised when the user clicks the back button when the user is viewing a child table, and the <xref:System.Windows.Forms.DataGrid.ShowParentDetailsButtonClick> event is raised when the show/hide parent rows icon is clicked.  
   
-## See Also  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  
- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)  
- [How to: Format the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)
+## See also
+- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)
+- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
+- [How to: Delete or Hide Columns in the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)
+- [How to: Format the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-format-the-windows-forms-datagrid-control.md)

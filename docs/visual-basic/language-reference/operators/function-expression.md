@@ -1,20 +1,11 @@
 ---
 title: "Function Expression (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Function expression [Visual Basic]"
   - "functions [Visual Basic], function expressions"
   - "lambda expressions [Visual Basic], function expression"
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Function Expression (Visual Basic)
 Declares the parameters and code that define a function lambda expression.  
@@ -88,14 +79,14 @@ Dim londonCusts = db.Customers.
                   Select(Function(cust) cust)  
 ```  
   
- For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/queries.md). For more information about standard query operators, see [Standard Query Operators Overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
+ For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/index.md). For more information about standard query operators, see [Standard Query Operators Overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
-## See Also  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
- [Value Comparisons](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
- [Boolean Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)  
- [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)  
- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+## See also
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [Value Comparisons](../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
+- [Boolean Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)
+- [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)
+- [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

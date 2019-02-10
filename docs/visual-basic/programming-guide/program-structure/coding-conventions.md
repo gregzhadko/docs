@@ -1,21 +1,11 @@
 ---
 title: "Visual Basic Coding Conventions"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "coding conventions [Visual Basic], Visual Basic"
   - "examples [Visual Basic], coding conventions"
   - "Visual Basic code, conventions"
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
-caps.latest.revision: 48
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Visual Basic Coding Conventions
 Microsoft develops samples and documentation that follow the guidelines in this topic. If you follow the same coding conventions, you may gain the following benefits:  
@@ -209,5 +199,5 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
      [!code-vb[VbVbalrGuidelines#34](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_26.vb)]  
   
-## See Also  
- [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)
+## See also
+- [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

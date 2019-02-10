@@ -1,13 +1,6 @@
 ---
 title: "Recursive Procedures (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], that call themselves"
@@ -17,12 +10,9 @@ helpviewer_keywords:
   - "functions [Visual Basic], calling recursively"
   - "recursion"
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Recursive Procedures (Visual Basic)
-A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code.  
+A *recursive* procedure is one that calls itself. In general, this is not the most effective way to write Visual Basic code.  
   
  The following procedure uses recursion to calculate the factorial of its original argument.  
   
@@ -41,15 +31,14 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
   
  **Testing**. If you write a recursive procedure, you should test it very carefully to make sure it always meets some limiting condition. You should also ensure that you cannot run out of memory due to having too many recursive calls.  
   
-## See Also  
- <xref:System.StackOverflowException>  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Procedure Overloading](./procedure-overloading.md)  
- [Troubleshooting Procedures](./troubleshooting-procedures.md)  
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [Troubleshooting Exceptions: System.StackOverflowException](http://msdn.microsoft.com/library/51b71217-c507-4f5b-bc35-0236180d7968)
+## See also
+- <xref:System.StackOverflowException>
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Procedure Overloading](./procedure-overloading.md)
+- [Troubleshooting Procedures](./troubleshooting-procedures.md)
+- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)

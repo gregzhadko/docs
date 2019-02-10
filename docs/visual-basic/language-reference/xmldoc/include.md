@@ -1,22 +1,12 @@
 ---
-title: "&lt;include&gt; (Visual Basic)"
-ms.custom: ""
+title: "<include> (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "include XML tag"
   - "<include> XML tag"
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
-# &lt;include&gt; (Visual Basic)
+# \<include> (Visual Basic)
 Refers to another file that describes the types and members in your source code.  
   
 ## Syntax  
@@ -41,7 +31,7 @@ Refers to another file that describes the types and members in your source code.
 ## Remarks  
  Use the `<include>` tag to refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  
   
- The `<include>` tag uses the W3C XML Path Language (XPath) Version 1.0 Recommendation. More information for ways to customize your `<include>` use is available at http://www.w3.org/TR/xpath.  
+ The `<include>` tag uses the W3C XML Path Language (XPath) Version 1.0 Recommendation. For more information about ways to customize your `<include>` use, see <https://www.w3.org/TR/xpath>.  
   
 ## Example  
  This example uses the `<include>` tag to import member documentation comments from a file called `commentFile.xml`.  
@@ -63,5 +53,5 @@ Refers to another file that describes the types and members in your source code.
 </Docs>  
 ```  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

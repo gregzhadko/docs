@@ -1,25 +1,11 @@
 ---
 title: "ContextMenuStrip Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "context menus"
   - "ContextMenuStrip control [Windows Forms]"
   - "shortcut menus"
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # ContextMenuStrip Control
 The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut menu that you associate with a control.  
@@ -43,7 +29,7 @@ The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut men
  [How to: Handle the ContextMenuStrip Opening Event](../../../../docs/framework/winforms/controls/how-to-handle-the-contextmenustrip-opening-event.md)  
  Describes how to customize the behavior of a <xref:System.Windows.Forms.ContextMenuStrip> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
   
- Also see [ContextMenuStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233646\(v=vs.110\)) or [ContextMenuStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233641\(v=vs.110\)).  
+ Also see [ContextMenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233646\(v=vs.110\)) or [ContextMenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233641\(v=vs.110\)).  
   
 ## Reference  
  <xref:System.Windows.Forms.MenuStrip>  

@@ -1,14 +1,6 @@
 ---
 title: "Data Binding Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,12 +10,6 @@ helpviewer_keywords:
   - "data binding [WPF], about data binding"
   - "conversion for data binding [WPF]"
 ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
-caps.latest.revision: 78
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
-ms.workload: 
-  - dotnet
 ---
 # Data Binding Overview
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] objects and [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)]. <xref:System.Windows.Controls.ContentControl>s such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.ItemsControl>s such as <xref:System.Windows.Controls.ListBox> and <xref:System.Windows.Controls.ListView> have built-in functionality to enable flexible styling of single data items or collections of data items. Sort, filter, and group views can be generated on top of the data.  
@@ -39,7 +25,7 @@ ms.workload:
   
  A typical use of data binding is to place server or local configuration data into forms or other [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] controls. In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], this concept is expanded to include the binding of a broad range of properties to a variety of data sources. In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], dependency properties of elements can be bound to [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] objects (including [!INCLUDE[TLA#tla_adonet](../../../../includes/tlasharptla-adonet-md.md)] objects or objects associated with Web Services and Web properties) and [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data.  
   
- For an example of data binding, take a look at the following application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] from the [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703):  
+ For an example of data binding, take a look at the following application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703):  
   
  ![Data binding sample screen shot](../../../../docs/framework/wpf/data/media/databinding-databindingdemo.png "DataBinding_DataBindingDemo")  
   
@@ -249,7 +235,7 @@ ms.workload:
   
 <a name="how_to_create_a_view"></a>   
 #### How to Create a View  
- One way to create and use a view is to instantiate the view object directly and then use it as the binding source. For example, consider the [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) application shown in the [What Is Data Binding?](#what_is_data_binding) section. The application is implemented such that the <xref:System.Windows.Controls.ListBox> binds to a view over the data collection instead of the data collection directly. The following example is extracted from the [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) application. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] proxy of a class that inherits from <xref:System.Windows.Data.CollectionView>. In this particular example, the <xref:System.Windows.Data.CollectionViewSource.Source%2A> of the view is bound to the *AuctionItems* collection (of type <xref:System.Collections.ObjectModel.ObservableCollection%601>) of the current application object.  
+ One way to create and use a view is to instantiate the view object directly and then use it as the binding source. For example, consider the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) application shown in the [What Is Data Binding?](#what_is_data_binding) section. The application is implemented such that the <xref:System.Windows.Controls.ListBox> binds to a view over the data collection instead of the data collection directly. The following example is extracted from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) application. The <xref:System.Windows.Data.CollectionViewSource> class is the [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] proxy of a class that inherits from <xref:System.Windows.Data.CollectionView>. In this particular example, the <xref:System.Windows.Data.CollectionViewSource.Source%2A> of the view is bound to the *AuctionItems* collection (of type <xref:System.Collections.ObjectModel.ObservableCollection%601>) of the current application object.  
   
  [!code-xaml[DataBindingLab#WindowResources1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#windowresources1)]  
 [!code-xaml[DataBindingLab#CollectionViewSource](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#collectionviewsource)]  
@@ -332,7 +318,7 @@ ms.workload:
 #### Master-Detail Binding Scenario  
  The notion of a current item is useful not only for navigation of items in a collection, but also for the master-detail binding scenario. Consider the application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] in the [What Is Data Binding?](#what_is_data_binding) section again. In that application, the selection within the <xref:System.Windows.Controls.ListBox> determines the content shown in the <xref:System.Windows.Controls.ContentControl>. To put it in another way, when a <xref:System.Windows.Controls.ListBox> item is selected, the <xref:System.Windows.Controls.ContentControl> shows the details of the selected item.  
   
- You can implement the master-detail scenario simply by having two or more controls bound to the same view. The following example from the [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703) shows the markup of the <xref:System.Windows.Controls.ListBox> and the <xref:System.Windows.Controls.ContentControl> you see on the application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] in the [What Is Data Binding?](#what_is_data_binding) section:  
+ You can implement the master-detail scenario simply by having two or more controls bound to the same view. The following example from the [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703) shows the markup of the <xref:System.Windows.Controls.ListBox> and the <xref:System.Windows.Controls.ContentControl> you see on the application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] in the [What Is Data Binding?](#what_is_data_binding) section:  
   
  [!code-xaml[DataBindingLab#Master1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#master1)]  
 [!code-xaml[DataBindingLab#Master2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml#master2)]  
@@ -437,11 +423,11 @@ ms.workload:
 ## Debugging Mechanism  
  You can set the attached property <xref:System.Diagnostics.PresentationTraceSources.TraceLevel%2A?displayProperty=nameWithType> on a binding-related object to receive information about the status of a specific binding.  
   
-## See Also  
- <xref:System.Windows.Controls.DataErrorValidationRule>  
- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)  
- [Bind to the Results of a LINQ Query](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
- [Bind to an ADO.NET Data Source](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)
+## See also
+- <xref:System.Windows.Controls.DataErrorValidationRule>
+- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)
+- [Bind to the Results of a LINQ Query](../../../../docs/framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)
+- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Data Binding Demo](https://go.microsoft.com/fwlink/?LinkID=163703)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Bind to an ADO.NET Data Source](../../../../docs/framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)

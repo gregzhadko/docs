@@ -1,21 +1,15 @@
 ---
-title: "&lt;value&gt; (C# Programming Guide)"
+title: "<value> - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "<value>"
 helpviewer_keywords: 
   - "<value> C# XML tag"
   - "value C# XML tag"
 ms.assetid: 08dbadaf-9ab6-43d9-9493-98e43bed199a
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
-# &lt;value&gt; (C# Programming Guide)
+# \<value> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -34,6 +28,7 @@ ms.author: "wiwagn"
 ## Example  
  [!code-csharp[csProgGuideDocComments#14](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/value_1.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

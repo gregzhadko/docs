@@ -1,12 +1,6 @@
 ---
 title: "On Error Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.OnError"
 helpviewer_keywords: 
@@ -28,9 +22,6 @@ helpviewer_keywords:
   - "run-time errors [Visual Basic], handling"
   - "On Error statement [Visual Basic]"
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # On Error Statement (Visual Basic)
 Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine.  
@@ -121,13 +112,13 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Information.Err%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)  
- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## See also
+- <xref:Microsoft.VisualBasic.Information.Err%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)
+- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
